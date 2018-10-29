@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="" />
+    <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +17,8 @@
       <file leaf-file-name="lasq.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lasq.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="64" column="70" lean-forward="true" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
+            <state relative-caret-position="-1004">
+              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -134,10 +136,10 @@
       <list>
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" />
-        <option value="$PROJECT_DIR$/lasq.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" />
+        <option value="$PROJECT_DIR$/lasq.xml" />
       </list>
     </option>
   </component>
@@ -346,10 +348,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297491" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297491" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21503638" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21503638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -589,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lasq.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="64" column="70" lean-forward="true" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
+        <state relative-caret-position="-1004">
+          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
     </entry>
