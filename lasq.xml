@@ -14,7 +14,7 @@
         <classes>
             <class name="com.lasq.testcase.testcase">
                 <methods>
-                    <!--<include name="checkProtocal"/>-->
+                    <include name="checkProtocal"/>
                     <!--<include name="checkManRegiste1"/>-->
                     <!--<include name="checkManRegiste3"/>-->
                     <!--<include name="checkSayHi"/>-->
