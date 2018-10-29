@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="恋爱神器" duration-ms="90977" started-at="2018-10-29T06:53:31Z" finished-at="2018-10-29T06:55:02Z">
+    <groups>
+    </groups>
+    <test name="恋爱神器" duration-ms="90977" started-at="2018-10-29T06:53:31Z" finished-at="2018-10-29T06:55:02Z">
+      <class name="com.lasq.testcase.testcase">
+        <test-method status="PASS" signature="getDriver(java.lang.String, java.lang.String)[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="getDriver" is-config="true" duration-ms="22995" started-at="2018-10-29T14:53:31Z" finished-at="2018-10-29T14:53:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DU2SSE148L041137]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lasq]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="checkManRegisteNear3()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="checkManRegisteNear3" duration-ms="59654" started-at="2018-10-29T14:53:54Z" description="三线男，注册引导附近" finished-at="2018-10-29T14:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkManRegisteNear3 -->
+        <test-method status="PASS" signature="resetApp()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="resetApp" is-config="true" duration-ms="4085" started-at="2018-10-29T14:54:54Z" finished-at="2018-10-29T14:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetApp -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="closeBrowser" is-config="true" duration-ms="4227" started-at="2018-10-29T14:54:58Z" finished-at="2018-10-29T14:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.lasq.testcase.testcase -->
+    </test> <!-- 恋爱神器 -->
+  </suite> <!-- 恋爱神器 -->
+  <suite name="多名称" duration-ms="0" started-at="2018-10-29T06:55:02Z" finished-at="2018-10-29T06:55:02Z">
+    <groups>
+    </groups>
+  </suite> <!-- 多名称 -->
+</testng-results>

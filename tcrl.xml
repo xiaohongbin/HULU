@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="同城热恋" parallel="tests" thread-count="2">
+
+    <!--&lt;!&ndash;<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>&ndash;&gt;-->
+    <!--<suite-files>-->
+    <!--<suite-file path="test1.xml"></suite-file>-->
+    <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
+    <!--</suite-files>-->
+    <test name="同城热恋" preserve-order="true">
+        <parameter name="deviceID" value="DU2SSE148L041137"/>
+        <parameter name="app" value="tcrl"/>
+        <classes>
+            <class name="com.tcrl.testcase.testcase">
+                <methods>
+                    <!--<include name="checkProtocal"/>-->
+                    <include name="checkManRegiste1"/>
+                    <include name="checkManRegiste3"/>
+                    <!--<include name="checkManSayHi1"/>-->
+                    <!--<include name="checkManSayHi3"/>-->
+                    <!--<include name="checkManAskbtn1"/>-->
+                    <!--<include name="checkManConversation1"/>-->
+                    <!--<include name="checkManNotread1"/>-->
+                    <!--<include name="checkManUpgraded1"/>-->
+                    <!--<include name="checkManOnlineStatus1"/>-->
+                    <!--<include name="checkManVedio3"/>-->
+                    <!--<include name="checkManMore3"/>-->
+                    <!--<include name="checkManMore1"/>-->
+                    <!--<include name="checkManNear1"/>-->
+                    <!--<include name="checkManMailboxPersonData1"/>-->
+                    <!--<include name="checkManMailboxNum1"/>-->
+                    <!--<include name="checkManMailbox1"/>-->
+                    <!--<include name="checkManMailboxZone3"/>-->
+                    <!--<include name="checkManMailboxZonePic3"/>-->
+                    <!--<include name="checkVIPCenter1"/>-->
+                    <!--<include name="checkBeanList1"/>-->
+                    <!--<include name="checkBeanList3"/>-->
+                    <!--<include name="checkLetterList1"/>-->
+                    <!--<include name="checkLetterList3"/>-->
+                    <!--&lt;!&ndash;<include name="checkVipList1"/>&ndash;&gt;-->
+                    <!--<include name="checkVipList3"/>-->
+                    <!--<include name="checkDuiDuiPeng"/>-->
+                    <!--&lt;!&ndash;<include name="checkAnswerQuestions1"/>&ndash;&gt;-->
+                    <!--<include name="checkAnswerQuestions3"/>-->
+                    <!--<include name="checkMyTag1"/>-->
+                    <!--<include name="checkMyPersonData1"/>-->
+                    <!--<include name="checkMyCondition1"/>-->
+                    <!--<include name="checkMyIntroduction3"/>-->
+                    <!--<include name="checkMyVisitor3"/>-->
+                    <!--<include name="checkWomenLogin1"/>-->
+                    <!--<include name="checkWomenLogin3"/>-->
+                    <!--<include name="checkWomenMemberCenter3"/>-->
+                    <!--<include name="checkWomenMore3"/>-->
+                    <!--<include name="checkWomenAdvertisement3"/>-->
+
+                    <!--<include name="checkManRegisteNear3"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name ="chrome" preserve-order="true">-->
+    <!--<parameter name="browser" value="chrome" />-->
+    <!--<classes>-->
+    <!--<class name="ptenginecase.Chrome">-->
+    <!--<methods>-->
+    <!--<include name="cnLogin"/>-->
+    <!--&lt;!&ndash;<include name="DCoverview"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="referralmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="searchmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="keywordmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="socialmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="devicemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="osmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="browsermenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="resolutionmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="locationmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="pagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="entrypagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignOverviewmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticsmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticstabmenu"/>&ndash;&gt;-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <listeners>
+        <!--&lt;!&ndash;listener class-name="listener.TestngListener"/&ndash;&gt;-->
+        <!--&lt;!&ndash;<listener class-name="listener.ExtentTestNGIReporterListener1"/>&ndash;&gt;-->
+        <listener class-name="com.listener.ExtentTestNGITestListener"/>
+        <!--<listener class-name="com.listener.ExtentTestNGIReporterListener"/>-->
+    </listeners>
+</suite>
