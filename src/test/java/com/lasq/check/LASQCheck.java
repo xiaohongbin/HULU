@@ -1600,6 +1600,7 @@ public class LASQCheck extends ElementMethod {
         if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
             Assert.fail("800豆币未启动支付宝");
         }
+        this.waitElement(driver,alisure);
         this.clickAlipayBack();
         this.clickEnsure();
         this.waitElement(driver, alipay);
