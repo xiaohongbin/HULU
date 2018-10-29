@@ -23,7 +23,7 @@
                     <!--<include name="checkUpgraded"/>-->
                     <!--<include name="checkAskbtn"/>-->
                     <!--<include name="checkOnlineStatus"/>-->
-                    <!--<include name="checkManMore1"/>-->
+                    <include name="checkManMore1"/>
                     <!--<include name="checkManMore3"/>-->
                     <!--<include name="checkManVideo3"/>-->
                     <!--<include name="checkVIPList"/>-->
@@ -60,7 +60,7 @@
                     <!--<include name="checkManCustomCall"/>-->
                     <!--<include name="checkManSayHILanjie3"/>-->
                     <!--<include name="checkManSayHILanjie1"/>-->
-                    <include name="checkManRegisteNear3"/>
+                    <!--<include name="checkManRegisteNear3"/>-->
 
                     <!--<include name="checkWomenZuanfenZhuShou1"/>-->
                     <!--<include name="checkWomenMemberCenter"/>-->

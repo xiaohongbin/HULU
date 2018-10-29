@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lasq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lasq.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="lasq.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lasq.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-354">
-              <caret line="37" column="55" lean-forward="true" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="96">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -576,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lasq.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <caret line="37" column="55" lean-forward="true" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        <state relative-caret-position="96">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="48" />
         </state>
       </provider>
     </entry>
