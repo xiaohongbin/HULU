@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lasq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lasq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/lasq.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="48" />
+              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,8 @@
       <file leaf-file-name="LASQCheck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="1603" column="19" lean-forward="true" selection-start-line="1603" selection-start-column="19" selection-end-line="1603" selection-end-column="19" />
+            <state relative-caret-position="-2817">
+              <caret line="1602" column="39" selection-start-line="1602" selection-start-column="39" selection-end-line="1602" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -55,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
+              <caret line="1078" column="26" lean-forward="true" selection-start-line="1078" selection-start-column="26" selection-end-line="1078" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -68,8 +67,8 @@
       <file leaf-file-name="ElementMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="1327" column="16" selection-start-line="1327" selection-start-column="16" selection-end-line="1327" selection-end-column="16" />
+            <state relative-caret-position="48">
+              <caret line="1332" column="25" selection-start-line="1332" selection-start-column="25" selection-end-line="1332" selection-end-column="25" />
               <folding>
                 <element signature="e#32676#32677#0" expanded="true" />
                 <element signature="e#32705#32706#0" expanded="true" />
@@ -100,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
-              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -140,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" />
         <option value="$PROJECT_DIR$/lasq.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" />
       </list>
     </option>
   </component>
@@ -546,21 +545,21 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
+          <caret line="1078" column="26" lean-forward="true" selection-start-line="1078" selection-start-column="26" selection-end-line="1078" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="1327" column="16" selection-start-line="1327" selection-start-column="16" selection-end-line="1327" selection-end-column="16" />
+        <state relative-caret-position="48">
+          <caret line="1332" column="25" selection-start-line="1332" selection-start-column="25" selection-end-line="1332" selection-end-column="25" />
           <folding>
             <element signature="e#32676#32677#0" expanded="true" />
             <element signature="e#32705#32706#0" expanded="true" />
@@ -570,15 +569,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="1603" column="19" lean-forward="true" selection-start-line="1603" selection-start-column="19" selection-end-line="1603" selection-end-column="19" />
+        <state relative-caret-position="-2817">
+          <caret line="1602" column="39" selection-start-line="1602" selection-start-column="39" selection-end-line="1602" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lasq.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="48" />
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
         </state>
       </provider>
     </entry>

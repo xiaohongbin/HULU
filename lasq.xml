@@ -23,7 +23,7 @@
                     <!--<include name="checkUpgraded"/>-->
                     <!--<include name="checkAskbtn"/>-->
                     <!--<include name="checkOnlineStatus"/>-->
-                    <include name="checkManMore1"/>
+                    <!--<include name="checkManMore1"/>-->
                     <!--<include name="checkManMore3"/>-->
                     <!--<include name="checkManVideo3"/>-->
                     <!--<include name="checkVIPList"/>-->
@@ -35,7 +35,7 @@
                     <!--<include name="checkMyCondition1"/>-->
                     <!--<include name="checkMyTag1"/>-->
                     <!--<include name="checkMyVisitor3"/>-->
-                    <include name="checkMyIntegrity3"/>
+                    <!--<include name="checkMyIntegrity3"/>-->
                     <!--<include name="checkInitSearch"/>-->
                     <!--<include name="checkSeachArea"/>-->
                     <!--<include name="checkSeachAge"/>-->
