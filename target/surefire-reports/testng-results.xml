@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="恋爱神器" duration-ms="98340" started-at="2018-10-29T07:33:38Z" finished-at="2018-10-29T07:35:17Z">
+  <suite name="恋爱神器" duration-ms="276341" started-at="2018-10-31T07:16:44Z" finished-at="2018-10-31T07:21:20Z">
     <groups>
     </groups>
-    <test name="恋爱神器" duration-ms="98340" started-at="2018-10-29T07:33:38Z" finished-at="2018-10-29T07:35:17Z">
+    <test name="恋爱神器" duration-ms="276341" started-at="2018-10-31T07:16:44Z" finished-at="2018-10-31T07:21:20Z">
       <class name="com.lasq.testcase.testcase">
-        <test-method status="PASS" signature="getDriver(java.lang.String, java.lang.String)[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="getDriver" is-config="true" duration-ms="22027" started-at="2018-10-29T15:33:38Z" finished-at="2018-10-29T15:34:01Z">
+        <test-method status="PASS" signature="getDriver(java.lang.String, java.lang.String)[pri:0, instance:com.lasq.testcase.testcase@cb51256]" name="getDriver" is-config="true" duration-ms="27978" started-at="2018-10-31T15:16:44Z" finished-at="2018-10-31T15:17:12Z">
           <params>
             <param index="0">
               <value>
@@ -23,22 +23,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method status="PASS" signature="checkManRegisteNear3()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="checkManRegisteNear3" duration-ms="67802" started-at="2018-10-29T15:34:01Z" description="三线男，注册引导附近" finished-at="2018-10-29T15:35:08Z">
+        <test-method status="PASS" signature="checkBeanList1()[pri:0, instance:com.lasq.testcase.testcase@cb51256]" name="checkBeanList1" duration-ms="239899" started-at="2018-10-31T15:17:12Z" description="1线男 会员中心--豆币价格列表及支付方式调起" finished-at="2018-10-31T15:21:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkManRegisteNear3 -->
-        <test-method status="PASS" signature="resetApp()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="resetApp" is-config="true" duration-ms="4387" started-at="2018-10-29T15:35:08Z" finished-at="2018-10-29T15:35:13Z">
+        </test-method> <!-- checkBeanList1 -->
+        <test-method status="PASS" signature="resetApp()[pri:0, instance:com.lasq.testcase.testcase@cb51256]" name="resetApp" is-config="true" duration-ms="4114" started-at="2018-10-31T15:21:12Z" finished-at="2018-10-31T15:21:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.lasq.testcase.testcase@7113b13f]" name="closeBrowser" is-config="true" duration-ms="4104" started-at="2018-10-29T15:35:13Z" finished-at="2018-10-29T15:35:17Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.lasq.testcase.testcase@cb51256]" name="closeBrowser" is-config="true" duration-ms="4332" started-at="2018-10-31T15:21:16Z" finished-at="2018-10-31T15:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.lasq.testcase.testcase -->
     </test> <!-- 恋爱神器 -->
   </suite> <!-- 恋爱神器 -->
-  <suite name="多名称" duration-ms="0" started-at="2018-10-29T07:35:17Z" finished-at="2018-10-29T07:35:17Z">
+  <suite name="多名称" duration-ms="0" started-at="2018-10-31T07:21:21Z" finished-at="2018-10-31T07:21:21Z">
     <groups>
     </groups>
   </suite> <!-- 多名称 -->
