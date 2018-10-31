@@ -28,7 +28,7 @@
                     <!--<include name="checkManVideo3"/>-->
                     <!--<include name="checkVIPList"/>-->
                     <include name="checkBeanList1"/>
-                    <!--<include name="checkLetterList1"/>-->
+                    <include name="checkLetterList1"/>
                     <!--<include name="checkVipList1"/>-->
                     <!--<include name="checkAnswerQuestions1"/>-->
                     <!--<include name="checkMyPersonData1"/>-->
