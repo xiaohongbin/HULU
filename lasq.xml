@@ -17,7 +17,7 @@
                     <!--<include name="checkProtocal"/>-->
                     <!--<include name="checkManRegiste1"/>-->
                     <!--<include name="checkManRegiste3"/>-->
-                    <!--<include name="checkSayHi"/>-->
+                    <include name="checkSayHi"/>
                     <!--<include name="checkConversation"/>-->
                     <!--<include name="checkNotread"/>-->
                     <!--<include name="checkUpgraded"/>-->
@@ -27,8 +27,8 @@
                     <!--<include name="checkManMore3"/>-->
                     <!--<include name="checkManVideo3"/>-->
                     <!--<include name="checkVIPList"/>-->
-                    <include name="checkBeanList1"/>
-                    <include name="checkLetterList1"/>
+                    <!--<include name="checkBeanList1"/>-->
+                    <!--<include name="checkLetterList1"/>-->
                     <!--<include name="checkVipList1"/>-->
                     <!--<include name="checkAnswerQuestions1"/>-->
                     <!--<include name="checkMyPersonData1"/>-->

@@ -52,6 +52,10 @@ public class ElementMethod extends PageElement {
         log.info("合理化，注册页点击 立即注册");
         btn_reg_dialog_reg.click();
     }
+    public void clickBtnSpeed(){
+        log.info("合理化，双号，超级曝光页点击 立即领取");
+        btn_speed.click();
+    }
     //    下方五个模块切换
     public void clickYuanFenIcon() {
         log.info("点击“缘分”ICON");
@@ -128,6 +132,12 @@ public class ElementMethod extends PageElement {
         log.info("展开注册地址一项");
         address.click();
     }
+    public void setBeiJing(){
+        log.info("设置为一线城市北京");
+        for(int i=0;i<4;i++){
+            num_up_province.click();
+        }
+    }
     public String getAddress(){
         log.info("获取修改后的城市");
         return address.getText();
@@ -186,6 +196,15 @@ public class ElementMethod extends PageElement {
     public String getTVNickName() {
         log.info("获取缘分列表上的用户名");
         return tv_nickname.get(0).getText();
+    }
+    //缘分页，三列头像。5.5.9需求
+    public void clickIVAction() {
+        log.info("5.5.9新需求，点击缘分页上第一个打招呼按钮");
+        iv_action.get(0).click();
+    }
+    public String getTVAge(){
+        log.info("5.5.9新需求,获取缘分页，第一个女用户头像上显示的年龄");
+        return tv_age.get(0).getText();
     }
 
     public void clickTVSayHello() {
@@ -1042,8 +1061,14 @@ public class ElementMethod extends PageElement {
 
 
     public void waitElement(AndroidDriver driver, WebElement webelement) throws Exception {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(webelement));
+//        try{
+            WebDriverWait wait = new WebDriverWait(driver, 30);
+            wait.until(ExpectedConditions.elementToBeClickable(webelement));
+//        }catch (Exception e){
+//            log.info("报错信息！元素："+webelement+" 没有找到");
+//            e.printStackTrace();
+//        }
+
     }
 
 
@@ -1058,7 +1083,15 @@ public class ElementMethod extends PageElement {
         action.tap(width - 10, 150).perform();
         action.tap(width - 10, 150).perform();
     }
-
+    //向上滑动选择一线城市
+    public void swipeAddressUp(AndroidDriver driver) {
+        log.info("滑动修改城市，选择一线城市");
+        Duration duration = Duration.ofSeconds(1);
+        int width = driver.manage().window().getSize().width;
+        int height = driver.manage().window().getSize().height;
+        TouchAction action1 = new TouchAction(driver).press(200, 950).waitAction(duration).moveTo(200, 1320).release();
+        action1.perform();
+    }
     //      滑动选择所在地址
     public void swipeAddress(AndroidDriver driver) {
         log.info("滑动修改城市");

@@ -29,13 +29,13 @@ public class LASQCheck extends ElementMethod {
         Thread.sleep(2000);
         this.clickMonitor(driver);
         this.clickTestEnv();
-//        this.clickProduct();
+        this.clickProduct();
 //        this.clickTestEnv();
-        this.clickHuluprep();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
-        this.clickAddress();
-        this.swipeAddress(driver);
-        this.clickBtnok();
+//        this.clickAddress();
+//        this.swipeAddress(driver);
+//        this.clickBtnok();
         String address=this.getAddress();
         log.pass(address);
         this.clickSave();
@@ -63,12 +63,17 @@ public class LASQCheck extends ElementMethod {
         }
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
+        //5.5.9新新需求，双号弹出超级曝光页面
+        log.info("判断新需求，超级曝光页是否弹出");
+        if(this.doesWebElementExist(speed_dialog_title)){
+            this.clickBtnSpeed();
+        }
 //        this.waitElement(driver, topview);
         log.info("判断是否进入缘分模块");
         if (!this.doesWebElementExist(mokuai.get(0))) {
             Assert.fail("登录成功后，未进入缘分模块");
         }
-        if (this.doesWebElementExist(msg_close)) {
+        if (this.doesWebElementExist(msg_close)) {//等待时间？
             this.clickMsgClose();
         }
         String userid=this.getUserID(driver);
@@ -80,19 +85,20 @@ public class LASQCheck extends ElementMethod {
     }
 
     //  1线男注册
-    public void manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
+    public String manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
         this.clickLogin();
         Thread.sleep(2000);
         this.clickMonitor(driver);
         this.clickTestEnv();
-//        this.clickProduct();
-//        this.clickTestEnv();
-        this.clickHuluprep();
+        this.clickProduct();
+////        this.clickTestEnv();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
+        this.clickAddress();
+//        this.setBeiJing();
+        this.swipeAddressUp(driver);
+        this.clickBtnok();
         log.info("渠道号：" + qudaohao);
-//        this.clickAddress();
-//        this.swipeAddress(driver);
-//        this.clickBtnok();
         String address=this.getAddress();
         log.pass(address);
         this.clickSave();
@@ -103,9 +109,16 @@ public class LASQCheck extends ElementMethod {
             this.clickLijireg();
         }
         this.waitElement(driver, btn_left);
+//        this.waitElement(driver,title_name);
         this.clickBtnLeft();
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
+        //5.5.9新新需求，双号弹出超级曝光页面
+        log.info("判断5.5.9新需求，一线城市超级曝光页是否弹出");
+//        if(this.doesWebElementExist(speed_dialog_title)){
+//            Assert.fail("一线城市弹出超级曝光页面");
+////            this.clickBtnSpeed();
+//        }
 //        this.waitElement(driver, topview);
         log.info("判断是否进入缘分模块");
         if (!this.doesWebElementExist(mokuai.get(0))) {
@@ -126,33 +139,66 @@ public class LASQCheck extends ElementMethod {
         this.clickBtnLeft();
         this.clickBtnLeft();
         this.clickYuanFenIcon();
+        return userid;
     }
 
     //      一线男 缘分页打招呼
     public void manSayHi(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste1(driver, qudaohao);
-        this.waitElement(driver, iv_sayhi.get(0));
-        this.clickTVSayHello();
-        String name = this.getTVNickName();
-        this.clickIVUser();
-        if (this.doesWebElementExist(tips)) {
-            this.clickMonitor1(driver);
-        }
+        String userid = this.manRegiste1(driver, qudaohao);
+        Integer user = new Integer(userid);
+//        int user1 = Integer.parseInt(userid);
+        log.info("判断注册ID号是否为双号");//针对双号策略生效
+        if(user%2==0||user%2==1){
+            if(!this.doesWebElementExist(tv_age.get(0))){
+                Assert.fail("双号没有展示缘分页三列女用户策略");
+            }
+            this.waitElement(driver,iv_action.get(0));
+            this.clickIVAction();
+            String  age = this.getTVAge();
+            this.clickIVUser();
+            if (this.doesWebElementExist(tips)) {
+                this.clickMonitor1(driver);
+            }
 //        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-        this.waitElementLoad(driver, piccount);
+            this.waitElementLoad(driver, piccount);
 //      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-        this.clickMonitor1(driver);
-        this.waitElement(driver, user_name_text);
-        log.info("判断打招呼后，进入空间，是否无打招呼按钮");
-        if (this.doesWebElementExist(ask_button)) {
-            Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
+            this.clickMonitor1(driver);
+            this.waitElement(driver, user_name_text);
+            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
+            if (this.doesWebElementExist(ask_button)) {
+                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
+            }
+            log.info("判断 点击头像进入空间后，年龄是否一致");
+            if (this.getMemberInfoText().contains(age)) {
+                this.clickLeftBtn();
+            } else {
+                Assert.fail("点击头像进入空间后，用户年龄不一致");
+            }
+            }else{
+            this.waitElement(driver, iv_sayhi.get(0));
+            this.clickTVSayHello();
+            String name = this.getTVNickName();
+            this.clickIVUser();
+            if (this.doesWebElementExist(tips)) {
+                this.clickMonitor1(driver);
+            }
+//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+            this.waitElementLoad(driver, piccount);
+//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+            this.clickMonitor1(driver);
+            this.waitElement(driver, user_name_text);
+            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
+            if (this.doesWebElementExist(ask_button)) {
+                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
+            }
+            log.info("判断 点击头像进入空间后，姓名是否一致");
+            if (name.equals(this.getUserNameText())) {
+                this.clickLeftBtn();
+            } else {
+                Assert.fail("点击头像进入空间后，用户姓名不一致");
+            }
         }
-        log.info("判断 点击头像进入空间后，姓名是否一致");
-        if (name.equals(this.getUserNameText())) {
-            this.clickLeftBtn();
-        } else {
-            Assert.fail("点击头像进入空间后，用户姓名不一致");
-        }
+
     }
 
     //      一线男 空间页打招呼
@@ -160,7 +206,7 @@ public class LASQCheck extends ElementMethod {
         String name1;
         String name2;
         this.manRegiste1(driver, qudaohao);
-        this.waitElement(driver, iv_sayhi.get(0));
+        this.waitElement(driver, iv_action.get(0));
         this.clickIVUser();
         if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
@@ -175,31 +221,35 @@ public class LASQCheck extends ElementMethod {
         }
         name1 = this.getUserNameText();
         this.clickAskBtn();
-        if (this.doesWebElementExist(tips)) {
-            this.clickMonitor1(driver);
-        }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-        this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-        this.clickMonitor1(driver);
-        this.waitElement(driver, user_name_text);
-        name2 = this.getUserNameText();
-        if (name1.equals(name2)) {
-            Assert.fail("在空间中点击“打招呼”按钮后，未跳转至另一用户");
-        }
-        this.clickNext();
-        if (this.doesWebElementExist(tips)) {
-            this.clickMonitor1(driver);
-        }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-        this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-        this.clickMonitor1(driver);
-        this.waitElement(driver, user_name_text);
-        name1 = this.getUserNameText();
-        if (name1.equals(name2)) {
-            Assert.fail("在空间中点击“下一个”按钮后，未跳转至另一用户");
-        }
+        /**
+         * 5.5.9需求，女用户空间页打招呼后停留在当前页
+         */
+
+//        if (this.doesWebElementExist(tips)) {
+//            this.clickMonitor1(driver);
+//        }
+////        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+//        this.waitElementLoad(driver, piccount);
+////      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+//        this.clickMonitor1(driver);
+//        this.waitElement(driver, user_name_text);
+//        name2 = this.getUserNameText();
+//        if (name1.equals(name2)) {
+//            Assert.fail("在空间中点击“打招呼”按钮后，未跳转至另一用户");
+//        }
+//        this.clickNext();
+//        if (this.doesWebElementExist(tips)) {
+//            this.clickMonitor1(driver);
+//        }
+////        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+//        this.waitElementLoad(driver, piccount);
+////      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+//        this.clickMonitor1(driver);
+//        this.waitElement(driver, user_name_text);
+//        name1 = this.getUserNameText();
+//        if (name1.equals(name2)) {
+//            Assert.fail("在空间中点击“下一个”按钮后，未跳转至另一用户");
+//        }
         this.clickLeftBtn();
     }
 
@@ -207,7 +257,6 @@ public class LASQCheck extends ElementMethod {
     public void conversation(AndroidDriver driver, String qudaohao) throws Exception {
         this.manRegiste1(driver, qudaohao);
         this.waitElement(driver, iv_user.get(0));
-        String name1 = this.getTVNickName();
         this.clickIVUser();
         if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
@@ -217,6 +266,7 @@ public class LASQCheck extends ElementMethod {
 //      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
         this.clickMonitor1(driver);
         this.waitElement(driver, user_name_text);
+        String name1 = this.getUserNameText();
         if (this.doesWebElementExist(msg_close)) {
             this.clickMsgClose();
         }
@@ -388,12 +438,18 @@ public class LASQCheck extends ElementMethod {
         this.swipeToUp(driver);
         Thread.sleep(1000);
 //        this.waitElement(driver, more_button);
-        this.clickMoreBtn();
-        Thread.sleep(1000);
-        log.info("判断是否无 升级提示，直接展开更多资料");
-        if (!this.doesWebElementExist(more_text)) {
-            Assert.fail("1线男，点击“更多详细资料”，未能展开更多资料详情");
+//        this.swipeToDown(driver);
+        if(this.doesWebElementExist(more_button)){
+            this.clickMoreBtn();
+            Thread.sleep(1000);
+            log.info("判断是否无 升级提示，直接展开更多资料");
+            if (!this.doesWebElementExist(more_text)) {
+                Assert.fail("1线男，点击“更多详细资料”，未能展开更多资料详情");
+            }else{
+                log.info("女用户资料不完整，不显示更多详细资料按钮");
+            }
         }
+
     }
     //    3线男 查看更多资料
     public void manMore3(AndroidDriver driver, String qudaohao) throws Exception {
@@ -945,6 +1001,7 @@ public class LASQCheck extends ElementMethod {
         }
         this.clickBtnLeft();
         this.waitElement(driver, topview);
+//        this.waitElement(driver, wancheng);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
@@ -986,7 +1043,8 @@ public class LASQCheck extends ElementMethod {
         this.clickQianWang();
         log.info("判断第一次支付引导");
         this.clickBuYao();
-        this.waitElement(driver, personal_data);
+        this.waitElement(driver, title_name);
+//        this.waitElement(driver, personal_data);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
@@ -2486,9 +2544,9 @@ public class LASQCheck extends ElementMethod {
         Thread.sleep(2000);
         this.clickMonitor(driver);
         this.clickTestEnv();
-//        this.clickProduct();
+        this.clickProduct();
 //        this.clickTestEnv();
-        this.clickHuluprep();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.pass("渠道号：" + qudaohao);
 //        this.clickAddress();
@@ -2514,9 +2572,9 @@ public class LASQCheck extends ElementMethod {
         Thread.sleep(2000);
         this.clickMonitor(driver);
         this.clickTestEnv();
-//        this.clickProduct();
+        this.clickProduct();
 //        this.clickTestEnv();
-        this.clickHuluprep();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.pass("渠道号：" + qudaohao);
 //        this.clickAddress();

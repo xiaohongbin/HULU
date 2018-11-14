@@ -229,7 +229,7 @@ public class testcase extends Driver {
     @Test(description = "1线女 登录")
     public void checkWomenLogin1()throws Exception{
         LASQCheck lasqCheck=PageFactory.initElements(driver,LASQCheck.class);
-        lasqCheck.womanLogin1(driver,"120220","855431724","123456q");
+        lasqCheck.womanLogin1(driver,"120220","873964673","123456q");
     }
     @Test(description = "3线女 登录")
     public void checkWomenLogin3()throws Exception{
