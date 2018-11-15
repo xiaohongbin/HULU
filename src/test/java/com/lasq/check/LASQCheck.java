@@ -1886,7 +1886,7 @@ public class LASQCheck extends ElementMethod {
 //            Assert.fail("1线男，写信包月，30天畅聊价格有误");
 //        }
         if (!this.doesWebElementExist(letter7)) {
-            Assert.fail("71线男，写信包月，天畅聊不存在");
+            Assert.fail("1线男，写信包月，天畅聊不存在");
         }
 //        if (!this.getLetter7Price().contains("￥69")) {
 //            Assert.fail("1线男，写信包月，7天畅聊价格有误");

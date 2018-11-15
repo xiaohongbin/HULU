@@ -3,29 +3,44 @@
   <component name="ChangeListManager">
     <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lasq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lasq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsjy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsjy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/laps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.lasq.testcase.testcase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.lasq.testcase.testcase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.lasq.testcase.testcase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/check/DSJYCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/check/DSJYCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/method/ElementMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/page/PageElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/testcase/testcase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/laps/check/LAPSCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/laps/check/LAPSCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/laps/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/laps/method/ElementMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/laps/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/laps/page/PageElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/laps/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/laps/testcase/testcase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/check/LASQCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/check/LASQCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/page/PageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/testcase/testcase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/com.lasq.testcase.testcasecheckVipList1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/com.lasq.testcase.testcasecheckVipList1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,96 +52,186 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lasq.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lasq.xml">
+      <file leaf-file-name="LAPSCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindBy.java" pinned="false" current-in-tab="false">
-        <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0-sources.jar!/org/openqa/selenium/support/FindBy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LASQCheck.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="152" column="41" lean-forward="true" selection-start-line="152" selection-start-column="41" selection-end-line="152" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtentTest.class" pinned="false" current-in-tab="false">
-        <entry file="jar://F:/maven/repo/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/ExtentTest.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2425">
-              <caret line="199" column="22" selection-start-line="199" selection-start-column="22" selection-end-line="199" selection-end-column="22" />
+            <state relative-caret-position="203">
+              <caret line="3811" column="28" selection-start-line="3811" selection-start-column="28" selection-end-line="3811" selection-end-column="28" />
               <folding>
-                <element signature="e#7420#7421#0" expanded="true" />
-                <element signature="e#7501#7502#0" expanded="true" />
+                <element signature="e#799#2491#0" />
+                <element signature="e#6504#8792#0" />
+                <element signature="e#8798#10638#0" />
+                <element signature="e#10644#12718#0" />
+                <element signature="e#12724#14973#0" />
+                <element signature="e#14979#15941#0" />
+                <element signature="e#15947#16809#0" />
+                <element signature="e#16815#17632#0" />
+                <element signature="e#18746#19661#0" />
+                <element signature="e#19667#20530#0" />
+                <element signature="e#31161#31835#0" />
+                <element signature="e#43818#44369#0" />
+                <element signature="e#54394#57139#0" />
+                <element signature="e#57145#60156#0" />
+                <element signature="e#68473#72557#0" />
+                <element signature="e#72563#77402#0" />
+                <element signature="e#84179#90915#0" />
+                <element signature="e#90921#98159#0" />
+                <element signature="e#102685#107179#0" />
+                <element signature="e#143941#145410#0" />
+                <element signature="e#145416#146812#0" />
+                <element signature="e#146819#148270#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ElementMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="1062" column="16" selection-start-line="1062" selection-start-column="16" selection-end-line="1062" selection-end-column="16" />
+            <state relative-caret-position="247">
+              <caret line="1354" column="5" selection-start-line="1350" selection-start-column="4" selection-end-line="1354" selection-end-column="5" />
+              <folding>
+                <element signature="e#26768#27041#0" />
+                <element signature="e#27047#27320#0" />
+                <element signature="e#27326#27599#0" />
+                <element signature="e#33131#33132#0" expanded="true" />
+                <element signature="e#33159#33160#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDriverWait.java" pinned="false" current-in-tab="false">
-        <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0-sources.jar!/org/openqa/selenium/support/ui/WebDriverWait.java">
+      <file leaf-file-name="ElementMethod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="247">
+              <caret line="209" column="16" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
+              <folding>
+                <element signature="e#27070#27071#0" expanded="true" />
+                <element signature="e#27098#27099#0" expanded="true" />
+                <element signature="e#27307#27596#0" />
+                <element signature="e#27602#27876#0" />
+                <element signature="e#27882#28156#0" />
+                <element signature="e#28162#28436#0" />
+                <element signature="e#28437#28710#0" />
+                <element signature="e#28716#28989#0" />
+                <element signature="e#28995#29268#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FluentWait.java" pinned="false" current-in-tab="false">
-        <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="182">
+              <caret line="1138" column="31" selection-start-line="1136" selection-start-column="4" selection-end-line="1138" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Throwable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/Throwable.java">
+      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2225">
-              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state relative-caret-position="97">
+              <caret line="1202" column="536" selection-start-line="1202" selection-start-column="19" selection-end-line="1202" selection-end-column="536" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="laps.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laps.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-750">
+              <caret line="37" column="54" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dsjy.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dsjy.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="78" column="55" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-753">
+              <caret line="368" column="5" selection-start-line="368" selection-start-column="5" selection-end-line="368" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DSJYCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="4618" column="24" selection-start-line="4618" selection-start-column="24" selection-end-line="4618" selection-end-column="24" />
+              <folding>
+                <element signature="e#2320#3996#0" />
+                <element signature="e#5602#7657#0" />
+                <element signature="e#8650#10915#0" />
+                <element signature="e#11908#14173#0" />
+                <element signature="e#17733#19807#0" />
+                <element signature="e#21876#24127#0" />
+                <element signature="e#24132#26365#0" />
+                <element signature="e#26371#27335#0" />
+                <element signature="e#28296#29159#0" />
+                <element signature="e#29164#30011#0" />
+                <element signature="e#30017#30835#0" />
+                <element signature="e#31644#32749#0" />
+                <element signature="e#32754#33836#0" />
+                <element signature="e#33842#34757#0" />
+                <element signature="e#34762#35655#0" />
+                <element signature="e#35661#36545#0" />
+                <element signature="e#36550#37391#0" />
+                <element signature="e#39023#40671#0" />
+                <element signature="e#41374#42049#0" />
+                <element signature="e#42053#42708#0" />
+                <element signature="e#51390#52035#0" />
+                <element signature="e#52039#53078#0" />
+                <element signature="e#53010#53563#0" />
+                <element signature="e#53566#54102#0" />
+                <element signature="e#59561#62223#0" />
+                <element signature="e#62228#65001#0" />
+                <element signature="e#65006#67713#0" />
+                <element signature="e#67718#70434#0" />
+                <element signature="e#67719#70692#0" />
+                <element signature="e#73416#76398#0" />
+                <element signature="e#74431#76206#0" />
+                <element signature="e#76212#76948#0" />
+                <element signature="e#70306#74373#0" />
+                <element signature="e#74378#78462#0" />
+                <element signature="e#83313#88129#0" />
+                <element signature="e#88135#94901#0" />
+                <element signature="e#94905#101641#0" />
+                <element signature="e#101648#108887#0" />
+                <element signature="e#108892#116103#0" />
+                <element signature="e#120629#125123#0" />
+                <element signature="e#120630#125446#0" />
+                <element signature="e#129950#134739#0" />
+                <element signature="e#115429#116320#0" />
+                <element signature="e#139604#141183#0" />
+                <element signature="e#177450#178887#0" />
+                <element signature="e#180367#181737#0" />
+                <element signature="e#183144#184570#0" />
+                <element signature="e#184574#186025#0" />
+                <element signature="e#186032#187455#0" />
+                <element signature="e#187459#188907#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,36 +240,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.huizheng.lasq:id/title_name</find>
-      <find>product</find>
-      <find>com.huizheng.lasq:id/num_down_province</find>
-      <find>com.huizheng.lasq:id/btn_ok</find>
-      <find>checkConversation</find>
-      <find>checkManRegiste3</find>
-      <find>checkNotread</find>
-      <find>checkAskbtn</find>
-      <find>checkOnlineStatus</find>
-      <find>checkVIPList</find>
-      <find>checkBeanList1</find>
-      <find>checkSeachAll</find>
       <find>checkSeachHello</find>
-      <find>checkMailbox</find>
-      <find>checkMailboxNum1</find>
-      <find>条数</find>
-      <find>com.huizheng.lasq:id/user_name_text</find>
-      <find>/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.TextView</find>
-      <find>com.huizheng.lasq:id/ad_image_view</find>
-      <find>checkLetterMianMi</find>
-      <find>checkWomenYuanfenZhuShou1</find>
-      <find>com.huizheng.lasq:id/body_item_6</find>
-      <find>checkManKeFu</find>
-      <find>checkWomenLogin3</find>
-      <find>checkManSecurity</find>
-      <find>checkManMore1</find>
-      <find>swip</find>
+      <find>seachHello</find>
+      <find>letter_n</find>
+      <find>duiDuiPeng</find>
+      <find>alipayn</find>
+      <find>agree</find>
       <find>checkDuiDuiPeng</find>
-      <find>checkSayHi</find>
-      <find>inte</find>
+      <find>clickpayb</find>
+      <find>clickback</find>
+      <find>myTag1</find>
+      <find>checkMyTag1</find>
+      <find>buyLetter3</find>
+      <find>clickB</find>
+      <find>checkManCustomCall</find>
+      <find>com.huizheng.lasq:id/iv_head_map</find>
+      <find>checkManNear3</find>
+      <find>/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.widget.ImageView</find>
+      <find>附近</find>
+      <find>checkManNear1</find>
+      <find>checkWomenSayHi3</find>
+      <find>/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView</find>
+      <find>com.huizheng.lasq:id/tv_name_map</find>
+      <find>clickali</find>
+      <find>log</find>
+      <find>/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ImageView</find>
+      <find>checkWomenNear3</find>
+      <find>checkManSpace3</find>
+      <find>checkWomenLogin3</find>
+      <find>checkManSayHILanjie3</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,13 +278,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java" />
         <option value="$PROJECT_DIR$/lasq.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/laps.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java" />
+        <option value="$PROJECT_DIR$/dsjy.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java" />
       </list>
     </option>
   </component>
@@ -204,9 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,7 +359,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
@@ -256,7 +368,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
               <item name="check" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,7 +387,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
               <item name="method" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,7 +397,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,13 +407,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
               <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,27 +492,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38709676" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24818109" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33512545" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31123686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,52 +526,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/WriteUserID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar!/org/openqa/selenium/support/FindBy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/laps.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -539,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/WriteUserID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -559,9 +635,6 @@
           <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laps.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/NoSuchElementException.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,34 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1775">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/maven/repo/io/appium/java-client/5.0.4/java-client-5.0.4-sources.jar!/io/appium/java_client/android/StartsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -691,54 +736,246 @@
     </entry>
     <entry file="jar://F:/maven/repo/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0-sources.jar!/org/openqa/selenium/support/ui/WebDriverWait.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="1575">
           <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="jar://F:/maven/repo/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/ExtentTest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2425">
+        <state relative-caret-position="4250">
           <caret line="199" column="22" selection-start-line="199" selection-start-column="22" selection-end-line="199" selection-end-column="22" />
-          <folding>
-            <element signature="e#7420#7421#0" expanded="true" />
-            <element signature="e#7501#7502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="1062" column="16" selection-start-line="1062" selection-start-column="16" selection-end-line="1062" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lasq.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="247">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="43" column="87" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="147">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+        <state relative-caret-position="600">
+          <caret line="61" column="38" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#26739#27027#0" />
+            <element signature="e#27033#27306#0" />
+            <element signature="e#27312#27585#0" />
+            <element signature="e#31975#31976#0" expanded="true" />
+            <element signature="e#32007#32008#0" expanded="true" />
+            <element signature="e#32211#32493#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="152" column="41" lean-forward="true" selection-start-line="152" selection-start-column="41" selection-end-line="152" selection-end-column="41" />
+        <state relative-caret-position="-1271">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#813#2911#0" />
+            <element signature="e#7298#9134#0" />
+            <element signature="e#9140#11214#0" />
+            <element signature="e#11220#13469#0" />
+            <element signature="e#34337#37137#0" />
+            <element signature="e#37142#39887#0" />
+            <element signature="e#39893#42904#0" />
+            <element signature="e#60524#65363#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1138" column="31" selection-start-line="1136" selection-start-column="4" selection-end-line="1138" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="3811" column="28" selection-start-line="3811" selection-start-column="28" selection-end-line="3811" selection-end-column="28" />
+          <folding>
+            <element signature="e#799#2491#0" />
+            <element signature="e#6504#8792#0" />
+            <element signature="e#8798#10638#0" />
+            <element signature="e#10644#12718#0" />
+            <element signature="e#12724#14973#0" />
+            <element signature="e#14979#15941#0" />
+            <element signature="e#15947#16809#0" />
+            <element signature="e#16815#17632#0" />
+            <element signature="e#18746#19661#0" />
+            <element signature="e#19667#20530#0" />
+            <element signature="e#31161#31835#0" />
+            <element signature="e#43818#44369#0" />
+            <element signature="e#54394#57139#0" />
+            <element signature="e#57145#60156#0" />
+            <element signature="e#68473#72557#0" />
+            <element signature="e#72563#77402#0" />
+            <element signature="e#84179#90915#0" />
+            <element signature="e#90921#98159#0" />
+            <element signature="e#102685#107179#0" />
+            <element signature="e#143941#145410#0" />
+            <element signature="e#145416#146812#0" />
+            <element signature="e#146819#148270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1354" column="5" selection-start-line="1350" selection-start-column="4" selection-end-line="1354" selection-end-column="5" />
+          <folding>
+            <element signature="e#26768#27041#0" />
+            <element signature="e#27047#27320#0" />
+            <element signature="e#27326#27599#0" />
+            <element signature="e#33131#33132#0" expanded="true" />
+            <element signature="e#33159#33160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1202" column="536" selection-start-line="1202" selection-start-column="19" selection-end-line="1202" selection-end-column="536" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laps.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsjy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="78" column="55" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="209" column="16" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
+          <folding>
+            <element signature="e#27070#27071#0" expanded="true" />
+            <element signature="e#27098#27099#0" expanded="true" />
+            <element signature="e#27307#27596#0" />
+            <element signature="e#27602#27876#0" />
+            <element signature="e#27882#28156#0" />
+            <element signature="e#28162#28436#0" />
+            <element signature="e#28437#28710#0" />
+            <element signature="e#28716#28989#0" />
+            <element signature="e#28995#29268#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4618" column="24" selection-start-line="4618" selection-start-column="24" selection-end-line="4618" selection-end-column="24" />
+          <folding>
+            <element signature="e#2320#3996#0" />
+            <element signature="e#5602#7657#0" />
+            <element signature="e#8650#10915#0" />
+            <element signature="e#11908#14173#0" />
+            <element signature="e#17733#19807#0" />
+            <element signature="e#21876#24127#0" />
+            <element signature="e#24132#26365#0" />
+            <element signature="e#26371#27335#0" />
+            <element signature="e#28296#29159#0" />
+            <element signature="e#29164#30011#0" />
+            <element signature="e#30017#30835#0" />
+            <element signature="e#31644#32749#0" />
+            <element signature="e#32754#33836#0" />
+            <element signature="e#33842#34757#0" />
+            <element signature="e#34762#35655#0" />
+            <element signature="e#35661#36545#0" />
+            <element signature="e#36550#37391#0" />
+            <element signature="e#39023#40671#0" />
+            <element signature="e#41374#42049#0" />
+            <element signature="e#42053#42708#0" />
+            <element signature="e#51390#52035#0" />
+            <element signature="e#52039#53078#0" />
+            <element signature="e#53010#53563#0" />
+            <element signature="e#53566#54102#0" />
+            <element signature="e#59561#62223#0" />
+            <element signature="e#62228#65001#0" />
+            <element signature="e#65006#67713#0" />
+            <element signature="e#67718#70434#0" />
+            <element signature="e#67719#70692#0" />
+            <element signature="e#73416#76398#0" />
+            <element signature="e#74431#76206#0" />
+            <element signature="e#76212#76948#0" />
+            <element signature="e#70306#74373#0" />
+            <element signature="e#74378#78462#0" />
+            <element signature="e#83313#88129#0" />
+            <element signature="e#88135#94901#0" />
+            <element signature="e#94905#101641#0" />
+            <element signature="e#101648#108887#0" />
+            <element signature="e#108892#116103#0" />
+            <element signature="e#120629#125123#0" />
+            <element signature="e#120630#125446#0" />
+            <element signature="e#129950#134739#0" />
+            <element signature="e#115429#116320#0" />
+            <element signature="e#139604#141183#0" />
+            <element signature="e#177450#178887#0" />
+            <element signature="e#180367#181737#0" />
+            <element signature="e#183144#184570#0" />
+            <element signature="e#184574#186025#0" />
+            <element signature="e#186032#187455#0" />
+            <element signature="e#187459#188907#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="368" column="5" selection-start-line="368" selection-start-column="5" selection-end-line="368" selection-end-column="5" />
         </state>
       </provider>
     </entry>

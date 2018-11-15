@@ -7,11 +7,11 @@
     <suite-files>
         <!--<suite-file path="jp.xml"/>-->
         <!--<suite-file path="laps.xml"/>-->
-        <suite-file path="lasq.xml"/>
+        <!--<suite-file path="lasq.xml"/>-->
         <!--<suite-file path="plp.xml"/>-->
         <!--<suite-file path="tcrl.xml"/>-->
         <!--<suite-file path="yhb.xml"/>-->
-        <!--<suite-file path="dsjy.xml"/>-->
+        <suite-file path="dsjy.xml"/>
     </suite-files>
     <!--<test name="恋爱神器" preserve-order="true">-->
     <!--<parameter name="deviceID" value="DU2SSE148L041137"/>-->

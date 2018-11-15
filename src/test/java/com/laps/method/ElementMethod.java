@@ -43,6 +43,16 @@ public class ElementMethod extends PageElement {
         return title_name.getText();
     }
 
+    //5.5.9新增页面元素方法
+    public void clickLijireg(){
+        log.info("合理化，注册页点击 立即注册");
+        btn_reg_dialog_reg.click();
+    }
+    public void clickBtnSpeed(){
+        log.info("合理化，双号，超级曝光页点击 立即领取");
+        btn_speed.click();
+    }
+
     //    下方五个模块切换
     public void clickYuanFenIcon() {
         log.info("点击“缘分”ICON");
@@ -187,6 +197,18 @@ public class ElementMethod extends PageElement {
         log.info("获取缘分列表上的用户名");
         return tv_nickname.get(0).getText();
     }
+
+    //缘分页，三列头像。5.5.9需求
+    public void clickIVAction() {
+        log.info("5.5.9新需求，点击缘分页上第一个打招呼按钮");
+        iv_action.get(0).click();
+    }
+    public String getTVAge(){
+        log.info("5.5.9新需求,获取缘分页，第一个女用户头像上显示的年龄");
+        return tv_age.get(0).getText();
+    }
+
+
 
     public void clickTVSayHello() {
         log.info("点击缘分页上第一个打招呼按钮");
@@ -1123,33 +1145,34 @@ public class ElementMethod extends PageElement {
 //    }
 
     //    发送密码
+
     public void sendKeyA(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
-        action.tap(505, 1225).perform();
+        action.tap(190, 1225).perform();
     }
 
     public void sendKeyB(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
-        action.tap(522, 1549).perform();
+        action.tap(540, 1725).perform();
     }
 
     public void sendKeyC(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
-        action.tap(900, 1230).perform();
+        action.tap(900, 1225).perform();
     }
 
-    public void sendKeyD(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(180, 1200).perform();
-    }
+//    public void sendKeyD(AndroidDriver driver) {
+//        TouchAction action = new TouchAction(driver);
+////        int width = driver.manage().window().getSize().width;
+////        int height=driver.manage().window().getSize().height;
+//        action.tap(180, 1200).perform();
+//    }
 
     public void clickCheck() {
         log.info("查询免密开通情况");
@@ -1315,13 +1338,34 @@ public class ElementMethod extends PageElement {
     public void clickAliMianMi() {
         alimianmi.click();
     }
+    public void clickMonitorAliMianMi(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(190, 1382).perform();
+    }
+
     //    确认开通并支付
     public void clickAgreePay(){
         agreepay.click();
     }
+    public void clickMonitorAgreePay(AndroidDriver driver){
+        log.info("支付宝付款页面，点击 确认开通并支付");
+        TouchAction action = new TouchAction(driver);
+        action.tap(500, 1530).perform();
+    }
 
     public void clickAgree() {
         agree.click();
+    }
+    //    点击支付宝 立即付款
+//    public void clickAliPayNow(){
+//        log.info("点击支付宝 立即付款");
+//        alipaynow.click();
+//    }
+    public void clickMonitorAgree(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1320).perform();
     }
     //    点击支付宝 立即付款
     public void clickAliPayNow(){
@@ -1352,6 +1396,11 @@ public class ElementMethod extends PageElement {
 
     public void clickBack() {
         back.click();
+    }
+    public void clickMonitorBack(AndroidDriver driver) {
+        log.info("支付宝免密签约成功页面，点击 返回");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1160).perform();
     }
 
     public String getOnlineStatus(){

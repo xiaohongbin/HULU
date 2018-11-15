@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites</span>
+      <span class="top-banner-font-1">2 suites, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-恋爱神器">
-              <span class="suite-name border-passed">恋爱神器</span>
+              <span class="suite-name border-failed">恋爱神器</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-恋爱神器">
-                    <span>E:\LBS5.5.9\lasq.xml</span>
+                    <span>E:\LBS5.5.9\dsjy.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-恋爱神器" class="hide-methods failed suite-恋爱神器"> (hide)</a> <!-- hide-methods failed suite-恋爱神器 -->
+                      <a href="#" panel-name="suite-恋爱神器" class="show-methods failed suite-恋爱神器"> (show)</a> <!-- show-methods failed suite-恋爱神器 -->
+                    </span>
+                    <div class="method-list-content failed suite-恋爱神器">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.dsjy.testcase.testcase" hash-for-method="checkManBuyBean3">checkManBuyBean3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.dsjy.testcase.testcase" hash-for-method="checkManBuyVip3">checkManBuyVip3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.dsjy.testcase.testcase" hash-for-method="checkManSayHILanjie1">checkManSayHILanjie1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.dsjy.testcase.testcase" hash-for-method="checkManSayHILanjie3">checkManSayHILanjie3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-恋爱神器 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +131,7 @@
                     <div class="method-list-content passed suite-恋爱神器">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.lasq.testcase.testcase" hash-for-method="checkSayHi">checkSayHi</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-恋爱神器" title="com.dsjy.testcase.testcase" hash-for-method="checkWomenRegiste1">checkWomenRegiste1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-恋爱神器 -->
@@ -117,19 +146,280 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-恋爱神器" class="panel 恋爱神器">
-          <div class="suite-恋爱神器-class-passed">
+          <div class="suite-恋爱神器-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.lasq.testcase.testcase</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.dsjy.testcase.testcase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkSayHi">
-                  </a> <!-- checkSayHi -->
-                  <span class="method-name">checkSayHi</span>
+                  <a name="checkManBuyBean3">
+                  </a> <!-- checkManBuyBean3 -->
+                  <span class="method-name">checkManBuyBean3</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dsjy.method.ElementMethod.waitElement(ElementMethod.java:1113)
+	at com.dsjy.check.DSJYCheck.buyBean3(DSJYCheck.java:5361)
+	at com.dsjy.check.DSJYCheck.manBuyBean3(DSJYCheck.java:4981)
+	at com.dsjy.testcase.testcase.checkManBuyBean3(testcase.java:340)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SC-201512161950&apos;, ip: &apos;192.168.123.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
+*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc=&quot;返回&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 24 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(1线男缘分页打招呼)                  </em>
+(3线男，购买豆币550个)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkManBuyVip3">
+                  </a> <!-- checkManBuyVip3 -->
+                  <span class="method-name">checkManBuyVip3</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dsjy.method.ElementMethod.waitElement(ElementMethod.java:1113)
+	at com.dsjy.check.DSJYCheck.buyVip3(DSJYCheck.java:5272)
+	at com.dsjy.check.DSJYCheck.manBuyVip3(DSJYCheck.java:4919)
+	at com.dsjy.testcase.testcase.checkManBuyVip3(testcase.java:335)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SC-201512161950&apos;, ip: &apos;192.168.123.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
+*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc=&quot;返回&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 24 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(3线男，购买vip30天，查看更多资料，在线状态，到期日期)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkManSayHILanjie1">
+                  </a> <!-- checkManSayHILanjie1 -->
+                  <span class="method-name">checkManSayHILanjie1</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dsjy.method.ElementMethod.waitElement(ElementMethod.java:1113)
+	at com.dsjy.check.DSJYCheck.buyLetter1(DSJYCheck.java:5185)
+	at com.dsjy.check.DSJYCheck.manSayHILanjie1(DSJYCheck.java:4754)
+	at com.dsjy.testcase.testcase.checkManSayHILanjie1(testcase.java:329)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SC-201512161950&apos;, ip: &apos;192.168.123.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
+*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc=&quot;返回&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 24 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1线男，购买写信包月后，打招呼实名拦截)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkManSayHILanjie3">
+                  </a> <!-- checkManSayHILanjie3 -->
+                  <span class="method-name">checkManSayHILanjie3</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SC-201512161950&apos;, ip: &apos;192.168.123.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.dsjy.method.ElementMethod.clickAliPayNow(ElementMethod.java:1180)
+	at com.dsjy.check.DSJYCheck.buyLetter3(DSJYCheck.java:5083)
+	at com.dsjy.check.DSJYCheck.manSayHILanjie3(DSJYCheck.java:4594)
+	at com.dsjy.testcase.testcase.checkManSayHILanjie3(testcase.java:323)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(3线男，购买写信包月后，打招呼实名拦截，查看更多资料及照片)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-恋爱神器-class-failed -->
+          <div class="suite-恋爱神器-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dsjy.testcase.testcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkWomenRegiste1">
+                  </a> <!-- checkWomenRegiste1 -->
+                  <span class="method-name">checkWomenRegiste1</span>
+                  <em>
+(1线女 注册)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +429,7 @@
         </div> <!-- panel 多名称 -->
         <div panel-name="test-xml-恋爱神器" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\LBS5.5.9\lasq.xml</span>
+            <span class="header-content">E:\LBS5.5.9\dsjy.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -150,14 +440,18 @@
     &lt;listener class-name=&quot;com.listener.ExtentTestNGITestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;恋爱神器&quot;&gt;
-    &lt;parameter name=&quot;app&quot; value=&quot;lasq&quot;/&gt;
+    &lt;parameter name=&quot;app&quot; value=&quot;dsjy&quot;/&gt;
     &lt;parameter name=&quot;deviceID&quot; value=&quot;DU2SSE148L041137&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.lasq.testcase.testcase&quot;&gt;
+      &lt;class name=&quot;com.dsjy.testcase.testcase&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;checkSayHi&quot;/&gt;
+          &lt;include name=&quot;checkManSayHILanjie3&quot;/&gt;
+          &lt;include name=&quot;checkManSayHILanjie1&quot;/&gt;
+          &lt;include name=&quot;checkManBuyVip3&quot;/&gt;
+          &lt;include name=&quot;checkManBuyBean3&quot;/&gt;
+          &lt;include name=&quot;checkWomenRegiste1&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.lasq.testcase.testcase --&gt;
+      &lt;/class&gt; &lt;!-- com.dsjy.testcase.testcase --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- 恋爱神器 --&gt;
 &lt;/suite&gt; &lt;!-- 恋爱神器 --&gt;
@@ -174,7 +468,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;多名称&quot; parallel=&quot;tests&quot;&gt;
   &lt;suite-files&gt;
-    &lt;suite-file path=&quot;lasq.xml&quot;/&gt;
+    &lt;suite-file path=&quot;dsjy.xml&quot;/&gt;
   &lt;/suite-files&gt;
 &lt;/suite&gt; &lt;!-- 多名称 --&gt;
             </pre>
@@ -229,16 +523,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkSayHi')
-data.setCell(0, 2, 'com.lasq.testcase.testcase')
-data.setCell(0, 3, 113976);
+data.setCell(0, 1, 'checkManBuyBean3')
+data.setCell(0, 2, 'com.dsjy.testcase.testcase')
+data.setCell(0, 3, 215036);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkManSayHILanjie1')
+data.setCell(1, 2, 'com.dsjy.testcase.testcase')
+data.setCell(1, 3, 205215);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkManBuyVip3')
+data.setCell(2, 2, 'com.dsjy.testcase.testcase')
+data.setCell(2, 3, 189973);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkManSayHILanjie3')
+data.setCell(3, 2, 'com.dsjy.testcase.testcase')
+data.setCell(3, 3, 121626);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkWomenRegiste1')
+data.setCell(4, 2, 'com.dsjy.testcase.testcase')
+data.setCell(4, 3, 64495);
 window.suiteTableData['恋爱神器']= { tableData: data, tableDiv: 'times-div-恋爱神器'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-恋爱神器">
               </div> <!-- times-div-恋爱神器 -->
             </div> <!-- times-div -->
@@ -284,119 +594,141 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-恋爱神器" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">54 ignored methods</span>
+            <span class="header-content">65 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.lasq.testcase.testcase</span>
+              <span class="ignored-class-name">com.dsjy.testcase.testcase</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">checkManSayHILanjie1</span>
-                <br/>
-                <span class="ignored-method-name">checkManSayHILanjie3</span>
+                <span class="ignored-method-name">checkAskbtn</span>
                 <br/>
                 <span class="ignored-method-name">checkMailboxNum1</span>
                 <br/>
-                <span class="ignored-method-name">checkAskbtn</span>
-                <br/>
                 <span class="ignored-method-name">checkManMailboxZone3</span>
-                <br/>
-                <span class="ignored-method-name">checkMailbox</span>
-                <br/>
-                <span class="ignored-method-name">checkManBuyBean3</span>
-                <br/>
-                <span class="ignored-method-name">checkMyIntegrity3</span>
-                <br/>
-                <span class="ignored-method-name">checkManSecurity</span>
-                <br/>
-                <span class="ignored-method-name">checkProtocal</span>
                 <br/>
                 <span class="ignored-method-name">checkVipList1</span>
                 <br/>
-                <span class="ignored-method-name">checkManCustomCall</span>
+                <span class="ignored-method-name">checkManSecurity</span>
                 <br/>
-                <span class="ignored-method-name">checkManMore1</span>
+                <span class="ignored-method-name">checkMyIntegrity3</span>
                 <br/>
-                <span class="ignored-method-name">checkManNear1</span>
+                <span class="ignored-method-name">checkWomenSayHi3</span>
+                <br/>
+                <span class="ignored-method-name">checkMailbox1</span>
+                <br/>
+                <span class="ignored-method-name">checkSayHi3</span>
+                <br/>
+                <span class="ignored-method-name">checkSayHi1</span>
                 <br/>
                 <span class="ignored-method-name">checkManMore3</span>
                 <br/>
-                <span class="ignored-method-name">checkManBuyVip3</span>
+                <span class="ignored-method-name">checkManNear1</span>
                 <br/>
-                <span class="ignored-method-name">checkConversation</span>
+                <span class="ignored-method-name">checkManNear3</span>
                 <br/>
-                <span class="ignored-method-name">checkDuiDuiPeng</span>
+                <span class="ignored-method-name">checkVipList3</span>
+                <br/>
+                <span class="ignored-method-name">checkManMore1</span>
+                <br/>
+                <span class="ignored-method-name">checkManCustomCall</span>
                 <br/>
                 <span class="ignored-method-name">checkMyIntroduction3</span>
                 <br/>
+                <span class="ignored-method-name">checkDuiDuiPeng</span>
+                <br/>
+                <span class="ignored-method-name">checkBeanList3</span>
+                <br/>
                 <span class="ignored-method-name">checkBeanList1</span>
+                <br/>
+                <span class="ignored-method-name">checkManMailboxZonePic3</span>
+                <br/>
+                <span class="ignored-method-name">checkConversation</span>
+                <br/>
+                <span class="ignored-method-name">checkSeachHello</span>
                 <br/>
                 <span class="ignored-method-name">checkInitSearch</span>
                 <br/>
                 <span class="ignored-method-name">checkMyVisitor3</span>
                 <br/>
-                <span class="ignored-method-name">checkSeachHello</span>
+                <span class="ignored-method-name">checkWomenZhaoHuGuanJia1</span>
                 <br/>
-                <span class="ignored-method-name">checkManMailboxZonePic3</span>
+                <span class="ignored-method-name">checkWomenRegiste3</span>
                 <br/>
                 <span class="ignored-method-name">checkManVideo3</span>
                 <br/>
+                <span class="ignored-method-name">checkVIPList</span>
+                <br/>
                 <span class="ignored-method-name">checkSeachHeight</span>
                 <br/>
-                <span class="ignored-method-name">checkVIPList</span>
+                <span class="ignored-method-name">checkVIPMianMi</span>
+                <br/>
+                <span class="ignored-method-name">checkWomenNear3</span>
                 <br/>
                 <span class="ignored-method-name">checkWomenMore3</span>
                 <br/>
+                <span class="ignored-method-name">checkVIPList3</span>
+                <br/>
+                <span class="ignored-method-name">checkManQQ3</span>
+                <br/>
                 <span class="ignored-method-name">checkSeachAll</span>
                 <br/>
-                <span class="ignored-method-name">checkVIPMianMi</span>
+                <span class="ignored-method-name">checkLetterList3</span>
+                <br/>
+                <span class="ignored-method-name">checkManTuiJian3</span>
+                <br/>
+                <span class="ignored-method-name">checkLetterList1</span>
                 <br/>
                 <span class="ignored-method-name">checkManKeFu</span>
                 <br/>
                 <span class="ignored-method-name">checkSeachArea</span>
                 <br/>
-                <span class="ignored-method-name">checkLetterList1</span>
-                <br/>
-                <span class="ignored-method-name">checkManHelp</span>
-                <br/>
-                <span class="ignored-method-name">checkOnlineStatus</span>
-                <br/>
-                <span class="ignored-method-name">checkUpgraded</span>
-                <br/>
-                <span class="ignored-method-name">checkLetterMianMi</span>
-                <br/>
-                <span class="ignored-method-name">checkWomenMemberCenter3</span>
+                <span class="ignored-method-name">checkManRegiste1</span>
                 <br/>
                 <span class="ignored-method-name">checkWomenLogin1</span>
                 <br/>
-                <span class="ignored-method-name">checkAnswerQuestions1</span>
+                <span class="ignored-method-name">checkWomenMemberCenter3</span>
                 <br/>
-                <span class="ignored-method-name">checkWomenLogin3</span>
+                <span class="ignored-method-name">checkUpgraded</span>
                 <br/>
-                <span class="ignored-method-name">checkMailboxPersonData1</span>
+                <span class="ignored-method-name">checkProtocol</span>
+                <br/>
+                <span class="ignored-method-name">checkManHelp</span>
+                <br/>
+                <span class="ignored-method-name">checkManSpace3</span>
+                <br/>
+                <span class="ignored-method-name">checkOnlineStatus</span>
+                <br/>
+                <span class="ignored-method-name">checkLetterMianMi</span>
+                <br/>
+                <span class="ignored-method-name">checkManOnlineStatus3</span>
                 <br/>
                 <span class="ignored-method-name">checkManRegisteNear3</span>
                 <br/>
-                <span class="ignored-method-name">checkAnswerQuestions3</span>
+                <span class="ignored-method-name">checkWomenLogin3</span>
                 <br/>
-                <span class="ignored-method-name">checkWomenAdvertisement3</span>
+                <span class="ignored-method-name">checkMyCondition3</span>
                 <br/>
-                <span class="ignored-method-name">checkMyTag1</span>
+                <span class="ignored-method-name">checkMailboxPersonData1</span>
+                <br/>
+                <span class="ignored-method-name">checkManWechar3</span>
+                <br/>
+                <span class="ignored-method-name">checkAnswerQuestions1</span>
                 <br/>
                 <span class="ignored-method-name">checkSeachAge</span>
                 <br/>
-                <span class="ignored-method-name">checkManRegiste1</span>
+                <span class="ignored-method-name">checkMyTag1</span>
                 <br/>
                 <span class="ignored-method-name">checkManRegiste3</span>
                 <br/>
                 <span class="ignored-method-name">checkMyCondition1</span>
                 <br/>
-                <span class="ignored-method-name">checkManTuijian3</span>
+                <span class="ignored-method-name">checkAnswerQuestions3</span>
                 <br/>
-                <span class="ignored-method-name">checkWomanMore3</span>
-                <br/>
-                <span class="ignored-method-name">checkNotread</span>
+                <span class="ignored-method-name">checkWomenAdvertisement3</span>
                 <br/>
                 <span class="ignored-method-name">checkMyPersonData1</span>
+                <br/>
+                <span class="ignored-method-name">checkNotread</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -415,22 +747,62 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.lasq.testcase.testcase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.dsjy.testcase.testcase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">getDriver(DU2SSE148L041137, lasq)</span>
+                <span class="method-name">getDriver(DU2SSE148L041137, dsjy)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">checkSayHi</span>
-                <span class="method-start">22561 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkManSayHILanjie3</span>
+                <span class="method-start">22608 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">resetApp</span>
-                <span class="method-start">136539 ms</span>
+                <span class="method-start">147841 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkManSayHILanjie1</span>
+                <span class="method-start">152698 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetApp</span>
+                <span class="method-start">362211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkManBuyVip3</span>
+                <span class="method-start">366285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetApp</span>
+                <span class="method-start">561105 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkManBuyBean3</span>
+                <span class="method-start">565691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetApp</span>
+                <span class="method-start">785673 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">checkWomenRegiste1</span>
+                <span class="method-start">790178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetApp</span>
+                <span class="method-start">854674 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">140674 ms</span>
+                <span class="method-start">858854 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

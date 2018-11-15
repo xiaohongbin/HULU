@@ -15,9 +15,10 @@
             <class name="com.laps.testcase.testcase">
                 <methods>
                     <!--<include name="checkProtocol"/>-->
-                    <include name="checkManRegiste1"/>
-                    <include name="checkManRegiste3"/>
-                    <!--<include name="checkSayHi"/>-->
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManRegiste3"/>-->
+                    <!--<include name="checkSayHi1"/>-->
+                    <!--<include name="checkSayHi3"/>-->
                     <!--<include name="checkConversation"/>-->
                     <!--<include name="checkNotread"/>-->
                     <!--<include name="checkUpgraded"/>-->
@@ -36,7 +37,7 @@
                     <!--<include name="checkVipList3"/>-->
                     <!--<include name="checkDuiDuiPeng"/>-->
                     <!--<include name="checkManNear1"/>-->
-                    <!--<include name="checkManNear3"/>-->
+
                     <!--<include name="checkAnswerQuestions1"/>-->
                     <!--<include name="checkAnswerQuestions3"/>-->
                     <!--<include name="checkMyPersonData1"/>-->
@@ -55,15 +56,18 @@
                     <!--<include name="checkMailbox1"/>-->
                     <!--<include name="checkManMailboxZone3"/>-->
                     <!--<include name="checkManMailboxZonePic3"/>-->
-                    <!--<include name="checkWomenRegiste"/>-->
-                    <!--<include name="checkWomenLogin3"/>-->
-                    <!--<include name="checkWomenMore3"/>-->
-                    <!--<include name="checkWomenAdvertisement3"/>-->
-                    <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;<include name="checkWomenSayHi3" 只能用已存在用户登录，无法判断当前用户是否已打招呼/>&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
-                    <!--<include name="checkWomenMemberCenter3"/>-->
+
+                    <include name="checkWomenLogin1"/>
+                    <include name="checkWomenLogin3"/>
+                    <include name="checkWomenMore3"/>
+                    <include name="checkWomenAdvertisement3"/>
+                    <include name="checkWomenSayHi3"/>
+                    <include name="checkWomenMemberCenter3"/>
                     <!--&lt;!&ndash;<include name="checkWomenNear3"  3线女附近，xpath与3男线男不一样，暂时屏蔽&ndash;&gt;-->
 
-                    <include name="checkManSpace3"/>
+                    <!--<include name="checkWomenRegiste"/>-->
+                    <!--<include name="checkManNear3"/>-->
+                    <!--<include name="checkManSpace3"/>-->
                     <!--<include name="checkManWechar3"/>-->
                     <!--<include name="checkManQQ3"/>-->
 
