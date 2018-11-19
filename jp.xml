@@ -14,7 +14,7 @@
         <classes>
             <class name="com.jp.testcase.testcase">
                 <methods>
-                    <!--&lt;!&ndash;缘分页&ndash;&gt;-->
+                    <!--缘分页-->
                     <!--<include name="checkProtocol"/>-->
                     <include name="checkRegiste1"/>
                     <include name="checkRegiste3"/>
@@ -29,7 +29,7 @@
                     <!--<include name="checkVideo3"/>-->
                     <!--<include name="checkMore3"/>-->
                     <!--<include name="checkMore1"/>-->
-                    <!--&lt;!&ndash;会员中心 &ndash;&gt;-->
+                    <!--会员中心 -->
                     <!--<include name="checkVIPList"/>-->
                     <!--<include name="checkVIPList3"/>-->
                     <!--<include name="checkBeanList1"/>-->
@@ -38,10 +38,10 @@
                     <!--<include name="checkLetterList3"/>-->
                     <!--<include name="checkVipList1"/>-->
                     <!--<include name="checkVipList3"/>-->
-                    <!--&lt;!&ndash;&lt;!&ndash;<include name="checkReciveLetter1List1"/>&ndash;&gt;&ndash;&gt;-->
-                    <!--&lt;!&ndash;&lt;!&ndash;<include name="checkMiguList1"/>&ndash;&gt;&ndash;&gt;-->
+                    <!--<include name="checkReciveLetter1List1"/>-->
+                    <!--<include name="checkMiguList1"/>-->
 
-                    <!--&lt;!&ndash;我的&ndash;&gt;-->
+                    <!--我的-->
                     <!--<include name="checkMyPersonData"/>-->
                     <!--<include name="checkMyConditon"/>-->
                     <!--<include name="checkMyQuestion"/>-->
@@ -52,7 +52,7 @@
                     <!--<include name="checkMyIntegrity3"/>-->
 
 
-                    <!--&lt;!&ndash;搜索/推荐&ndash;&gt;-->
+                    <!--搜索/推荐-->
                     <!--<include name="checkInitSearch"/>-->
                     <!--<include name="checkSearchArea"/>-->
                     <!--<include name="checkSearchAge"/>-->
@@ -61,7 +61,7 @@
                     <!--<include name="checkSearchHello"/>-->
                     <!--<include name="checkTuijian3"/>-->
 
-                    <!--&lt;!&ndash;信箱&ndash;&gt;-->
+                    <!--信箱-->
                     <!--<include name="checkMailboxTab"/>-->
                     <!--<include name="checkMailboxNum"/>-->
                     <!--<include name="checkMailboxPersonData"/>-->
@@ -76,23 +76,23 @@
                     <!--<include name="checkManHelp"/>-->
                     <!--<include name="checkManKeFu"/>-->
                     <!--<include name="checkManCustomCall"/>-->
-                    <!--&lt;!&ndash;购买服务&ndash;&gt;-->
+                    <!--购买服务-->
                     <!--<include name="checkManSayHILanjie3"/>-->
                     <!--<include name="checkManSayHILanjie1"/>-->
                     <!--<include name="checkManBuyVip3"/>-->
                     <!--<include name="checkManBuyBean3"/>-->
 
-                    <!--&lt;!&ndash;附近&ndash;&gt;-->
+                    <!--附近-->
                     <!--<include name="checkManNear1"/>-->
                     <!--<include name="checkManNear3"/>-->
-                    <!--&lt;!&ndash;女用户 &ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="checkWomanRegiste"/>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="checkWomanSayHi"/>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="checkWomanZhaoHuGuanJia"/>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<include name="checkWomanNear3"真实定位，为一个整html5/>&ndash;&gt;-->
+                    <!--女用户 -->
+                    <!--<include name="checkWomanRegiste"/>-->
+                    <!--<include name="checkWomanSayHi"/>-->
+                    <!--<include name="checkWomanZhaoHuGuanJia"/>-->
+                    <!--<include name="checkWomanNear3"真实定位，为一个整html5/>-->
                     <!--<include name="checkWomenMore3"/>-->
                     <!--<include name="checkWomenAdvertisement3"/>-->
-                    <!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;<include name="checkWomenSayHi3" 只能用已存在用户登录，无法判断当前用户是否已打招呼/>&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+                    <!--<include name="checkWomenSayHi3" 只能用已存在用户登录，无法判断当前用户是否已打招呼/>-->
                     <!--<include name="checkWomenMemberCenter3"/>-->
 
                     <!--<include name="checkManRegisteNear3"/>-->

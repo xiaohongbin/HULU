@@ -1185,6 +1185,7 @@ public class ElementMethod extends PageElement {
     }
 
     public void clickQueRen(){
+        log.info("放弃微信支付回退后,确认页面，点击确认");
         queren.click();
     }
 

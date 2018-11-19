@@ -150,6 +150,15 @@ public class ElementMethod extends PageElement {
         mokuai.get(0).click();
     }
 
+    //5.5.9新增页面元素方法
+    public void clickLijireg(){
+        log.info("合理化，注册页点击 立即注册");
+        btn_reg_dialog_reg.click();
+    }
+    public void clickBtnSpeed(){
+        log.info("合理化，双号，超级曝光页点击 立即领取");
+        btn_speed.click();
+    }
     public void clickReLiaoIcon() {
         log.info("点击“热聊”");
         mokuai.get(1).click();
@@ -1033,32 +1042,52 @@ public class ElementMethod extends PageElement {
     }
 
     //    发送密码
-    public void sendKeyA(AndroidDriver driver) {
+    public void sendKeyAA(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(505, 1225).perform();
     }
 
-    public void sendKeyB(AndroidDriver driver) {
+    public void sendKeyBB(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(522, 1549).perform();
     }
 
-    public void sendKeyC(AndroidDriver driver) {
+    public void sendKeyCC(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(900, 1230).perform();
     }
 
-    public void sendKeyD(AndroidDriver driver) {
+    public void sendKeyDD(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(180, 1200).perform();
+    }
+    public void sendKeyA(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(190, 1225).perform();
+    }
+
+    public void sendKeyB(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(540, 1725).perform();
+    }
+
+    public void sendKeyC(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(900, 1225).perform();
     }
 
 //    public void clickBack() {
@@ -1215,12 +1244,25 @@ public class ElementMethod extends PageElement {
         return message_chat_content.getText();
     }
 
+    public void clickQueRen(){
+        queren.click();
+    }
     //    支付宝页面方法
 //    支付宝关闭免密
     public void clickAliMianMi() {
         alimianmi.click();
     }
+    public void clickMonitorAliMianMi(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(190, 1382).perform();
+    }
     //    确认开通并支付
+    public void clickMonitorAgreePay(AndroidDriver driver){
+        log.info("支付宝付款页面，点击 确认开通并支付");
+        TouchAction action = new TouchAction(driver);
+        action.tap(500, 1530).perform();
+    }
     public void clickAgreePay(){
         agreepay.click();
     }
@@ -1229,6 +1271,11 @@ public class ElementMethod extends PageElement {
         agree.click();
     }
     //    点击支付宝 立即付款
+    public void clickMonitorAgree(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1320).perform();
+    }
     public void clickAliPayNow(){
         log.info("点击支付宝 立即付款");
         alipaynow.click();
@@ -1255,10 +1302,63 @@ public class ElementMethod extends PageElement {
         alipayback.click();
     }
 
+    public void clickMonitorBack(AndroidDriver driver) {
+        log.info("支付宝免密签约成功页面，点击 返回");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1160).perform();
+    }
     public void clickBack() {
         back.click();
     }
-
+    public void qianYueZhifubao(AndroidDriver driver) throws Exception{
+        log.info("签约支付宝");
+        this.waitElement(driver, mianmititle);
+        this.clickMonitorAgree(driver);
+        Thread.sleep(3000);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyB(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.waitElement(driver, wancheng);
+        this.clickMonitorBack(driver);
+        this.waitElement(driver, alipay);
+        this.keyBack(driver);
+    }
+    public void fufeiZhifubao(AndroidDriver driver) throws Exception{
+        log.info("打开支付宝完成支付");
+        this.waitElement(driver, mianmititle);
+        this.clickMonitorAliMianMi(driver);
+        this.clickMonitorAgreePay(driver);
+        Thread.sleep(3000);
+        this.clickAliPayNow();//尚未修改
+        Thread.sleep(2000);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyB(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.waitElement(driver, aliback);
+        this.clickAliBack();
+//        this.waitElement(driver, back);
+//        this.clickBack();
+        this.waitElement(driver, alipay);
+        this.keyBack(driver);
+    }
     public String getOnlineStatus(){
         log.info("获取 空间页--在线状态 文本");
         return online_status.getText();

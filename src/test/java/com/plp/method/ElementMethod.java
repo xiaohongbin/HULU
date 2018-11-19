@@ -49,6 +49,16 @@ public class ElementMethod extends PageElement {
         return title_name.getText();
     }
 
+    //5.5.9新增页面元素方法
+    public void clickLijireg(){
+        log.info("合理化，注册页点击 立即注册");
+        btn_reg_dialog_reg.click();
+    }
+    public void clickBtnSpeed(){
+        log.info("合理化，双号，超级曝光页点击 立即领取");
+        btn_speed.click();
+    }
+
     //    下方五个模块切换
     public void clickYuanFenIcon() {
         log.info("点击“缘分”ICON");
@@ -194,6 +204,18 @@ public class ElementMethod extends PageElement {
         log.info("点击缘分页上第一个打招呼按钮");
         iv_sayhi.get(0).click();
     }
+
+    //缘分页，三列头像。5.5.9需求
+    public void clickIVAction() {
+        log.info("5.5.9新需求，点击缘分页上第一个打招呼按钮");
+        iv_action.get(0).click();
+    }
+    public String getTVAge(){
+        log.info("5.5.9新需求,获取缘分页，第一个女用户头像上显示的年龄");
+        return tv_age.get(0).getText();
+    }
+
+
 
     //    空间页方法
 //    获取空间中用户名
@@ -1114,6 +1136,16 @@ public class ElementMethod extends PageElement {
         action.tap(width - 10, 150).perform();
     }
 
+    //向上滑动选择一线城市
+    public void swipeAddressUp(AndroidDriver driver) {
+        log.info("滑动修改城市，选择一线城市");
+        Duration duration = Duration.ofSeconds(1);
+        int width = driver.manage().window().getSize().width;
+        int height = driver.manage().window().getSize().height;
+        TouchAction action1 = new TouchAction(driver).press(200, 950).waitAction(duration).moveTo(200, 1320).release();
+        action1.perform();
+    }
+
     //      滑动选择所在地址
     public void swipeAddress(AndroidDriver driver) {
         log.info("滑动修改城市");
@@ -1163,23 +1195,77 @@ public class ElementMethod extends PageElement {
     public void clickBack() {
         back.click();
     }
+    public void clickMonitorBack(AndroidDriver driver) {
+        log.info("支付宝免密签约成功页面，点击 返回");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1160).perform();
+    }
+    public void qianYueZhifubao(AndroidDriver driver) throws Exception{
+        log.info("签约支付宝");
+        this.waitElement(driver, mianmititle);
+        this.clickMonitorAgree(driver);
+        Thread.sleep(3000);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyB(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.waitElement(driver, wancheng);
+        this.clickMonitorBack(driver);
+        this.waitElement(driver, alipay);
+        this.keyBack(driver);
+    }
+    public void fufeiZhifubao(AndroidDriver driver) throws Exception{
+        log.info("打开支付宝完成支付");
+        this.waitElement(driver, mianmititle);
+        this.clickMonitorAliMianMi(driver);
+        this.clickMonitorAgreePay(driver);
+        Thread.sleep(3000);
+        this.clickAliPayNow();//尚未修改
+        Thread.sleep(2000);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyB(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
+        Thread.sleep(500);
+        this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.waitElement(driver, aliback);
+        this.clickAliBack();
+//        this.waitElement(driver, back);
+//        this.clickBack();
+        this.waitElement(driver, alipay);
+        this.keyBack(driver);
+    }
 
     //    发送密码
-    public void sendKeyA(AndroidDriver driver) {
+    public void sendKeyAA(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(505, 1225).perform();
     }
 
-    public void sendKeyB(AndroidDriver driver) {
+    public void sendKeyBB(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(522, 1549).perform();
     }
 
-    public void sendKeyC(AndroidDriver driver) {
+    public void sendKeyCC(AndroidDriver driver) {
         TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
@@ -1191,6 +1277,26 @@ public class ElementMethod extends PageElement {
 //        int width = driver.manage().window().getSize().width;
 //        int height=driver.manage().window().getSize().height;
         action.tap(180, 1200).perform();
+    }
+    public void sendKeyA(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(190, 1225).perform();
+    }
+
+    public void sendKeyB(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(540, 1725).perform();
+    }
+
+    public void sendKeyC(AndroidDriver driver) {
+        TouchAction action = new TouchAction(driver);
+//        int width = driver.manage().window().getSize().width;
+//        int height=driver.manage().window().getSize().height;
+        action.tap(900, 1225).perform();
     }
 
     public void clickCheck() {
@@ -1225,6 +1331,10 @@ public class ElementMethod extends PageElement {
     }
 
 
+    public void clickQueRen(){
+        log.info("放弃微信支付回退后,确认页面，点击确认");
+        queren.click();
+    }
 
     //    设置--安全指南
     public void clickSecurity() {
@@ -1374,11 +1484,26 @@ public class ElementMethod extends PageElement {
     public void clickAliMianMi() {
         alimianmi.click();
     }
+    public void clickMonitorAliMianMi(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(190, 1382).perform();
+    }
     //    确认开通并支付
+    public void clickMonitorAgreePay(AndroidDriver driver){
+        log.info("支付宝付款页面，点击 确认开通并支付");
+        TouchAction action = new TouchAction(driver);
+        action.tap(500, 1530).perform();
+    }
     public void clickAgreePay(){
         agreepay.click();
     }
 
+    public void clickMonitorAgree(AndroidDriver driver) {
+        log.info("支付宝免密支付页面，点击 同意协议并开通");
+        TouchAction action = new TouchAction(driver);
+        action.tap(530, 1320).perform();
+    }
     //    点击支付宝 立即付款
     public void clickAliPayNow(){
         log.info("点击支付宝 立即付款");

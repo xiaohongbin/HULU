@@ -15,8 +15,8 @@
             <class name="com.tcrl.testcase.testcase">
                 <methods>
                     <!--<include name="checkProtocal"/>-->
-                    <include name="checkManRegiste1"/>
-                    <include name="checkManRegiste3"/>
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManRegiste3"/>-->
                     <!--<include name="checkManSayHi1"/>-->
                     <!--<include name="checkManSayHi3"/>-->
                     <!--<include name="checkManAskbtn1"/>-->
@@ -38,10 +38,10 @@
                     <!--<include name="checkBeanList3"/>-->
                     <!--<include name="checkLetterList1"/>-->
                     <!--<include name="checkLetterList3"/>-->
-                    <!--&lt;!&ndash;<include name="checkVipList1"/>&ndash;&gt;-->
+                    <!--<include name="checkVipList1"/>-->
                     <!--<include name="checkVipList3"/>-->
                     <!--<include name="checkDuiDuiPeng"/>-->
-                    <!--&lt;!&ndash;<include name="checkAnswerQuestions1"/>&ndash;&gt;-->
+                    <include name="checkAnswerQuestions1"/>
                     <!--<include name="checkAnswerQuestions3"/>-->
                     <!--<include name="checkMyTag1"/>-->
                     <!--<include name="checkMyPersonData1"/>-->

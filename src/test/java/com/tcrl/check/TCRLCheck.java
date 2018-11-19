@@ -38,8 +38,8 @@ public class TCRLCheck extends ElementMethod {
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
-        this.clickTestEnv();
-        this.clickHuluprep();
+//        this.clickTestEnv();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.info("渠道号：" + qudaohao);
 //        this.clickAddress();
@@ -51,9 +51,12 @@ public class TCRLCheck extends ElementMethod {
         this.clickLoginRegister();
         this.clickMen();
         this.clickRegister();
-        if (!this.doesWebElementExist(upload_user_icon_image)) {
-            Assert.fail("1线男用户注册，第一个页面未提示上传头像");
+        if(this.doesWebElementExist(btn_reg_dialog_reg)){
+            this.clickLijireg();
         }
+//        if (!this.doesWebElementExist(upload_user_icon_image)) {
+//            Assert.fail("1线男用户注册，第一个页面未提示上传头像");
+//        }
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
         this.waitElement(driver, title_name);
@@ -70,7 +73,7 @@ public class TCRLCheck extends ElementMethod {
             this.clickMsgClose();
         }
         String userid=this.getUserID(driver);
-        wui.appendFile("D:\\TCRL.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
+        wui.appendFile("E:\\TCRL.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
         log.pass(userid);
         this.clickBtnLeft();
         this.clickBtnLeft();
@@ -86,8 +89,8 @@ public class TCRLCheck extends ElementMethod {
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
-        this.clickTestEnv();
-        this.clickHuluprep();
+//        this.clickTestEnv();
+//        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.info("渠道号：" + qudaohao);
         this.clickAddress();
@@ -101,6 +104,9 @@ public class TCRLCheck extends ElementMethod {
         this.clickLoginRegister();
         this.clickMen();
         this.clickRegister();
+        if(this.doesWebElementExist(btn_reg_dialog_reg)){
+            this.clickLijireg();
+        }
 //        if(!this.doesWebElementExist(upload_user_icon_image)){
 //            Assert.fail("1线男用户注册，第一个页面未提示上传头像");
 //        }
@@ -117,6 +123,11 @@ public class TCRLCheck extends ElementMethod {
         }
         this.clickBtnLeft();
 //        this.waitElement(driver, topview);
+        //5.5.9新新需求，双号弹出超级曝光页面
+        log.info("判断新需求，超级曝光页是否弹出");
+        if(this.doesWebElementExist(speed_dialog_title)){
+            this.clickBtnSpeed();
+        }
         log.info("判断是否进入缘分模块");
         if (!this.doesWebElementExist(mokuai.get(2))) {
             Assert.fail("注册成功后，未进入缘分模块");
@@ -125,7 +136,7 @@ public class TCRLCheck extends ElementMethod {
             this.clickMsgClose();
         }
         String userid=this.getUserID(driver);
-        wui.appendFile("D:\\TCRL.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
+        wui.appendFile("E:\\TCRL.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
         log.pass(userid);
         this.clickBtnLeft();
         this.clickBtnLeft();
@@ -776,16 +787,16 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, myquestion);
         this.clickMyQuestion();
         this.waitElement(driver, title_name);
-        log.info("判断是否进入我的匹配问答页面，且出现未做匹配问答提示");
-        if (!this.doesWebElementExist(noquestion)) {
-            Assert.fail("未做匹配问答时，没有出现提示");
-        }
-        this.clickAnswerQuetion();
-        log.info("判读是否进入匹配问答页面");
-        if (!this.getTitleName().equals("匹配问答")) {
-            Assert.fail("未能进入匹配问答页面");
-        }
-        this.clickQuestionView();
+//        log.info("判断是否进入我的匹配问答页面，且出现未做匹配问答提示");
+//        if (!this.doesWebElementExist(matching_qa_none_btn)) {
+//            Assert.fail("未做匹配问答时，没有出现提示");
+//        }
+//        this.clickAnswerQuetion();
+//        log.info("判读是否进入匹配问答页面");
+//        if (!this.getTitleName().equals("匹配问答")) {
+//            Assert.fail("未能进入匹配问答页面");
+//        }
+//        this.clickQuestionView();
         this.clickSendQuestion();
         this.clickBtnLeft();
         this.waitElement(driver, qa_q_ico.get(0));
@@ -876,7 +887,7 @@ public class TCRLCheck extends ElementMethod {
         this.manRegiste1(driver, qudaohao);
         this.clickMeIcon();
         this.waitElement(driver, mytag);
-        this.swipeToUp(driver);
+//        this.swipeToUp(driver);
         this.clickMyTag();
         log.info("判读是否进入 我的标签页面");
         if (!this.getTitleName().equals("我的标签")) {
@@ -1051,28 +1062,10 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agree);
-        this.clickAgree();
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, back);
-        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.qianYueZhifubao(driver);
         this.clickCheck();
         log.info("判断开通免密后，是否提示开通成功");
-        if (!this.doesWebElementExist(success)) {
+        if (!this.doesWebElementExist(qianwang)) {
             Assert.fail("开通免密后，没有成功提示");
         }
         this.clickQianWang();
@@ -1129,25 +1122,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agree);
-        this.clickAgree();
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, back);
-        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.qianYueZhifubao(driver);
         this.clickCheck();
         log.info("判断开通免密后，是否提示开通成功");
         if (!this.doesWebElementExist(success)) {
@@ -1213,25 +1188,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agree);
-        this.clickAgree();
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, back);
-        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.qianYueZhifubao(driver);
         this.clickCheck();
         log.info("判断开通免密后，是否提示开通成功");
         if (!this.doesWebElementExist(success)) {
@@ -1349,6 +1306,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("800豆币未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断800豆币，银联支付是否默认 价格优惠10元");
@@ -1395,6 +1353,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("550豆币未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断550豆币，银联支付是否默认价格优惠10元");
@@ -1463,6 +1422,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("800豆币未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断800豆币，银联支付是否默认 价格优惠10元");
@@ -1516,6 +1476,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("550豆币未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断550豆币，银联支付是否默认价格优惠10元");
@@ -1585,6 +1546,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("90天畅聊未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月90天，银联支付是否默认价格优惠10元");
@@ -1637,6 +1599,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("30天畅聊未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月30天，银联支付是否默认价格优惠10元");
@@ -1689,6 +1652,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("7天未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月7天，银联支付是否默认勾价格优惠10元");
@@ -1763,6 +1727,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("90天畅聊未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月90天，银联支付是否默认价格优惠10元");
@@ -1817,6 +1782,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("30天畅聊未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月30天，银联支付是否默认价格优惠10元");
@@ -1873,6 +1839,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("7天畅聊未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断写信包月7天，银联支付是否默认勾价格优惠10元");
@@ -1923,6 +1890,7 @@ public class TCRLCheck extends ElementMethod {
         if (!this.doesWebElementExist(yuanjia_vip90)) {
             Assert.fail("90天vip，支付宝取消 自动续费后，不为原价");
         }
+        this.clickXufei();
         this.clickKaiTong();
         log.info("判断90天vip，支付宝调起");
         this.waitElement(driver, alisure);
@@ -1945,6 +1913,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("90天vip未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.clickYinlianPay();
         this.waitElement(driver, title_name);
         log.info("判断90天vip，银联支付是否默认价格优惠10元");
@@ -1976,6 +1945,7 @@ public class TCRLCheck extends ElementMethod {
         if (!this.doesWebElementExist(yuanjia_vip30)) {
             Assert.fail("30天vip，支付宝取消 自动续费后，不为原价");
         }
+        this.clickXufei();
         this.clickKaiTong();
         log.info("判断30天vip，支付宝调起");
         this.waitElement(driver, alisure);
@@ -1997,6 +1967,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("30天vip未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断30天vip，银联支付是否默认价格优惠10元");
@@ -2049,6 +2020,7 @@ public class TCRLCheck extends ElementMethod {
         if (!this.doesWebElementExist(yuanjia_vip90)) {
             Assert.fail("90天vip，支付宝取消 自动续费后，不为原价");
         }
+        this.clickXufei();
         this.clickKaiTong();
 //        Thread.sleep(5000);
         log.info("判断90天vip，支付宝调起");
@@ -2072,6 +2044,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("90天vip未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.clickYinlianPay();
         this.waitElement(driver, title_name);
         log.info("判断90天vip，银联支付是否默认价格优惠10元");
@@ -2101,6 +2074,7 @@ public class TCRLCheck extends ElementMethod {
         if (!this.doesWebElementExist(yuanjia_vip30)) {
             Assert.fail("30天vip，支付宝取消 自动续费后，不为原价");
         }
+        this.clickXufei();
         this.clickKaiTong();
 //        Thread.sleep(5000);
         log.info("判断30天vip，支付宝调起");
@@ -2124,6 +2098,7 @@ public class TCRLCheck extends ElementMethod {
             Assert.fail("30天vip未启动微信");
         }
         this.keyBack(driver);
+        this.clickQueRen();
         this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断30天vip，银联支付是否默认价格优惠10元");
@@ -3045,30 +3020,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agreepay);
-        this.clickAliMianMi();
-        this.clickAgreePay();
-        Thread.sleep(3000);
-        this.clickAliPayNow();
-        Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, aliback);
-        this.clickAliBack();
-//        this.waitElement(driver, back);
-//        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.fufeiZhifubao(driver);
 //        三次回退，至 我 模块
         this.clickBtnLeft();
 //        this.clickBuLiao();
@@ -3091,28 +3043,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agreepay);
-        this.clickAliMianMi();
-        this.clickAgreePay();
-        Thread.sleep(3000);
-        this.clickAliPayNow();
-        Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, aliback);
-        this.clickAliBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.fufeiZhifubao(driver);
 //        三次回退，至 我 模块
         this.clickBtnLeft();
 //        this.clickBuLiao();
@@ -3134,30 +3065,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agreepay);
-        this.clickAliMianMi();
-        this.clickAgreePay();
-        Thread.sleep(3000);
-        this.clickAliPayNow();
-        Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, aliback);
-        this.clickAliBack();
-//        this.waitElement(driver, back);
-//        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.fufeiZhifubao(driver);
 //        三次回退，至 我 模块
         this.clickBtnLeft();
 //        this.clickBuLiao();
@@ -3179,30 +3087,7 @@ public class TCRLCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, agreepay);
-        this.clickAliMianMi();
-        this.clickAgreePay();
-        Thread.sleep(3000);
-        this.clickAliPayNow();
-        Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.sendKeyD(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, aliback);
-        this.clickAliBack();
-//        this.waitElement(driver, back);
-//        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
+        this.fufeiZhifubao(driver);
 //        三次回退，至 我 模块
         this.clickBtnLeft();
         this.clickBuLiao();

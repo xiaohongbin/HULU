@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="864.937" tests="5" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="323.575" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -64,78 +64,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkManSayHILanjie3" classname="com.dsjy.testcase.testcase" time="121.637">
-    <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;SC-201512161950&apos;, ip: &apos;192.168.123.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}&#10;Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65&#10;*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SC-201512161950', ip: '192.168.123.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
-*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout}
-	at com.dsjy.testcase.testcase.checkManSayHILanjie3(testcase.java:323)
-</failure>
-    <system-out><![CDATA[ Executing on 单身交友
-]]></system-out>
-    <system-err><![CDATA[Nov 15, 2018 3:12:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
-  <testcase name="checkManSayHILanjie1" classname="com.dsjy.testcase.testcase" time="205.216">
-    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@content-desc="返回"]' (tried for 60 second(s) with 500 MILLISECONDS interval)
-	at com.dsjy.testcase.testcase.checkManSayHILanjie1(testcase.java:329)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SC-201512161950', ip: '192.168.123.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
-*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc="返回"]}
-	at com.dsjy.testcase.testcase.checkManSayHILanjie1(testcase.java:329)
-</failure>
-    <system-out><![CDATA[GetScreenshot Successful   E:\LBS5.5.9\test-output\com.dsjy.testcase.testcasecheckManSayHILanjie3.jpg
-]]></system-out>
-  </testcase>
-  <testcase name="checkManBuyVip3" classname="com.dsjy.testcase.testcase" time="189.978">
-    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@content-desc="返回"]' (tried for 60 second(s) with 500 MILLISECONDS interval)
-	at com.dsjy.testcase.testcase.checkManBuyVip3(testcase.java:335)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SC-201512161950', ip: '192.168.123.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
-*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc="返回"]}
-	at com.dsjy.testcase.testcase.checkManBuyVip3(testcase.java:335)
-</failure>
-    <system-out><![CDATA[GetScreenshot Successful   E:\LBS5.5.9\test-output\com.dsjy.testcase.testcasecheckManSayHILanjie1.jpg
-]]></system-out>
-  </testcase>
-  <testcase name="checkManBuyBean3" classname="com.dsjy.testcase.testcase" time="215.039">
-    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.Button[@content-desc=&quot;返回&quot;]&apos; (tried for 60 second(s) with 500 MILLISECONDS interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@content-desc="返回"]' (tried for 60 second(s) with 500 MILLISECONDS interval)
-	at com.dsjy.testcase.testcase.checkManBuyBean3(testcase.java:340)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SC-201512161950', ip: '192.168.123.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: E:\dsjy.apk, appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, appWaitActivity: com.app.ui.activity.Welcome..., appWaitPackage: com.huizheng.lasq, databaseEnabled: false, desired: {app: E:\dsjy.apk, deviceName: DU2SSE148L041137, platformName: Android, platformVersion: 4.4.2, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: HUAWEI, deviceModel: H60-L01, deviceName: DU2SSE148L041137, deviceScreenSize: 1080x1920, deviceUDID: DU2SSE148L041137, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 4.4.2, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 3e54c8d0-a0a9-441d-ba1e-74fc5adfba65
-*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc="返回"]}
-	at com.dsjy.testcase.testcase.checkManBuyBean3(testcase.java:340)
-</failure>
-    <system-out><![CDATA[GetScreenshot Successful   E:\LBS5.5.9\test-output\com.dsjy.testcase.testcasecheckManBuyVip3.jpg
-]]></system-out>
-  </testcase>
-  <testcase name="checkWomenRegiste1" classname="com.dsjy.testcase.testcase" time="64.496"/>
+  <testcase name="checkLetterMianMi" classname="com.plp.testcase.testcase" time="149.133"/>
+  <testcase name="checkVIPMianMi" classname="com.plp.testcase.testcase" time="138.241"/>
 </testsuite>
