@@ -6,9 +6,9 @@
     <!--<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>-->
     <suite-files>
         <!--<suite-file path="jp.xml"/>-->
-        <!--<suite-file path="laps.xml"/>-->
+        <suite-file path="laps.xml"/>
         <!--<suite-file path="lasq.xml"/>-->
-        <suite-file path="plp.xml"/>
+        <!--<suite-file path="plp.xml"/>-->
         <!--<suite-file path="tcrl.xml"/>-->
         <!--<suite-file path="yhb.xml"/>-->
         <!--<suite-file path="dsjy.xml"/>-->

@@ -3,53 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="380a072b-931e-44ea-b63d-6f7100a36957" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsjy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsjy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plp/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plp/method/ElementMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plp/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plp/page/PageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tcrl/check/TCRLCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tcrl/check/TCRLCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tcrl/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tcrl/method/ElementMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tcrl/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tcrl/page/PageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tcrl/testcase/testcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tcrl/testcase/testcase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/laps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/PLP/PLP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/PLP/PLP.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.dsjy.testcase.testcase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.plp.testcase.testcase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/PLP.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/PLP/toc.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/恋爱神器/恋爱神器.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/恋爱神器/恋爱神器.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/check/DSJYCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/check/DSJYCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dsjy/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dsjy/testcase/testcase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plp/check/PLPCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plp/check/PLPCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plp/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plp/method/ElementMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plp/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plp/page/PageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plp/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plp/testcase/testcase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tcrl/check/TCRLCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tcrl/check/TCRLCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tcrl/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tcrl/method/ElementMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tcrl/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tcrl/page/PageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tcrl/testcase/testcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tcrl/testcase/testcase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcrl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tcrl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,43 +36,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plp.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plp.xml">
+      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+            <state relative-caret-position="7700">
+              <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PLPCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java">
+      <file leaf-file-name="laps.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laps.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="2728" column="11" selection-start-line="2726" selection-start-column="10" selection-end-line="2728" selection-end-column="11" />
-              <folding>
-                <element signature="e#14823#16882#0" />
-                <element signature="e#46440#50524#0" />
-                <element signature="e#63839#68439#0" />
-                <element signature="e#81828#82360#0" />
-                <element signature="e#82368#85789#0" />
-                <element signature="e#85792#88608#0" />
-                <element signature="e#88613#91366#0" />
-                <element signature="e#91369#93031#0" />
-                <element signature="e#93037#96014#0" />
-              </folding>
+            <state relative-caret-position="103">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DSJYCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
+      <file leaf-file-name="ElementMethod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1103">
-              <caret line="1855" column="16" selection-start-line="1855" selection-start-column="16" selection-end-line="1855" selection-end-column="16" />
-              <folding>
-                <element signature="e#39875#40794#0" />
-              </folding>
+            <state relative-caret-position="-21987">
+              <caret line="412" column="38" selection-start-line="412" selection-start-column="38" selection-end-line="412" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lasq.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lasq.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="53" column="54" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="265" column="22" lean-forward="true" selection-start-line="265" selection-start-column="22" selection-end-line="265" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LASQCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1025">
+              <caret line="989" column="16" selection-start-line="989" selection-start-column="16" selection-end-line="989" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="639" column="50" selection-start-line="639" selection-start-column="50" selection-end-line="639" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -106,81 +102,29 @@
       <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="289" column="25" selection-start-line="289" selection-start-column="25" selection-end-line="289" selection-end-column="25" />
+            <state relative-caret-position="137">
+              <caret line="289" column="22" selection-start-line="289" selection-start-column="22" selection-end-line="289" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TCRLCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/check/TCRLCheck.java">
+      <file leaf-file-name="DSJYCheck.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="1127" column="42" selection-start-line="1127" selection-start-column="42" selection-end-line="1127" selection-end-column="42" />
+            <state relative-caret-position="162">
+              <caret line="1895" column="26" lean-forward="true" selection-start-line="1895" selection-start-column="26" selection-end-line="1895" selection-end-column="26" />
               <folding>
-                <element signature="e#40340#42769#0" />
+                <element signature="e#39875#40794#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElementMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/method/ElementMethod.java">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="1090" column="5" selection-start-line="1071" selection-start-column="4" selection-end-line="1090" selection-end-column="5" />
-              <folding>
-                <element signature="e#24509#24798#0" />
-                <element signature="e#24804#25078#0" />
-                <element signature="e#25084#25358#0" />
-                <element signature="e#25364#25638#0" />
-                <element signature="e#25643#25916#0" />
-                <element signature="e#25922#26195#0" />
-                <element signature="e#26201#26474#0" />
-                <element signature="e#30011#30012#0" expanded="true" />
-                <element signature="e#30041#30042#0" expanded="true" />
-                <element signature="e#30147#30347#0" />
-                <element signature="e#30352#30566#0" />
-                <element signature="e#30697#30914#0" />
-                <element signature="e#31385#31577#0" />
-                <element signature="e#32363#33254#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/page/PageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="808" column="22" selection-start-line="808" selection-start-column="22" selection-end-line="808" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="268" column="21" selection-start-line="268" selection-start-column="21" selection-end-line="268" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/testcase/testcase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="283" column="25" selection-start-line="283" selection-start-column="25" selection-end-line="283" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/page/PageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="1008" column="22" selection-start-line="1008" selection-start-column="22" selection-end-line="1008" selection-end-column="22" />
+            <state relative-caret-position="225">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -213,12 +157,12 @@
       <find>clickqianyue</find>
       <find>clickalipayn</find>
       <find>checkDuiDuiPeng3</find>
-      <find>checkDuiDuiPeng</find>
       <find>sendK</find>
       <find>qianYueZhifubao</find>
       <find>letterMianMi</find>
       <find>alipaynow</find>
       <find>checkLetterMianMi</find>
+      <find>checkDuiDuiPeng</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java" />
-        <option value="$PROJECT_DIR$/laps.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laps/check/LAPSCheck.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java" />
@@ -248,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/tcrl/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/tcrl.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/tcrl/check/TCRLCheck.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp1/check/PLPCheck.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/check/LASQCheck.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java" />
@@ -257,6 +199,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/plp/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java" />
         <option value="$PROJECT_DIR$/plp.xml" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/laps.xml" />
       </list>
     </option>
   </component>
@@ -281,6 +225,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,16 +277,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dsjy" type="462c0819:PsiDirectoryNode" />
-              <item name="check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dsjy" type="462c0819:PsiDirectoryNode" />
               <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,107 +286,17 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="plp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="plp" type="462c0819:PsiDirectoryNode" />
-              <item name="check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="plp" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="plp" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="plp" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tcrl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tcrl" type="462c0819:PsiDirectoryNode" />
-              <item name="check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tcrl" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tcrl" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.5.9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tcrl" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
+              <item name="lasq" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="E:/LBS5.5.9V1.0/pom.xml" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -523,6 +369,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -533,10 +380,10 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33512545" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34946236" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23362975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -560,13 +407,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/WriteUserID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -693,24 +533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lasq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="67" column="52" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
           <caret line="43" column="87" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -725,30 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="3811" column="28" selection-start-line="3811" selection-start-column="28" selection-end-line="3811" selection-end-column="28" />
-          <folding>
-            <element signature="e#799#2491#0" />
-            <element signature="e#6504#8792#0" />
-            <element signature="e#8798#10638#0" />
-            <element signature="e#10644#12718#0" />
-            <element signature="e#12724#14973#0" />
-            <element signature="e#14979#15941#0" />
-            <element signature="e#15947#16809#0" />
-            <element signature="e#16815#17632#0" />
-            <element signature="e#18746#19661#0" />
-            <element signature="e#19667#20530#0" />
-            <element signature="e#31161#31835#0" />
-            <element signature="e#43818#44369#0" />
-            <element signature="e#54394#57139#0" />
-            <element signature="e#57145#60156#0" />
-            <element signature="e#68473#72557#0" />
-            <element signature="e#72563#77402#0" />
-            <element signature="e#84179#90915#0" />
-            <element signature="e#90921#98159#0" />
-            <element signature="e#102685#107179#0" />
-            <element signature="e#143941#145410#0" />
-            <element signature="e#145416#146812#0" />
-            <element signature="e#146819#148270#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,20 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="1354" column="5" selection-start-line="1350" selection-start-column="4" selection-end-line="1354" selection-end-column="5" />
-          <folding>
-            <element signature="e#26768#27041#0" />
-            <element signature="e#27047#27320#0" />
-            <element signature="e#27326#27599#0" />
-            <element signature="e#33131#33132#0" expanded="true" />
-            <element signature="e#33159#33160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laps.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -798,217 +586,166 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="613" column="12" selection-start-line="613" selection-start-column="12" selection-end-line="613" selection-end-column="12" />
-          <folding>
-            <element signature="e#26427#26627#0" />
-            <element signature="e#26711#26907#0" />
-            <element signature="e#27678#27679#0" expanded="true" />
-            <element signature="e#27706#27707#0" expanded="true" />
-            <element signature="e#29044#29317#0" />
-            <element signature="e#29323#29596#0" />
-            <element signature="e#29602#29875#0" />
-            <element signature="e#34041#34042#0" expanded="true" />
-            <element signature="e#34071#34072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="459" column="22" selection-start-line="459" selection-start-column="22" selection-end-line="459" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tcrl.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp1/check/PLPCheck.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp1/method/ElementMethod.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/LASQCheck.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="202" column="23" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="1434" column="38" selection-start-line="1434" selection-start-column="38" selection-end-line="1434" selection-end-column="38" />
-          <folding>
-            <element signature="e#462#807#0" />
-            <element signature="e#813#2911#0" />
-            <element signature="e#2917#4984#0" />
-            <element signature="e#4990#7292#0" />
-            <element signature="e#7298#9134#0" />
-            <element signature="e#9140#11214#0" />
-            <element signature="e#11220#13469#0" />
-            <element signature="e#34337#37137#0" />
-            <element signature="e#37142#39887#0" />
-            <element signature="e#39893#42904#0" />
-            <element signature="e#56410#60518#0" />
-            <element signature="e#65369#72133#0" />
-            <element signature="e#72139#79377#0" />
-            <element signature="e#79383#83897#0" />
-            <element signature="e#83903#88718#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="412" column="38" selection-start-line="412" selection-start-column="38" selection-end-line="412" selection-end-column="38" />
-          <folding>
-            <element signature="e#26739#27027#0" />
-            <element signature="e#27033#27306#0" />
-            <element signature="e#27312#27585#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="359" column="487" selection-start-line="359" selection-start-column="4" selection-end-line="359" selection-end-column="487" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/method/ElementMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="1299" column="5" selection-start-line="1299" selection-start-column="5" selection-end-line="1299" selection-end-column="5" />
-          <folding>
-            <element signature="e#26402#26682#0" />
-            <element signature="e#27516#27708#0" />
-            <element signature="e#27516#28234#0" />
-            <element signature="e#28239#29130#0" />
-            <element signature="e#29333#29622#0" />
-            <element signature="e#29628#29902#0" />
-            <element signature="e#29908#30182#0" />
-            <element signature="e#28369#28642#0" />
-            <element signature="e#30466#30739#0" />
-            <element signature="e#30745#31018#0" />
-            <element signature="e#31024#31297#0" />
-            <element signature="e#34578#34778#0" />
-            <element signature="e#34578#34792#0" />
-            <element signature="e#34662#34858#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="283" column="25" selection-start-line="283" selection-start-column="25" selection-end-line="283" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="268" column="21" selection-start-line="268" selection-start-column="21" selection-end-line="268" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/method/ElementMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="24975">
           <caret line="1090" column="5" selection-start-line="1071" selection-start-column="4" selection-end-line="1090" selection-end-column="5" />
-          <folding>
-            <element signature="e#24509#24798#0" />
-            <element signature="e#24804#25078#0" />
-            <element signature="e#25084#25358#0" />
-            <element signature="e#25364#25638#0" />
-            <element signature="e#25643#25916#0" />
-            <element signature="e#25922#26195#0" />
-            <element signature="e#26201#26474#0" />
-            <element signature="e#30011#30012#0" expanded="true" />
-            <element signature="e#30041#30042#0" expanded="true" />
-            <element signature="e#30147#30347#0" />
-            <element signature="e#30352#30566#0" />
-            <element signature="e#30697#30914#0" />
-            <element signature="e#31385#31577#0" />
-            <element signature="e#32363#33254#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/check/TCRLCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="27950">
           <caret line="1127" column="42" selection-start-line="1127" selection-start-column="42" selection-end-line="1127" selection-end-column="42" />
-          <folding>
-            <element signature="e#40340#42769#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/page/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="20100">
           <caret line="808" column="22" selection-start-line="808" selection-start-column="22" selection-end-line="808" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/page/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
+        <state relative-caret-position="25100">
           <caret line="1008" column="22" selection-start-line="1008" selection-start-column="22" selection-end-line="1008" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="289" column="25" selection-start-line="289" selection-start-column="25" selection-end-line="289" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1103">
-          <caret line="1855" column="16" selection-start-line="1855" selection-start-column="16" selection-end-line="1855" selection-end-column="16" />
-          <folding>
-            <element signature="e#39875#40794#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="2728" column="11" selection-start-line="2726" selection-start-column="10" selection-end-line="2728" selection-end-column="11" />
-          <folding>
-            <element signature="e#14823#16882#0" />
-            <element signature="e#46440#50524#0" />
-            <element signature="e#63839#68439#0" />
-            <element signature="e#81828#82360#0" />
-            <element signature="e#82368#85789#0" />
-            <element signature="e#85792#88608#0" />
-            <element signature="e#88613#91366#0" />
-            <element signature="e#91369#93031#0" />
-            <element signature="e#93037#96014#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plp.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+        <state relative-caret-position="1850">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tcrl/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3475">
+          <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcrl.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jp/JPCheck/JPCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7700">
+          <caret line="312" column="25" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laps.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21987">
+          <caret line="412" column="38" selection-start-line="412" selection-start-column="38" selection-end-line="412" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lasq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="265" column="22" lean-forward="true" selection-start-line="265" selection-start-column="22" selection-end-line="265" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1025">
+          <caret line="989" column="16" selection-start-line="989" selection-start-column="16" selection-end-line="989" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="639" column="50" selection-start-line="639" selection-start-column="50" selection-end-line="639" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="289" column="22" selection-start-line="289" selection-start-column="22" selection-end-line="289" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1895" column="26" lean-forward="true" selection-start-line="1895" selection-start-column="26" selection-end-line="1895" selection-end-column="26" />
+          <folding>
+            <element signature="e#39875#40794#0" />
+          </folding>
         </state>
       </provider>
     </entry>
