@@ -68,6 +68,8 @@
                     <include name="checkBeanMianMi3"/>
                     <include name="checkLetterMianMi3"/>
                     <include name="checkVIPMianMi3"/>
+
+
                     <!--设置-->
                     <!--<include name="checkManSecurity"/>
                     <include name="checkManHelp"/>
