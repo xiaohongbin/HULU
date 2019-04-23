@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="瑞福缘动" parallel="tests" thread-count="2">
+
+    <!--&lt;!&ndash;<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>&ndash;&gt;-->
+    <!--<suite-files>-->
+    <!--<suite-file path="test1.xml"></suite-file>-->
+    <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
+    <!--</suite-files>-->
+    <test name="瑞福缘动" preserve-order="true">
+        <parameter name="deviceID" value="5TF7N15A17007305"/>
+        <parameter name="app" value="rd"/>
+        <classes>
+            <class name="com.rd.testcase.testcase">
+                <methods>
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManRegiste3"/>-->
+                    <!--<include name="checkManSayHi1"/>
+                    <include name="checkManNextPeople"/>
+                    <include name="checkManConversation1"/>-->
+                    <!--<include name="checkManNotread1"/>
+                    <include name="checkManUpgraded1"/>-->
+                    <!--<include name="checkManOnlineStatus1"/>-->
+                    <!--<include name="checkManMore1"/>-->
+                    <!--<include name="checkManMore3"/>-->
+                    <!--<include name="checkManNear1"/>
+                    <include name="checkManReLiao1"/>-->
+                    <!--<include name="checkManVoice3"/>
+                    <include name="checkManVedio3"/>
+                    <include name="checkManNear3"/> -->
+                     <!-- 我的 -->
+                    <!--<include name="checkMyPersonData1"/>
+                    <include name="checkIntegrityLevel1"/>
+                    <include name="checkMyPicture"/>
+                    <include name="checkMyCondition1"/>
+                    <include name="checkAnswerQuestions1"/>
+                    <include name="checkMyTag1"/>
+                    <include name="checkMyIntroduction1"/>
+                    <include name="checkMyVisitor1"/>
+                    <include name="checkManMailboxPersonData1"/>
+                    <include name="checkManMailboxNum1"/>
+                    <include name="checkManMailbox1"/>
+                    <include name="checkManMailboxZone3"/>
+                    <include name="checkManMailboxZonePic3"/>-->
+                    <!--<include name="checkManSecurity"/>
+                    <include name="checkManHelp"/>
+                    <include name="checkManKeFu"/>
+                    <include name="checkMenLogin1"/>-->
+                    <!-- 会员中心 -->
+                    <!--<include name="checkVIPList"/>
+                    <include name="checkVIPList3"/>
+                    <include name="checkBeanList1"/>
+                    <include name="checkBeanList3"/>
+                    <include name="checkLetterList1"/>
+                    <include name="checkLetterList3"/>
+                    <include name="checkVipList1"/>
+                    <include name="checkVipList3"/>-->
+                    <!--女用户登陆 -->
+                    <!-- <include name="checkWomenRegister1"/>
+                    <include name="checkWomenLogin1"/>
+                    <include name="checkWomenLogin3"/>
+
+                    <include name="checkWomenYuanFenZhuShou"/>
+                    <include name="checkWomanReLiao1"/>
+                    <include name="checkWomanYuJian1"/>
+                    <include name="checkWomanNextPeople"/>
+                    <include name="checkWomanConversation1"/>
+                    <include name="checkWomanNotread1"/>
+                    <include name="checkWomanUpgraded1"/>
+                    <include name="checkWomenNear1"/>
+                    <include name="checkWomenMore1"/>
+                    <include name="checkWomanPersonData1"/>
+                    <include name="checkWomanIntegrityLevel1"/>
+                    <include name="checkWomanPicture"/>
+                    <include name="checkWomanCondition1"/>
+                    <include name="checkWomanAnswerQuestions1"/>
+                    <include name="checkWomanTag1"/>
+                    <include name="checkWomanIntroduction1"/>
+                    <include name="checkWomanVisitor1"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name ="chrome" preserve-order="true">-->
+    <!--<parameter name="browser" value="chrome" />-->
+    <!--<classes>-->
+    <!--<class name="ptenginecase.Chrome">-->
+    <!--<methods>-->
+    <!--<include name="cnLogin"/>-->
+    <!--&lt;!&ndash;<include name="DCoverview"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="referralmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="searchmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="keywordmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="socialmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="devicemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="osmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="browsermenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="resolutionmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="locationmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="pagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="entrypagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignOverviewmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticsmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticstabmenu"/>&ndash;&gt;-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <listeners>
+        <!--&lt;!&ndash;listener class-name="listener.TestngListener"/&ndash;&gt;-->
+        <!--&lt;!&ndash;<listener class-name="listener.ExtentTestNGIReporterListener1"/>&ndash;&gt;-->
+        <listener class-name="com.listener.ExtentTestNGITestListener"/>
+        <!--<listener class-name="com.listener.ExtentTestNGIReporterListener"/>-->
+    </listeners>
+</suite>

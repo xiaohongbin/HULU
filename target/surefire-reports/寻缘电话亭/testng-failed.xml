@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [寻缘电话亭]" parallel="tests">
+  <listeners>
+    <listener class-name="com.listener.ExtentTestNGITestListener"/>
+  </listeners>
+  <test name="寻缘电话亭(failed)" parallel="tests">
+    <parameter name="app" value="xydht"/>
+    <parameter name="deviceID" value="5TF7N15A17007305"/>
+    <classes>
+      <class name="com.xydht.testcase.testcase">
+        <methods>
+          <include name="checkBeanMianMi3"/>
+          <include name="checkVIPMianMi3"/>
+          <include name="resetApp"/>
+          <include name="getDriver"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.xydht.testcase.testcase -->
+    </classes>
+  </test> <!-- 寻缘电话亭(failed) -->
+</suite> <!-- Failed suite [寻缘电话亭] -->

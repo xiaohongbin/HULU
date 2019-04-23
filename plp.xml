@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="PLP" parallel="tests" thread-count="2">
+
+    <test name="PLP" preserve-order="true">
+        <parameter name="deviceID" value="5TF7N15A17007305"/>
+        <parameter name="app" value="plp"/>
+        <classes>
+            <class name="com.plp.testcase.testcase">
+                <methods>
+                   <!-- <include name="checkProtocal"/>
+                    <include name="checkManRegiste3"/>-->
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManSayHi3"/>-->
+                    <!--<include name="checkManAskbtn3"/>-->
+                    <!--<include name="checkManConversation3"/>-->
+                    <!--<include name="checkManNotread3"/>-->
+                    <!--<include name="checkManUpgraded3"/>-->
+                    <!--<include name="checkManOnlineStatus3"/>-->
+                    <!--<include name="checkManVideo3"/>-->
+                    <!--<include name="checkMore3"/>-->
+                    <!--<include name="checkMore1"/>-->
+                    <!--会员中心 -->
+                    <!--<include name="checkVIPList"/>
+                    <include name="checkVIPList3"/>
+                    <include name="checkBean1"/>
+                    <include name="checkBean3"/>
+                    <include name="checkLetter1"/>
+                    <include name="checkLetter3"/>
+                    <include name="checkVIP1"/>
+                    <include name="checkVIP3"/>-->
+                    <!--<include name="checkBeanList3"/>
+                    <include name="checkLetterList3"/>
+                    <include name="checkVipList3"/>
+                    <include name="checkBeanList1"/>
+                   <include name="checkLetterList1"/>
+                    <include name="checkVipList1"/>-->
+                    <!-- 免密支付 -->
+                    <include name="checkBeanMianMi3"/>
+                    <!--<include name="checkLetterMianMi3"/>
+                    <include name="checkVIPMianMi3"/>-->
+
+                    <!--<include name="checkInitSearch"/>-->
+                    <!--<include name="checkSeachArea"/>-->
+                    <!--<include name="checkSeachAge"/>-->
+                    <!--<include name="checkSeachHeight"/>-->
+                    <!--<include name="checkSeachAll"/>-->
+                    <!--<include name="checkSeachHello"/>-->
+
+                    <!--<include name="checkMyPersonData3"/>-->
+                    <!--<include name="checkMyCondition3"/>-->
+                    <!--<include name="checkMyIntroduction3"/>-->
+                    <!--<include name="checkUploadPic3"/>-->
+                    <!--<include name="checkMyVisitor3"/>-->
+                    <!--<include name="checkMyIntegrity3"/>-->
+                    <!--<include name="checkMyQuestion3"/>-->
+                    <!--<include name="checkMiGu3"/>-->
+                    <!--<include name="checkMyTag3"/>-->
+
+                    <!--<include name="checkMailbox3"/>-->
+                    <!--<include name="checkMailboxPersonData3"/>-->
+                    <!--<include name="checkMailboxNum3"/>-->
+                    <!--<include name="checkMailboxZone3"/>-->
+                    <!--<include name="checkMailboxPic3"/>-->
+
+                    <!--<include name="checkTuijian3"/>-->
+                    <!--<include name="checkManNear3"/>-->
+
+                    <!--<include name="checkDuiDuiPeng3"/>-->
+                    <!--<include name="checkLetterMianMi"/>-->
+                    <!--<include name="checkVIPMianMi"/>-->
+                    <!--设置-->
+                    <!--<include name="checkManSecurity"/>-->
+                    <!--<include name="checkManHelp"/>-->
+                    <!--<include name="checkManKeFu"/>-->
+                    <!--需要购买-->
+                    <!--<include name="checkManCustomCall"/>-->
+                    <!--购买服务-->
+                    <!--<include name="checkManSayHILanjie3"/>-->
+                    <!--<include name="checkManSayHILanjie1"/>-->
+                    <!--<include name="checkManBuyVip3"/>-->
+                    <!--<include name="checkManBuyBean3"/>-->
+
+                    <!--<include name="checkWomanRegiste3"/>-->
+                    <!--<include name="checkWomanRegiste"/>-->
+                    <!--<include name="checkWomanRegiste1"/>-->
+                    <!--<include name="checkWomanSayHi3"/>-->
+                    <!--<include name="checkWomanYuanfenZhuShou3"/>-->
+                    <!--<include name="checkWomanMemberCenter"/>-->
+
+                    <!--<include name="checkManSpace3"/>-->
+                    <!--<include name="checkManWechar3"/>-->
+                    <!--<include name="checkManQQ3"/>-->
+
+                    <!--<include name="checkManRegisteNear3"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.listener.ExtentTestNGITestListener"/>
+    </listeners>
+</suite>

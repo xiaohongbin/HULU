@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="寻缘电话亭" parallel="tests" thread-count="2">
+
+    <!--&lt;!&ndash;<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>&ndash;&gt;-->
+    <!--<suite-files>-->
+    <!--<suite-file path="test1.xml"></suite-file>-->
+    <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
+    <!--</suite-files>-->
+    <test name="寻缘电话亭" preserve-order="true">
+        <parameter name="deviceID" value="5TF7N15A17007305"/>
+        <parameter name="app" value="xydht"/>
+        <classes>
+            <class name="com.xydht.testcase.testcase">
+                <methods>
+                    <!--<include name="checkProtocolT"/>-->
+                    <!--<include name="checkProtocol"/>-->
+                    <!-- 缘分及空间 -->
+                   <!-- <include name="checkManRegiste1"/>
+                    <include name="checkManRegiste3"/>-->
+                    <!--<include name="checkManXunYuan1"/>-->
+                    <!--<include name="checkManXunYuan3"/>-->
+                    <!--<include name="checkSayHi1"/>-->
+                    <!--<include name="checkSayHi3"/>-->
+                    <!--<include name="checkAskbtn"/>-->
+                    <!--<include name="checkConversation"/>-->
+                    <!--<include name="checkNotread"/>-->
+                    <!--<include name="checkUpgraded"/>-->
+
+                    <!--<include name="checkManVideo3"/>-->
+                    <!--<include name="checkManMore3"/>-->
+                    <!--<include name="checkManSecPic3"/>-->
+                    <!--<include name="checkManMore1"/>-->
+                    <!-- 语音标签页 0218-->
+                    <!--<include name="checkManCall3"/>-->
+                    <!--<include name="checkConversation3"/>-->
+
+
+                    <!-- 我的 -->
+                    <!--<include name="checkMyPersonData3"/>-->
+                    <!--<include name="checkMyPersonData1"/>-->
+                    <!--<include name="checkMyCondition3"/>-->
+                    <!--<include name="checkMyCondition1"/>-->
+                    <!--<include name="checkMyTag1"/>-->
+                    <!--<include name="checkMyTag3"/>-->
+                    <!--<include name="checkAnswerQuestions1入口有问题"/>-->
+                    <!--<include name="checkAnswerQuestions3入口有问题"/>-->
+
+                    <!--<include name="checkMyVisitor3"/>-->
+                    <!--<include name="checkMyIntegrity3"/>-->
+
+                    <!-- 征友-->
+                    <!--<include name="checkInitSearch"/>-->
+                    <!--<include name="checkSeachArea"/>-->
+                    <!--<include name="checkSeachAge"/>-->
+                    <!--<include name="checkSeachHeight"/>-->
+                    <!--<include name="checkSeachAll"/>-->
+
+                    <!-- 会员中心 -->
+                    <include name="checkBean1"/>
+                    <!--<include name="checkBean3"/>
+                    <include name="checkLetter1"/>
+                    <include name="checkLetter3"/>
+                    <include name="checkVIP1"/>
+                    <include name="checkVIP3"/>
+                    <include name="checkVIPList"/>
+                    <include name="checkVIPList3"/>
+                    <include name="checkBeanList1"/>
+                    <include name="checkLetterList1"/>
+                    <include name="checkVipList1"/>
+                    <include name="checkBeanList3"/>
+                    <include name="checkLetterList3"/>
+                    <include name="checkVipList3"/>-->
+                    <!-- 免密支付 -->
+                    <include name="checkBeanMianMi3"/>
+                    <include name="checkLetterMianMi3"/>
+                    <include name="checkVIPMianMi3"/>
+
+                    <!-- 信箱 -->
+                    <!--<include name="checkMailbox1"/>-->
+                    <!--<include name="checkMailboxNum3"/>-->
+                    <!--<include name="checkMailboxNum1"/>-->
+                    <!--<include name="checkMailboxPersonData1"/>-->
+                    <!--<include name="checkManMailboxZone3"/>-->
+                    <!-- 附近 -->
+                    <!--<include name="checkManNear1"/>-->
+                    <!--<include name="checkManNear3"/>-->
+
+                    <!-- 免密开通 -->
+                    <!--<include name="checkLetterMianMi"/>-->
+                    <!--<include name="checkVIPMianMi"/>-->
+                    <!--设置-->
+                    <!--<include name="checkManSecurity"/>-->
+                    <!--<include name="checkManHelp"/>-->
+                    <!--<include name="checkManKeFu"/>-->
+                    <!--<include name="checkManCustomCall"/>-->
+
+                    <!--购买服务-->
+                    <!--<include name="checkManSayHILanjie3"/>-->
+                    <!--<include name="checkManSayHILanjie1"/>-->
+                    <!--<include name="checkManBuyVip3"/>-->
+                    <!--<include name="checkManBuyBean3"/>-->
+                    <!-- 女用户 -->
+                    <!--<include name="checkWomenRegiste1"/>
+                    <include name="checkWomenRegiste3"/>-->
+                    <!--<include name="checkWomenLogin1"/>-->
+                    <!--<include name="checkWomenLogin3"/>-->
+                    <!--<include name="checkWomenMore3"/>-->
+                    <!--<include name="checkWomenMore1"/>-->
+                    <!--<include name="checkWomenMemberCenter3"/>-->
+                    <!--<include name="checkManRegisteNear3"/>-->
+                    <!--<include name="checkWomenSayHi3"/>-->
+                    <!--<include name="checkWomanYuanfenZhuShou3"/>-->
+                    <!--<include name="checkWomenNear3"/>-->
+                    <!--<include name="checkWomenNear1"/>-->
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name ="chrome" preserve-order="true">-->
+    <!--<parameter name="browser" value="chrome" />-->
+    <!--<classes>-->
+    <!--<class name="ptenginecase.Chrome">-->
+    <!--<methods>-->
+    <!--<include name="cnLogin"/>-->
+    <!--&lt;!&ndash;<include name="DCoverview"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="referralmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="searchmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="keywordmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="socialmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="devicemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="osmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="browsermenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="resolutionmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="locationmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="pagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="entrypagemenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="campaignOverviewmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticsmenu"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include name="eventAnalyticstabmenu"/>&ndash;&gt;-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <listeners>
+        <!--&lt;!&ndash;listener class-name="listener.TestngListener"/&ndash;&gt;-->
+        <!--&lt;!&ndash;<listener class-name="listener.ExtentTestNGIReporterListener1"/>&ndash;&gt;-->
+        <listener class-name="com.listener.ExtentTestNGITestListener"/>
+        <!--<listener class-name="com.listener.ExtentTestNGIReporterListener"/>-->
+    </listeners>
+</suite>

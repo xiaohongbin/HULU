@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="美丽约会" parallel="tests" thread-count="2">
+
+    <!--&lt;!&ndash;<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>&ndash;&gt;-->
+    <!--<suite-files>-->
+    <!--<suite-file path="test1.xml"></suite-file>-->
+    <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
+    <!--</suite-files>-->
+    <test name="美丽约会" preserve-order="true">
+        <parameter name="deviceID" value="5TF7N15A17007305"/>
+        <parameter name="app" value="mlyh"/>
+        <classes>
+            <class name="com.mlyh.testcase.testcase">
+                <methods>
+                    <!--<include name="checkProtocal"/>-->
+                    <!--<include name="checkManRegiste1"/>
+                    <include name="checkManRegiste3"/>-->
+                    <!--<include name="checkSayHi"/>
+                    <include name="checkConversation"/>
+                    <include name="checkNotread"/>
+                    <include name="checkUpgraded"/>
+                    <include name="checkAskbtn"/>
+                    <include name="checkOnlineStatus"/>
+                    <include name="checkManMore1"/>
+                    <include name="checkManMore3"/>
+                    <include name="checkManVideo3"/>-->
+                    <!-- 会员中心 -->
+                    <!--<include name="checkVIPList"/>
+                    <include name="checkVIPList3"/>
+                    <include name="checkBeanList1"/>
+                    <include name="checkLetterList1"/>
+                    <include name="checkVipList1"/>
+                    <include name="checkBeanList3"/>
+                    <include name="checkLetterList3"/>
+                    <include name="checkVipList3"/>-->
+                    <!-- 免密开通 -->
+                    <include name="checkBeanMianMi3"/>
+                    <include name="checkLetterMianMi3"/>
+                    <include name="checkVIPMianMi3"/>
+                    <!--<include name="checkAnswerQuestions1"/>
+                    <include name="checkAnswerQuestions3"/>
+                    <include name="checkMyPersonData1"/>
+                    <include name="checkMyPersonData3"/>
+                    <include name="checkMyCondition1"/>
+                    <include name="checkMyTag1"/>
+                    <include name="checkMyVisitor1"/>
+                    <include name="checkMyVisitor3"/>
+                    <include name="checkMyIntegrity1"/>
+                    <include name="checkMyIntegrity3"/>-->
+                    <!--&lt;!&ndash;<美丽约会 无搜索功能，为语聊模块/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkInitSearch"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkSeachArea"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkSeachAge"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkSeachHeight"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkSeachAll"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="checkSeachHello"/>&ndash;&gt;-->
+                    <!--<include name="checkMailbox"/>
+                    <include name="checkMailboxNum1"/>
+                    <include name="checkMailboxPersonData1"/>
+                    <include name="checkManMailboxZone3"/>
+                    <include name="checkManMailboxZonePic3"/>
+                    <include name="checkManNear1"/>
+
+                    <include name="checkWomenRegiste1"/>
+                    <include name="checkWomenRegiste3"/>
+                    <include name="checkWomenLogin1"/>
+                    <include name="checkWomenLogin3"/>
+                    <include name="checkWomenSayHi1"/>
+                    <include name="checkWomenMore1"/>
+                    <include name="checkWomenMore3"/>
+                    &lt;!&ndash;&lt;!&ndash;<include name="checkWomenAdvertisement1"/>&ndash;&gt;&ndash;&gt;
+                    <include name="checkWomenZuanfenZhuShou1"/>
+                    <include name="checkWomenMemberCenter1"/>
+                    <include name="checkWomenMemberCenter3"/>
+                    <include name="checkWomenNear3"/>
+
+                    <include name="checkManRegisteNear3"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <listeners>
+        <!--&lt;!&ndash;listener class-name="listener.TestngListener"/&ndash;&gt;-->
+        <!--&lt;!&ndash;<listener class-name="listener.ExtentTestNGIReporterListener1"/>&ndash;&gt;-->
+        <listener class-name="com.listener.ExtentTestNGITestListener"/>
+        <!--<listener class-name="com.listener.ExtentTestNGIReporterListener"/>-->
+    </listeners>
+</suite>
