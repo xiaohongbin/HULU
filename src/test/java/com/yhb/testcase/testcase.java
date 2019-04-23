@@ -44,7 +44,7 @@ public class testcase extends Driver {
     public void checkManDateAndAnswer() throws Exception{
         YHBCheck yhbCheck=PageFactory.initElements(driver,YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.dateAndAnswer(driver);   //约会问答
 
     }
@@ -53,7 +53,7 @@ public class testcase extends Driver {
     public void checkHome() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
 //        yhbCheck.manLogin();
-//        yhbCheck.clickBtnBack();
+//        yhbCheck.clickBtnLeft();
 //        yhbCheck.keyBack(driver);  //手机的返回按钮
         yhbCheck.homeTab(driver);
 
@@ -63,7 +63,7 @@ public class testcase extends Driver {
     public void checkMessage() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
 //        yhbCheck.manLogin();
-//        yhbCheck.clickBtnBack();
+//        yhbCheck.clickBtnLeft();
 //        yhbCheck.keyBack(driver);  //手机的返回按钮
 
         yhbCheck.messageTab(driver);
@@ -73,7 +73,7 @@ public class testcase extends Driver {
     public void checkCreditRating() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
 //        yhbCheck.manLogin();
-//        yhbCheck.clickBtnBack();
+//        yhbCheck.clickBtnLeft();
 //        yhbCheck.keyBack(driver);  //手机的返回按钮
 
         yhbCheck.creditRating(driver);
@@ -83,7 +83,7 @@ public class testcase extends Driver {
     public void checkPicture() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
 //        yhbCheck.manLogin();
-//        yhbCheck.clickBtnBack();
+//        yhbCheck.clickBtnLeft();
 //        yhbCheck.keyBack(driver);  //手机的返回按钮
 
         yhbCheck.MyPic(driver);
@@ -93,7 +93,7 @@ public class testcase extends Driver {
     public void checkDateRequirements() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
         yhbCheck.DateRequirements(driver);
     }
@@ -101,7 +101,7 @@ public class testcase extends Driver {
     public void checkSelfIntroduction() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
 
         yhbCheck.selfIntroduction(driver);
@@ -111,44 +111,39 @@ public class testcase extends Driver {
     public void checkQuestionAndAnswerGame() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
 
         yhbCheck.questionAndAnswerGame(driver);
     }
-
+    @Test(description = "1线男 会员中心购买项")
+    public void checkVIPList() throws Exception {
+        YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
+        yhbCheck.VIP(driver);
+    }
     @Test(description = "男用户-会员中心-豆币")
     public void checkBeanPrice1() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
-        yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
-        yhbCheck.keyBack(driver);  //手机的返回按钮
+        yhbCheck.beanList1(driver);
 
-        yhbCheck.beanPrice1(driver);
     }
 
     @Test(description = "男用户-会员中心-写信包月")
     public void checkLetterPrice1() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
-        yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
-        yhbCheck.keyBack(driver);  //手机的返回按钮
-        yhbCheck.letterPrice1(driver);
+        yhbCheck.letterList1(driver);
     }
     @Test(description = "男用户-会员中心-VIP")
     public void checkVipPrice1() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
-        yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
-        yhbCheck.keyBack(driver);  //手机的返回按钮
-        yhbCheck.VipPrice1(driver);
+        yhbCheck.vipList1(driver);
     }
 
    /* @Test(description = "男用户-会员中心-收信宝")
     public void checkReceiveLetterPrice1() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
         yhbCheck.receiveLetterPrice1(driver);
     }*/
@@ -157,7 +152,7 @@ public class testcase extends Driver {
     public void checkMiguList1()throws Exception{
         YHBCheck yhbCheck=PageFactory.initElements(driver,YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
         yhbCheck.migu(driver);
     }
@@ -166,7 +161,7 @@ public class testcase extends Driver {
     public void checkResetPwd() throws Exception {
         YHBCheck yhbCheck = PageFactory.initElements(driver, YHBCheck.class);
         yhbCheck.manLogin();
-        yhbCheck.clickBtnBack();
+        yhbCheck.clickBtnLeft();
         yhbCheck.keyBack(driver);  //手机的返回按钮
         yhbCheck.resetPwd(driver);
 

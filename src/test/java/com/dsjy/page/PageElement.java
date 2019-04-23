@@ -1,35 +1,36 @@
 package com.dsjy.page;
 
+import com.hulu.check.publicCheck;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class PageElement {
+public class PageElement extends publicCheck {
 
     //  通用
     //    上方加载信息
     @FindBy(id = "com.huizheng.lasq:id/header_content")
     @CacheLookup
     public WebElement header_content;
-    //    左上角返回
+ /*  公共 //    左上角返回
     @FindBy(id = "com.huizheng.lasq:id/btn_left")
     @CacheLookup
-    public WebElement btn_left;
+    public WebElement btn_left;*/
     //    模块title
     @FindBy(id = "com.huizheng.lasq:id/id_topview")
     @CacheLookup
     public WebElement topview;
-    //    上方私信关闭
+/*  公共  //    上方私信关闭
     @FindBy(id = "com.huizheng.lasq:id/msg_close")
     @CacheLookup
-    public WebElement msg_close;
+    public WebElement msg_close;*/
     //    取消按钮
     @FindBy(id = "com.huizheng.lasq:id/btn_cancel")
     @CacheLookup
     public WebElement btn_cancel;
-    //    确认
+/*  公共  //    确认
     @FindBy(id = "com.huizheng.lasq:id/btn_ok")
     @CacheLookup
     public WebElement btn_ok;
@@ -38,36 +39,17 @@ public class PageElement {
     @CacheLookup
     public WebElement title_name;
 
-    //5.5.9新增页面,注册页合理化
-    @FindBy(id="com.huizheng.lasq:id/btn_reg_dialog_reg")
-    @CacheLookup
-    public WebElement btn_reg_dialog_reg;
-
-    //5.5.9新增页面,缘分页超级曝光页
-    @FindBy(id="com.huizheng.lasq:id/iv_speed_top")
-    @CacheLookup
-    public WebElement speed_top;
-    @FindBy(id="com.huizheng.lasq:id/speed_dialog_title")
-    @CacheLookup
-    public WebElement speed_dialog_title;//免费获得×10倍加速推荐，快来领!
-    @FindBy(id="com.huizheng.lasq:id/iv_speed_item_image")
-    @CacheLookup
-    public List<WebElement> speed_item_image;//头像列表
-    @FindBy(id="com.huizheng.lasq:id/btn_speed")
-    @CacheLookup
-    public WebElement btn_speed;//立即领取
-
     //    1线下方5个模块
     @FindBy(className = "android.widget.RadioButton")
     @CacheLookup
     public List<WebElement> mokuai;
 
     //    注册页面
-//    一键注册
+ //    一键注册
     @FindBy(id = "com.huizheng.lasq:id/login_regist_button")
     @CacheLookup
     public WebElement btn_reg;
-    //    我是男
+  //    我是男
     @FindBy(id = "com.huizheng.lasq:id/btn_men")
     @CacheLookup
     public WebElement btn_men;
@@ -78,7 +60,7 @@ public class PageElement {
     //    直接登录
     @FindBy(id = "com.huizheng.lasq:id/btn_login")
     @CacheLookup
-    public WebElement login;
+    public WebElement login;*/
     //    女用户招呼关键开启按钮
     @FindBy(id = "com.huizheng.lasq:id/msg_manager_ok")
     @CacheLookup
@@ -99,38 +81,38 @@ public class PageElement {
     @FindBy(id="com.huizheng.lasq:id/btn_protocal")
     @CacheLookup
     public WebElement btn_protocol;
+    /* 公共
+        //    1线男 注册后第一个提示，上传照片
+        @FindBy(id="com.huizheng.lasq:id/upload_user_icon_image")
+        @CacheLookup
+        public WebElement upload_user_icon_image;
 
-    //    1线男 注册后第一个提示，上传照片
-    @FindBy(id="com.huizheng.lasq:id/upload_user_icon_image")
-    @CacheLookup
-    public WebElement upload_user_icon_image;
 
-
-    //    环境修改
-//    地址修改
-    @FindBy(id = "com.huizheng.lasq:id/tv_test_address")
-    @CacheLookup
-    protected WebElement address;
-    //    服务端环境
-    @FindBy(id = "com.huizheng.lasq:id/rv_test_env")
-    @CacheLookup
-    public WebElement test_env;
-    //    product环境
-    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.TextView[1]")
-    @CacheLookup
-    public WebElement product;
+        //    环境修改
+    //    地址修改
+        @FindBy(id = "com.huizheng.lasq:id/tv_test_address")
+        @CacheLookup
+        protected WebElement address;
+      //    服务端环境
+        @FindBy(id = "com.huizheng.lasq:id/rv_test_env")
+        @CacheLookup
+        public WebElement test_env;
+        //    product环境
+        @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.TextView[1]")
+        @CacheLookup
+        public WebElement product;*/
     //    huluprep
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.TextView[3]")
     @CacheLookup
     public WebElement huluprep;
-    //    渠道号
+  /* 公共 //    渠道号
     @FindBy(id = "com.huizheng.lasq:id/et_test_fid")
     @CacheLookup
     public WebElement qudao;
     //    保存
     @FindBy(id = "com.huizheng.lasq:id/btn_test_save")
     @CacheLookup
-    public WebElement btn_test_save;
+    public WebElement btn_test_save;*/
 
     //    女用户提示注册成功提示
     @FindBy(id = "com.huizheng.lasq:id/btn_i_know")
@@ -145,16 +127,6 @@ public class PageElement {
     @FindBy(id = "com.huizheng.lasq:id/tv_name")
     @CacheLookup
     public List<WebElement> tv_nickname;
-
-    //5.5.9新需求，缘分页新页面，三列，渠道120220
-    //打招呼按钮
-    @FindBy(id = "com.huizheng.lasq:id/iv_action")
-    @CacheLookup
-    public List<WebElement> iv_action;
-    //女用户头像右下角年龄数字元素
-    @FindBy(id = "com.huizheng.lasq:id/tv_age")
-    @CacheLookup
-    public List<WebElement> tv_age;
 
     //  缘分页 用户左上角打招呼
     @FindBy(id = "com.huizheng.lasq:id/iv_say")
@@ -331,13 +303,11 @@ public class PageElement {
     @CacheLookup
     public WebElement ok;
     //    私信上未读的标记
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[2]")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[2]")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[2]")
 //    @CacheLookup
     public WebElement letter_num;
     //    下方信箱上未读标记
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.TextView")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.TextView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.TextView")
 //    @CacheLookup
     public WebElement mailbox_num;
     //    立即查看 私信按钮
@@ -353,18 +323,15 @@ public class PageElement {
     @CacheLookup
     public WebElement personal_data;
     //    通知标签
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
     @CacheLookup
     public WebElement tongzhi;
     //    私信标签
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[1]")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[1]")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView[1]")
     @CacheLookup
     public WebElement sixin;
     //    最近联系标签
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.TextView")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.TextView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.TextView")
     @CacheLookup
     public WebElement lianxi;
     //    私信里 的 用户头像
@@ -422,9 +389,8 @@ public class PageElement {
     @CacheLookup
     public WebElement nearthing;
     //    身边人
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
 //    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.TextView")
     @CacheLookup
     public WebElement nearpeople;
     //    身边人头像
@@ -441,11 +407,11 @@ public class PageElement {
     public List<WebElement> nearage;
 
 
-    //    我的
+/*  公共  //    我的
 //    会员中心按钮
     @FindBy(id = "com.huizheng.lasq:id/left_member_center")
     @CacheLookup
-    public WebElement member_center;
+    public WebElement member_center;*/
     //    资料按钮
     @FindBy(id = "com.huizheng.lasq:id/right_member_info")
     @CacheLookup
@@ -645,7 +611,7 @@ public class PageElement {
 
 
     //  会员中心页面
-//    豆币
+/*公共//    豆币
     @FindBy(id = "com.huizheng.lasq:id/member_center_bean_title")
     @CacheLookup
     public WebElement bean;
@@ -655,7 +621,7 @@ public class PageElement {
     @CacheLookup
     public WebElement btn_rigth;
 
-    //    自动续费
+  //    自动续费
     @FindBy(xpath = "//android.view.View[@content-desc=\"自动续费再减10元\"]")
 //    @CacheLookup
     public WebElement xufei;
@@ -667,15 +633,15 @@ public class PageElement {
     //    800语音豆
     @FindBy(xpath = "//android.view.View[@content-desc=\"0.1元/豆\"]")
     @CacheLookup
-    public WebElement bean800;
+    public WebElement bean800;*/
 //    //    800语音豆价格
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"0.16元/豆\"]")
 //    @CacheLookup
 //    public WebElement bean800price;
-    //    550语音豆
+ /* 公共  //    550语音豆
     @FindBy(xpath = "//android.view.View[@content-desc=\"0.16元/豆\"]")
     @CacheLookup
-    public WebElement bean550;
+    public WebElement bean550;*/
 //    //    550语音豆价格
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"共￥89\"]")
 //    @CacheLookup
@@ -698,7 +664,7 @@ public class PageElement {
 //    @CacheLookup
 //    public WebElement bean550price_3;
 
-    //    800优惠价额
+ /*  公共 //    800优惠价额
     @FindBy(xpath = "//android.view.View[@content-desc=\"已优惠:-10元合计:￥89\"]")
 //    @CacheLookup
     public WebElement youhuijiage800;
@@ -713,9 +679,9 @@ public class PageElement {
     //    550原价
     @FindBy(xpath = "//android.view.View[@content-desc=\"合计:￥89\"]")
 //    @CacheLookup
-    public WebElement yuanjia550;
+    public WebElement yuanjia550;*/
 
-    //    写信包月详情
+ /* 公共  //    写信包月详情
     //    写信包月
     @FindBy(id = "com.huizheng.lasq:id/member_write_letters_layout")
     @CacheLookup
@@ -727,7 +693,7 @@ public class PageElement {
     //    90天会员
     @FindBy(xpath = "//android.view.View[@content-desc=\"1.2元/天\"]")
     @CacheLookup
-    public WebElement letter90;
+    public WebElement letter90;*/
 //    //   3线 90天会员
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"90天畅聊会员 超值\"]")
 //    @CacheLookup
@@ -740,10 +706,10 @@ public class PageElement {
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"￥109\"]")
 //    @CacheLookup
 //    public WebElement letter90price_3;
-    //    30天会员
+ /* 公共  //    30天会员
     @FindBy(xpath = "//android.view.View[@content-desc=\"2.9元/天\"]")
     @CacheLookup
-    public WebElement letter30;
+    public WebElement letter30;*/
 //    //    3线 30天会员
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"30天畅聊会员\"]")
 //    @CacheLookup
@@ -756,10 +722,10 @@ public class PageElement {
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"￥89\"]")
 //    @CacheLookup
 //    public WebElement letter30price_3;
-    //    7天会员
+ /*  公共 //    7天会员
     @FindBy(xpath = "//android.view.View[@content-desc=\"9.8元/天\"]")
     @CacheLookup
-    public WebElement letter7;
+    public WebElement letter7;*/
 //    //    3线 7天会员
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"7天畅聊会员\"]")
 //    @CacheLookup
@@ -772,7 +738,7 @@ public class PageElement {
 //    @FindBy(xpath = "//android.view.View[@content-desc=\"￥69\"]")
 //    @CacheLookup
 //    public WebElement letter7price_3;
-    //    90优惠价额
+/*  公共  //    90优惠价额
     @FindBy(xpath = "//android.view.View[@content-desc=\"已优惠:-10元合计:￥99\"]")
 //    @CacheLookup
     public WebElement youhuijiage90;
@@ -795,10 +761,10 @@ public class PageElement {
     //    7原价
     @FindBy(xpath = "//android.view.View[@content-desc=\"合计:￥69\"]")
 //    @CacheLookup
-    public WebElement yuanjia7;
+    public WebElement yuanjia7;*/
 
     //    星级服务详情
-    //    星级服务
+ /* 公共  //    星级服务
     @FindBy(id = "com.huizheng.lasq:id/member_center_vip_title")
     @CacheLookup
     public WebElement vip_title;
@@ -829,7 +795,7 @@ public class PageElement {
     //    30vip原价
     @FindBy(xpath = "//android.view.View[@content-desc=\"合计:￥50\"]")
 //    @CacheLookup
-    public WebElement yuanjia_vip30;
+    public WebElement yuanjia_vip30;*/
 
     //    收信宝
     @FindBy(id = "com.huizheng.lasq:id/member_center_receive_letter_layout")
@@ -876,7 +842,7 @@ public class PageElement {
     @FindBy(id = "com.huizheng.lasq:id/tv_member_center_migu_title")
     @CacheLookup
     public WebElement migu;
-    //    立即开通
+/* 公共   //    立即开通
     @FindBy(xpath = "//android.view.View[@content-desc=\"立即开通\"]")
 //    @CacheLookup
     public WebElement kaitong;
@@ -890,7 +856,7 @@ public class PageElement {
     @FindBy(xpath = "//android.view.View[@content-desc=\"银联支付\"]")
     @CacheLookup
     public WebElement yinlianpay;
-
+*/
 
     //    设置页面
 //    设置页面 用户信息
@@ -985,10 +951,6 @@ public class PageElement {
     public WebElement aliback;
 
 //   支付按钮
-
-    @FindBy(id = "com.alipay.mobile.nebula:id/h5_tv_title")//支付宝免密支付、支付宝付款
-    @CacheLookup
-    public WebElement mianmititle;
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"同意协议并开通\"]")
     @CacheLookup
     public WebElement agree;
@@ -1001,10 +963,6 @@ public class PageElement {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout")
     @CacheLookup
     public WebElement alipaynow;
-
-    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"完成\"]")
-    @CacheLookup
-    public WebElement wancheng;
 
     //    支付成功页面关闭
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"返回\"]")
@@ -1023,8 +981,7 @@ public class PageElement {
     @CacheLookup
     public WebElement alipayback;
     //    支付宝支付提示
-    @FindBy(id = "com.alipay.mobile.nebula:id/h5_tv_title")
-//    @FindBy(xpath = "//android.widget.Button[@content-desc=\"确认开通并支付\"]")
+    @FindBy(xpath = "//android.widget.Button[@content-desc=\"确认开通并支付\"]")
     @CacheLookup
     public WebElement alisure;
 
@@ -1194,21 +1151,11 @@ public class PageElement {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
     @CacheLookup
     public WebElement near1;
-    //附近头像列表元素
-    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
-    @CacheLookup
-    public List<WebElement> touxiang;
 
-//    3线男 附近模块 第一个女用户头像
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
-//    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
+//    3线 附近模块 附近
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
     @CacheLookup
     public WebElement near;
-    //三线女 附件模块 男用户头像列表元素
-    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TabHost/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout[1]/android.widget.ImageView")
-    @CacheLookup
-    public List<WebElement> mantouxiang;
-
 
 
 

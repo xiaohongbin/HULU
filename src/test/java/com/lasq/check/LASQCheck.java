@@ -105,9 +105,9 @@ public class LASQCheck extends ElementMethod {
         this.clickRegister();
         this.clickMen();
         this.clickBtnok();
-        if(this.doesWebElementExist(btn_reg_dialog_reg)){
-            this.clickLijireg();
-        }
+//        if(this.doesWebElementExist(btn_reg_dialog_reg)){
+////            this.clickLijireg();
+////        }
         this.waitElement(driver, btn_left);
 //        this.waitElement(driver,title_name);
         this.clickBtnLeft();
@@ -115,11 +115,11 @@ public class LASQCheck extends ElementMethod {
         this.clickBtnLeft();
         //5.5.9新新需求，双号弹出超级曝光页面
         log.info("判断5.5.9新需求，一线城市超级曝光页是否弹出");
-//        if(this.doesWebElementExist(speed_dialog_title)){
-//            Assert.fail("一线城市弹出超级曝光页面");
-////            this.clickBtnSpeed();
-//        }
-//        this.waitElement(driver, topview);
+        if(this.doesWebElementExist(speed_dialog_title)){
+            Assert.fail("一线城市弹出超级曝光页面");
+//            this.clickBtnSpeed();
+        }
+        this.waitElement(driver, topview);
         log.info("判断是否进入缘分模块");
         if (!this.doesWebElementExist(mokuai.get(0))) {
             Assert.fail("登录成功后，未进入缘分模块");

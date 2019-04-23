@@ -19,25 +19,26 @@ import java.util.Random;
 public class ElementMethod extends PageElement {
     ExtentTestNGITestListener el = new ExtentTestNGITestListener();
     ExtentTest log = el.getlog();
+    /*公共
 
+        //    注册页面
+    //   注册按钮或确定按钮
+        public void clickBtnRegister() {
+            log.info("点击注册按钮");
+            btn_register.click();
+        }
 
-    //    注册页面
-//   注册按钮或确定按钮
-    public void clickBtnRegister() {
-        log.info("点击注册按钮");
-        btn_register.click();
-    }
-//注册点击男用户头像
-    public void clickBtnMen() {
-        log.info("选择男用户头像");
-        btn_men.click();
-    }
+        //注册点击男用户头像
+        public void clickBtnMen() {
+            log.info("选择男用户头像");
+            btn_men.click();
+        }
     //注册点击女用户头像
     public void clickBtnWomen() {
         log.info("选择女用户头像");
         btn_women.click();
     }
-
+*/
 //登陆按钮
     public void clickBtnLogin() {
         log.info("点击登陆按钮");
@@ -48,12 +49,14 @@ public class ElementMethod extends PageElement {
         }
 
     }
-
+/*
+公共
     //设置登录密码
     public void setPwd() {
         log.info("设置登录密码");
         id_edittext_phone.sendKeys("QWE123");
     }
+
 
     //    确定按钮
     public void clickBtnOk() {
@@ -68,7 +71,7 @@ public class ElementMethod extends PageElement {
         }
 
     }
-
+*/
 
     //本地照片上传
     public void uploadLocalhostImage() {
@@ -98,7 +101,7 @@ public class ElementMethod extends PageElement {
         System.out.println("选择第三张照片");
     }
 
-    //拍照
+ /* 公共  //拍照
     public void clickPhotos() {
         upload_user_icon_take_photos.click();
     }
@@ -118,18 +121,20 @@ public class ElementMethod extends PageElement {
         log.info("点击确定按钮");
         btn_right.click();
     }
-
+*/
     //确定按钮文本
     public String confirmContent() {
         log.info("选中照片后"+btn_right.getText());
         return btn_right.getText();
     }
-
+/*
+公共
 //    点击下一步
     public void clickNextStep() {
         log.info("点击下一步");
         next_step.click();
     }
+
 
     //    女用户注册，录音
     public void clickAudio(AndroidDriver driver){
@@ -165,7 +170,7 @@ public class ElementMethod extends PageElement {
         log.info("开启约会管家");
         msg_manager_ok.click();
     }
-
+*/
     //我的是否存在
     public boolean topMe() {
         return doesWebElementExist(top_me);
@@ -179,7 +184,8 @@ public class ElementMethod extends PageElement {
     }
 
 
-
+/*
+公共
     //返回
     public void clickBtnBack() {
         log.info("点击返回按钮");
@@ -192,6 +198,7 @@ public class ElementMethod extends PageElement {
         return title_name.getText();
 
     }
+*/
 
     //注册手机号认证弹框-取消
     public void btn_pv_dialog_yuanfen_1() {
@@ -224,13 +231,15 @@ public class ElementMethod extends PageElement {
     }
 
 
-
+/*
+公共
     //   ---- 注册后约会问答
     //点击第一个问题答案
     public void askInfo() {
         log.info("选择第一个答案："+askInfo.getText());
         askInfo.click();
     }
+*/
 
 //---------------注册后完善个人信息
 
@@ -498,12 +507,12 @@ public class ElementMethod extends PageElement {
         Assert.assertEquals(info_content.get(10).getText(),"结交知己","约会目的保存不正确");
         log.info("约会目的保存正确："+info_content.get(10).getText());
     }
-    //点击左上角的我的
+   /*公共 //点击左上角的我的
     public void clickTopMe() {
         log.info("点击左上角的我的");
         top_me_layout.click();
     }
-
+*/
     //点击九宫格-约会信息
     public void clickBodyItem_9() {
         log.info("点击九宫格-约会信息");
@@ -757,26 +766,27 @@ public class ElementMethod extends PageElement {
         log.info("问答游戏-问题答案："+answer.getText());
         return answer.getText();
     }
+    /* 公共
+       //----------------会员中心
+       public void body_item_8() {
+           log.info("进入会员中心");
+           body_item_8.click();
+       }
 
-    //----------------会员中心
-    public void body_item_8() {
-        log.info("进入会员中心");
-        body_item_8.click();
-    }
-    public void clickReload() {
-        log.info("点击右上角刷新/跳过");
-        reload.click();
-    }
-    public void clickBean() {
+      public void clickReload() {
+           log.info("点击右上角刷新/跳过");
+           reload.click();
+       }
+      public void clickBean() {
         log.info("刷新页面");
         bean.click();
-    }
+      }
 
 
-    public void clickBean550() {
+     public void clickBean550() {
         log.info("点击550语音豆");
         bean550.click();
-    }
+     }
 
     public String getBean550Price() {
         log.info("获取550语音豆价格");
@@ -794,12 +804,13 @@ public class ElementMethod extends PageElement {
         log.info("点击写信包月");
         write_letters.click();
     }
-
+*/
     public void clickLetterVip() {
         log.info("点击3天vip9元购");
         letter_vip.click();
     }
-
+/*
+公共
     public void clickLetter90() {
         log.info("点击90天会员");
         letter90.click();
@@ -809,6 +820,7 @@ public class ElementMethod extends PageElement {
         log.info("获取90天会员价格");
         return letter90price.getAttribute("name");
     }
+
 
     public void clickLetter30() {
         log.info("点击30天会员");
@@ -820,6 +832,7 @@ public class ElementMethod extends PageElement {
         return letter30price.getAttribute("name");
     }
 
+
     public void clickLetter7() {
         log.info("点击7天会员");
         letter7.click();
@@ -830,10 +843,12 @@ public class ElementMethod extends PageElement {
         return letter7price.getAttribute("name");
     }
 
+
     public void vipClick() {
         log.info("点击vip");
         vip.click();
     }
+
     public void clickVip90() {
         log.info("点击90天vip");
         vip90.click();
@@ -845,6 +860,7 @@ public class ElementMethod extends PageElement {
         return vip90.getAttribute("name");
     }
 
+
     public void clickVip30() {
         log.info("点击30天vip");
         vip30.click();
@@ -854,6 +870,8 @@ public class ElementMethod extends PageElement {
         log.info("获取30天vip价格");
         return vip30.getAttribute("name");
     }
+
+    */
 /*
     public void clickReceiveLetter() {
         log.info("点击收信宝");
@@ -911,13 +929,13 @@ public class ElementMethod extends PageElement {
         log.info("点击立即付款");
         TouchAction action = new TouchAction(driver);
         action.tap(490, 1670).perform();
-    }*/
+    }
 
     public void clickKaiTong() {
         log.info("点击立即开通");
         kaitong.click();
     }
-
+*/
     public void clickMigu() {
         log.info("点击咪咕");
         migu.click();
@@ -1035,7 +1053,7 @@ public class ElementMethod extends PageElement {
         TouchAction action1 = new TouchAction(driver).press(width / 2, height / 4).waitAction(duration).moveTo(width / 2, height * 3 / 4).release();
         action1.perform();
     }
-
+/*  公共
     public void swipeToUp(AndroidDriver driver) {
         log.info("向上滑动屏幕");
         Duration duration = Duration.ofSeconds(1);
@@ -1043,7 +1061,7 @@ public class ElementMethod extends PageElement {
         int height = driver.manage().window().getSize().height;
         TouchAction action1 = new TouchAction(driver).press(width / 2, height*3/4).waitAction(duration).moveTo(width / 2, height/4).release();
         action1.perform();
-    }
+    }*/
 
     public void swipeToUpSecend(AndroidDriver driver,int x, int y,int y1) {
         log.info("小范围向上滑动屏幕");
@@ -1052,6 +1070,12 @@ public class ElementMethod extends PageElement {
         int height = driver.manage().window().getSize().height;
         TouchAction action1 = new TouchAction(driver).press(x, y).waitAction(duration).moveTo(x, y1).release();
         action1.perform();
+    }
+
+/*  公共
+     public void keyBack(AndroidDriver driver) {
+        log.info("点击物理返回键");
+        driver.pressKeyCode(AndroidKeyCode.BACK);
     }
 
     public String getCurrentActivity(AndroidDriver driver) {
@@ -1068,15 +1092,12 @@ public class ElementMethod extends PageElement {
         }
     }
 
-    public void keyBack(AndroidDriver driver) {
-        log.info("点击物理返回键");
-        driver.pressKeyCode(AndroidKeyCode.BACK);
-    }
+
 
     public void waitElement(AndroidDriver driver, WebElement webelement) throws Exception {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.elementToBeClickable(webelement));
     }
 
-
+*/
 }

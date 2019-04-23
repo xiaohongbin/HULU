@@ -6,7 +6,6 @@ import com.listener.ExtentTestNGITestListener;
 import com.listener.WriteUserID;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class JPCheck extends ElementMethod {
     ExtentTestNGITestListener el = new ExtentTestNGITestListener();
@@ -30,9 +29,9 @@ public class JPCheck extends ElementMethod {
         Thread.sleep(2000);
         this.clickMonitor(driver);
         this.clickTestEnv();
-        this.clickProduct();
+//        this.clickProduct();
 //        this.clickTestEnv();
-//        this.clickHuluprep();
+        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.info("渠道号：" + qudaohao);
 //        this.clickAddress();
@@ -46,6 +45,9 @@ public class JPCheck extends ElementMethod {
 //        log.pass("城市：广州");
         this.clickMen();
         this.clickBtnok();
+        if(this.doesWebElementExist(btn_reg_dialog_reg)){
+            this.clickLijireg();
+        }
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
         this.waitElement(driver, btn_left);
@@ -72,9 +74,9 @@ public class JPCheck extends ElementMethod {
         this.clickMonitor(driver);
 //        修改测试环境
         this.clickTestEnv();
-        this.clickProduct();
+//        this.clickProduct();
 //        this.clickTestEnv();
-//        this.clickHuluprep();
+        this.clickHuluprep();
 //        修改渠道
         this.updateQuDao(qudaohao);
         log.info("渠道号：" + qudaohao);
@@ -89,6 +91,9 @@ public class JPCheck extends ElementMethod {
         this.clickRegister();
         this.clickMen();
         this.clickBtnok();
+        if(this.doesWebElementExist(btn_reg_dialog_reg)){
+            this.clickLijireg();
+        }
         this.waitElement(driver, title_name);
         if (!this.getTitleName().contains("附近")) {
             Assert.fail("三线男 注册后，未进入“附近”页面");

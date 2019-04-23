@@ -38,6 +38,25 @@ public class PageElement {
     @CacheLookup
     public WebElement title_name;
 
+    //5.5.9新增页面,注册页合理化
+    @FindBy(id="com.huizheng.lasq:id/btn_reg_dialog_reg")
+    @CacheLookup
+    public WebElement btn_reg_dialog_reg;
+
+    //5.5.9新增页面,缘分页超级曝光页
+    @FindBy(id="com.huizheng.lasq:id/iv_speed_top")
+    @CacheLookup
+    public WebElement speed_top;
+    @FindBy(id="com.huizheng.lasq:id/speed_dialog_title")
+    @CacheLookup
+    public WebElement speed_dialog_title;//免费获得×10倍加速推荐，快来领!
+    @FindBy(id="com.huizheng.lasq:id/iv_speed_item_image")
+    @CacheLookup
+    public List<WebElement> speed_item_image;//头像列表
+    @FindBy(id="com.huizheng.lasq:id/btn_speed")
+    @CacheLookup
+    public WebElement btn_speed;//立即领取
+
     //    注册页面
 //    一键注册
     @FindBy(id = "com.huizheng.lasq:id/login_regist_button")

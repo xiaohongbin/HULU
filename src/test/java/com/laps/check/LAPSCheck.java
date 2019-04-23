@@ -1,9 +1,11 @@
 package com.laps.check;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.hulu.check.publicCheck;
 import com.laps.method.ElementMethod;
 import com.listener.ExtentTestNGITestListener;
 import com.listener.WriteUserID;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 
@@ -11,6 +13,7 @@ public class LAPSCheck extends ElementMethod {
     ExtentTestNGITestListener el = new ExtentTestNGITestListener();
     ExtentTest log = el.getlog();
     WriteUserID wui=new WriteUserID();
+//    publicCheck publiccheck =new publicCheck();
 
     public void protocol() throws Exception {
         this.clickProtocol();
@@ -24,81 +27,78 @@ public class LAPSCheck extends ElementMethod {
     }
 
     //    3线男注册
-    public String manRegiste3(AndroidDriver driver, String qudaohao) throws Exception {
+    public void manRegiste3(AndroidDriver driver, String qudaohao) throws Exception {
         this.clickLogin();
         Thread.sleep(2000);
+        this.oneClickRegister();
         this.clickMonitor(driver);
-        this.clickTestEnv();
-        this.clickProduct();
+//        this.clickTestEnv();
+//        this.clickProduct();
 //        this.clickTestEnv();
 //        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         this.clickAddress();
-        this.swipeAddress(driver);
+        this.swipeAddress3(driver);
         this.clickBtnok();
         String address=this.getAddress();
-        log.pass(address);
+        System.out.println("3线所在地："+address);
         this.clickSave();
-        this.clickRegister();
         this.clickMen();
         this.clickBtnok();
-        if(this.doesWebElementExist(btn_reg_dialog_reg)){
-            this.clickLijireg();
+        if (!this.doesWebElementExist(rv_reg_dialog_height)) {
+            Assert.fail("男用户注册，未提示基本资料");
         }
+
+        this.clickLijireg();
         this.waitElement(driver, title_name);
+        log.info("判断3线男注册，是否进入“附近”");
         if (!this.getTitleName().contains("附近")) {
             Assert.fail("三线男 注册后，未进入“附近”页面");
         }
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
-        //5.5.9新新需求，双号弹出超级曝光页面
-        log.info("判断新需求，超级曝光页是否弹出");
-        if(this.doesWebElementExist(speed_dialog_title)){
+        if(this.doesWebElementExist(btn_speed)){
             this.clickBtnSpeed();
         }
-        this.waitElement(driver, mokuai.get(0));
-//        log.info("判断是否进入缘分模块");
-//        if (!this.getTopView().equals("缘分")) {
-//            Assert.fail("登录成功后，未进入缘分模块");
-//        }
+
+        log.info("判断是否进入缘分模块");
+        this.waitElement(driver, topview);
+        if (!this.getTopView().equals("缘分")) {
+            Assert.fail("登录成功后，未进入缘分模块");
+        }
+        log.info("登录成功后，进入缘分模块");
         if (this.doesWebElementExist(msg_close)) {
             this.clickMsgClose();
         }
-        String userid=this.getUserID(driver);
-        wui.appendFile("E:\\LAPS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
-        log.pass(userid);
+        /*
         this.clickBtnLeft();
         this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        return userid;
+        this.clickYuanFenIcon();*/
     }
 
     //    1线男注册
-    public String manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
+    public void manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
         this.clickLogin();
         Thread.sleep(2000);
+        this.oneClickRegister();
         this.clickMonitor(driver);
-        this.clickTestEnv();
-        this.clickProduct();
+//        this.clickTestEnv();
+//        this.clickProduct();
 //        this.clickTestEnv();
 //        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.pass("渠道号：" + qudaohao);
-//        this.clickAddress();
+        this.clickAddress();
 //        this.swipeAddress(driver);
-//        this.clickBtnok();
+        this.clickBtnok();
         String address=this.getAddress();
-        log.pass(address);
+        System.out.println("1线所在地："+address);
         this.clickSave();
-        this.clickRegister();
         this.clickMen();
         this.clickBtnok();
-        if(this.doesWebElementExist(btn_reg_dialog_reg)){
-            this.clickLijireg();
+        if (!this.doesWebElementExist(upload_user_icon_image)) {
+            Assert.fail("1线男用户注册，第一个页面未提示上传头像");
         }
-//        if (!this.doesWebElementExist(upload_user_icon_image)) {
-//            Assert.fail("1线男用户注册，第一个页面未提示上传头像");
-//        }
         this.waitElement(driver, btn_left);
         this.clickBtnLeft();
         this.waitElement(driver, title_name);
@@ -114,130 +114,60 @@ public class LAPSCheck extends ElementMethod {
         if (this.doesWebElementExist(msg_close)) {
             this.clickMsgClose();
         }
-        String userid=this.getUserID(driver);
-        wui.appendFile("E:\\LAPS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
-        log.pass(userid);
-        this.clickBtnLeft();
-        this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        return userid;
+
     }
 
     //      一线男 缘分页打招呼
     public void manSayHi1(AndroidDriver driver, String qudaohao) throws Exception {
-        String userid = this.manRegiste1(driver, qudaohao);
-        Integer user = new Integer(userid);
-//        int user1 = Integer.parseInt(userid);
-        log.info("判断注册ID号是否为双号");//针对双号策略生效
-        if(user%2==0){
-            if(!this.doesWebElementExist(tv_age.get(0))){
-                Assert.fail("双号没有展示缘分页三列女用户策略");
-            }
-            this.waitElement(driver,iv_action.get(0));
-            this.clickIVAction();
-            String  age = this.getTVAge();
-            this.clickIVUser();
-            if (this.doesWebElementExist(tips)) {
-                this.clickMonitor1(driver);
-            }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-            this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.manRegiste1(driver, qudaohao);
+        this.waitElement(driver, iv_sayhi.get(0));
+        this.clickTVSayHello();
+        String name = this.getTVNickName();
+        this.clickIVUser();
+        if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
-            this.waitElement(driver, user_name_text);
-            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
-            if (this.doesWebElementExist(ask_button)) {
-                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
-            }
-            log.info("判断 点击头像进入空间后，年龄是否一致");
-            if (this.getMemberInfoText().contains(age)) {
-                this.clickLeftBtn();
-            } else {
-                Assert.fail("点击头像进入空间后，用户年龄不一致");
-            }
-        }else{
-            this.waitElement(driver, iv_sayhi.get(0));
-            this.clickTVSayHello();
-            String name = this.getTVNickName();
-            this.clickIVUser();
-            if (this.doesWebElementExist(tips)) {
-                this.clickMonitor1(driver);
-            }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-            this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-            this.clickMonitor1(driver);
-            this.waitElement(driver, user_name_text);
-            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
-            if (this.doesWebElementExist(ask_button)) {
-                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
-            }
-            log.info("判断 点击头像进入空间后，姓名是否一致");
-            if (name.equals(this.getUserNameText())) {
-                this.clickLeftBtn();
-            } else {
-                Assert.fail("点击头像进入空间后，用户姓名不一致");
-            }
         }
-
+//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+        this.waitElementLoad(driver, piccount);
+//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.clickMonitor1(driver);
+        this.waitElement(driver, user_name_text);
+        log.info("判断打招呼后，进入空间，是否无打招呼按钮");
+        if (this.doesWebElementExist(ask_button)) {
+            Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
+        }
+        log.info("判断 点击头像进入空间后，姓名是否一致");
+        if (name.equals(this.getUserNameText())) {
+            this.clickLeftBtn();
+        } else {
+            Assert.fail("点击头像进入空间后，用户姓名不一致");
+        }
     }
-    //      三线男 缘分页打招呼
+    //      一线男 缘分页打招呼
     public void manSayHi3(AndroidDriver driver, String qudaohao) throws Exception {
-        String userid = this.manRegiste3(driver, qudaohao);
-        Integer user = new Integer(userid);
-//        int user1 = Integer.parseInt(userid);
-        log.info("判断注册ID号是否为双号");//针对双号策略生效
-        if(user%2==0){
-            if(!this.doesWebElementExist(tv_age.get(0))){
-                Assert.fail("双号没有展示缘分页三列女用户策略");
-            }
-            this.waitElement(driver,iv_action.get(0));
-            this.clickIVAction();
-            String  age = this.getTVAge();
-            this.clickIVUser();
-            if (this.doesWebElementExist(tips)) {
-                this.clickMonitor1(driver);
-            }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-            this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.manRegiste3(driver, qudaohao);
+        this.waitElement(driver, iv_sayhi.get(0));
+        this.clickTVSayHello();
+        String name = this.getTVNickName();
+        this.clickIVUser();
+        if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
-            this.waitElement(driver, user_name_text);
-            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
-            if (this.doesWebElementExist(ask_button)) {
-                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
-            }
-            log.info("判断 点击头像进入空间后，年龄是否一致");
-            if (this.getMemberInfoText().contains(age)) {
-                this.clickLeftBtn();
-            } else {
-                Assert.fail("点击头像进入空间后，用户年龄不一致");
-            }
-        }else{
-            this.waitElement(driver, iv_sayhi.get(0));
-            this.clickTVSayHello();
-            String name = this.getTVNickName();
-            this.clickIVUser();
-            if (this.doesWebElementExist(tips)) {
-                this.clickMonitor1(driver);
-            }
-//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-            this.waitElementLoad(driver, piccount);
-//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-            this.clickMonitor1(driver);
-            this.waitElement(driver, user_name_text);
-            log.info("判断打招呼后，进入空间，是否无打招呼按钮");
-            if (this.doesWebElementExist(ask_button)) {
-                Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
-            }
-            log.info("判断 点击头像进入空间后，姓名是否一致");
-            if (name.equals(this.getUserNameText())) {
-                this.clickLeftBtn();
-            } else {
-                Assert.fail("点击头像进入空间后，用户姓名不一致");
-            }
         }
-
+//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+        this.waitElementLoad(driver, piccount);
+//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.clickMonitor1(driver);
+        this.waitElement(driver, user_name_text);
+        log.info("判断打招呼后，进入空间，是否无打招呼按钮");
+        if (this.doesWebElementExist(ask_button)) {
+            Assert.fail("在列表上点击“打招呼后”，进入空间页中，出现“打招呼”按钮");
+        }
+        log.info("判断 点击头像进入空间后，姓名是否一致");
+        if (name.equals(this.getUserNameText())) {
+            this.clickLeftBtn();
+        } else {
+            Assert.fail("点击头像进入空间后，用户姓名不一致");
+        }
     }
 
     //      一线男 空间页打招呼 下一个
@@ -245,7 +175,7 @@ public class LAPSCheck extends ElementMethod {
         String name1;
         String name2;
         this.manRegiste1(driver, qudaohao);
-        this.waitElement(driver, iv_action.get(0));
+        this.waitElement(driver, iv_sayhi.get(0));
         this.clickIVUser();
         if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
@@ -260,35 +190,31 @@ public class LAPSCheck extends ElementMethod {
         }
         name1 = this.getUserNameText();
         this.clickAskBtn();
-        /**
-         * 5.5.9需求，女用户空间页打招呼后停留在当前页
-         */
-
-//        if (this.doesWebElementExist(tips)) {
-//            this.clickMonitor1(driver);
-//        }
-////        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-//        this.waitElementLoad(driver, piccount);
-////      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-//        this.clickMonitor1(driver);
-//        this.waitElement(driver, user_name_text);
-//        name2 = this.getUserNameText();
-//        if (name1.equals(name2)) {
-//            Assert.fail("在空间中点击“打招呼”按钮后，未跳转至另一用户");
-//        }
-//        this.clickNext();
-//        if (this.doesWebElementExist(tips)) {
-//            this.clickMonitor1(driver);
-//        }
-////        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
-//        this.waitElementLoad(driver, piccount);
-////      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
-//        this.clickMonitor1(driver);
-//        this.waitElement(driver, user_name_text);
-//        name1 = this.getUserNameText();
-//        if (name1.equals(name2)) {
-//            Assert.fail("在空间中点击“下一个”按钮后，未跳转至另一用户");
-//        }
+        if (this.doesWebElementExist(tips)) {
+            this.clickMonitor1(driver);
+        }
+//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+        this.waitElementLoad(driver, piccount);
+//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.clickMonitor1(driver);
+        this.waitElement(driver, user_name_text);
+        name2 = this.getUserNameText();
+        if (name1.equals(name2)) {
+            Assert.fail("在空间中点击“打招呼”按钮后，未跳转至另一用户");
+        }
+        this.clickNext();
+        if (this.doesWebElementExist(tips)) {
+            this.clickMonitor1(driver);
+        }
+//        等待头像左下角的 数量是否出现1/**，用于判断整个页面是否加载完成
+        this.waitElementLoad(driver, piccount);
+//      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
+        this.clickMonitor1(driver);
+        this.waitElement(driver, user_name_text);
+        name1 = this.getUserNameText();
+        if (name1.equals(name2)) {
+            Assert.fail("在空间中点击“下一个”按钮后，未跳转至另一用户");
+        }
         this.clickLeftBtn();
     }
 
@@ -296,6 +222,7 @@ public class LAPSCheck extends ElementMethod {
     public void conversation(AndroidDriver driver, String qudaohao) throws Exception {
         this.manRegiste1(driver, qudaohao);
         this.waitElement(driver, iv_user.get(0));
+        String name1 = this.getTVNickName();
         this.clickIVUser();
         if (this.doesWebElementExist(tips)) {
             this.clickMonitor1(driver);
@@ -305,7 +232,6 @@ public class LAPSCheck extends ElementMethod {
 //      再次点击页面空白处，防止有头像多张时，消除 滑动查看照片提示
         this.clickMonitor1(driver);
         this.waitElement(driver, user_name_text);
-        String name1 = this.getUserNameText();
         if (this.doesWebElementExist(msg_close)) {
             this.clickMsgClose();
         }
@@ -1318,7 +1244,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.waitElement(driver, title_name);
-        this.VipCenter();
+//        this.VipCenter();
+        this.judgeVipCenter();
     }
     //三线线男 会员中心可购买项
     public void VIP3(AndroidDriver driver, String qudaohao) throws Exception {
@@ -1326,7 +1253,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.waitElement(driver, title_name);
-        this.VipCenter();
+        //        this.VipCenter();
+        this.judgeVipCenter();
     }
 
     //    三线男 豆币价格
@@ -1335,7 +1263,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickBean();
-        this.beanPrice3(driver);
+//        this.beanPrice3(driver);
+        this.judgeBeanPrice3(driver);
     }
 
     //    一线男 豆币价格
@@ -1344,7 +1273,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickBean();
-        this.beanPrice1(driver);
+//        this.beanPrice1(driver);
+        this.judgeBeanPrice1(driver);
     }
 
     //    三线男 写信包月价格
@@ -1353,7 +1283,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickWriteLetter();
-        this.letterPrice3(driver);
+//        this.letterPrice3(driver);
+        this.judgeLetterPrice3(driver);
     }
 
     //    一线男 写信包月价格
@@ -1362,7 +1293,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickWriteLetter();
-        this.letterPrice1(driver);
+//        this.letterPrice1(driver);
+        this.judgeLetterPrice1(driver);
     }
 
     //    三线男 皇冠特权
@@ -1371,7 +1303,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickVipTitle();
-        this.VipPrice3(driver);
+//        this.VipPrice3(driver);
+        this.judgeVipPrice3(driver);
     }
 
     //    1线男 皇冠特权
@@ -1380,257 +1313,36 @@ public class LAPSCheck extends ElementMethod {
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickVipTitle();
-        this.VipPrice1(driver);
+//        this.VipPrice1(driver);
+        this.judgeVipPrice1(driver);
     }
 
-    //      对对碰，免密开通及两次支付引导
-    public void duiDuiPeng3(AndroidDriver driver, String qudaohao, int beannum) throws Exception {
+    //      豆币，免密开通及两次支付引导
+    public void beanMianMi(AndroidDriver driver, String qudaohao ,int beannum) throws Exception {
         this.manRegiste3(driver, qudaohao);
-        this.clickduiduipeng(driver);
-        log.info("判断点击“对对碰”后，是否弹出对对碰对话框");
-        if (!this.doesWebElementExist(duiduipeng_dialog_bg)) {
-            Assert.fail("点击右下角“对对碰”，没有弹出 对对碰 对话框");
-        }
-        this.clickBtnok();
-        log.info("判断点击“解锁”后，是否进入会员服务页面");
-        if (!this.getTitleName().equals("会员服务")) {
-            Assert.fail("未能进入“会员服务”页");
-        }
-        this.clickBtnLeft();
-        this.waitElement(driver, topview);
-//        this.waitElement(driver, wancheng);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
-        log.info("判断初始豆币是不是0个");
-        if (this.getBeanNum() != beannum) {
-            Assert.fail("初始豆币个数和预期不一致");
-        }
-        this.clickBean();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickBeanVip();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickKaiTong();
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAgree(driver);
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, wancheng);
-        this.clickMonitorBack(driver);
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-        this.clickCheck();
-//        log.info("判断开通免密后，是否提示开通成功");
-//        if (!this.doesWebElementExist(success)) {
-//            Assert.fail("开通免密后，没有成功提示");
-//        }
-        this.clickQianWang();
-        log.info("判断第一次支付引导");
-        this.clickBuYao();
-        this.waitElement(driver, title_name);
-//        this.waitElement(driver, personal_data);
-        this.clickMeIcon();
-        this.waitElement(driver, member_center);
-        this.clickMemberCenter();
-        log.info("判断初始豆币是不是增加4个");
-        if (this.getBeanNum() != beannum + 4) {
-            Assert.fail("豆币个数未增加4个");
-        }
-        this.clickBean();
-        log.info("判断第二次支付引导");
-        this.clickBuLiao();
-        this.waitElement(driver, title_name);
-        this.clickBtnLeft();
-        this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        this.clickduiduipeng(driver);
-        Thread.sleep(2000);
-        log.info("判断开通免密后，对对碰中是否提示购买会员");
-        if (!this.getOKText().equals("免密解锁：99元90天畅聊")) {
-            Assert.fail("开通免密后，对对碰中提示信息未改变");
-        }
-
+        this.judgeBeanMianMi(driver,beannum);
 
     }
-    //      写信包月，免密开通及两次支付引导
-    public void letterMianMi(AndroidDriver driver, String qudaohao, int beannum) throws Exception {
+    //      写信包月，免密开通及两次支付引导-测试支付包账号专用
+    public void letterMianMi(AndroidDriver driver, String qudaohao) throws Exception {
         this.manRegiste3(driver, qudaohao);
-//        this.clickduiduipeng(driver);
-//        log.info("判断点击“对对碰”后，是否弹出对对碰对话框");
-//        if (!this.doesWebElementExist(duiduipeng_dialog_bg)) {
-//            Assert.fail("点击右下角“对对碰”，没有弹出 对对碰 对话框");
-//        }
-//        this.clickBtnok();
-//        log.info("判断点击“解锁”后，是否进入会员服务页面");
-//        if (!this.getTitleName().equals("会员服务")) {
-//            Assert.fail("未能进入“会员服务”页");
-//        }
-//        this.clickBtnLeft();
-//        this.waitElement(driver, topview);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
-        log.info("判断初始豆币是不是0个");
-        if (this.getBeanNum() != beannum) {
-            Assert.fail("初始豆币个数和预期不一致");
-        }
-        this.clickWriteLetter();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickLetterVip();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickKaiTong();
-        this.waitElement(driver, alisure);
-        this.clickMonitorAgree(driver);
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, wancheng);
-        this.clickMonitorBack(driver);
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-        this.clickCheck();
-//        log.info("判断开通免密后，是否提示开通成功");
-//        if (!this.doesWebElementExist(success)) {
-//            Assert.fail("开通免密后，没有成功提示");
-//        }
-        this.clickQianWang();
-        log.info("判断第一次支付引导");
-        this.clickBuYao();
-        this.waitElement(driver, personal_data);
-        this.clickMeIcon();
-        this.waitElement(driver, member_center);
-        this.clickMemberCenter();
-        log.info("判断初始豆币是不是增加4个");
-        if (this.getBeanNum() != beannum + 4) {
-            Assert.fail("豆币个数未增加4个");
-        }
-        this.clickWriteLetter();
-        log.info("判断第二次支付引导");
-        this.clickBuLiao();
-        this.waitElement(driver, title_name);
-        this.clickBtnLeft();
-        this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        this.clickduiduipeng(driver);
-        Thread.sleep(2000);
-        log.info("判断开通免密后，对对碰中是否提示购买会员");
-        if (!this.getOKText().equals("免密解锁：99元90天畅聊")) {
-            Assert.fail("开通免密后，对对碰中提示信息未改变");
-        }
+        this.judgeLetterMianMi(driver);
 
 
     }
-
     //      皇冠特权，免密开通及两次支付引导
-    public void vipMianMi(AndroidDriver driver, String qudaohao, int beannum) throws Exception {
+    public void vipMianMi(AndroidDriver driver, String qudaohao) throws Exception {
         this.manRegiste3(driver, qudaohao);
-        this.clickduiduipeng(driver);
-        log.info("判断点击“对对碰”后，是否弹出对对碰对话框");
-        if (!this.doesWebElementExist(duiduipeng_dialog_bg)) {
-            Assert.fail("点击右下角“对对碰”，没有弹出 对对碰 对话框");
-        }
-        log.info("判断初始令牌数");
-        if (!this.getToken().equals("您的令牌余额为：0")) {
-            Assert.fail("初始令牌数不为0");
-        }
-        this.clickBtnok();
-        log.info("判断点击“解锁”后，是否进入会员服务页面");
-        if (!this.getTitleName().equals("会员服务")) {
-            Assert.fail("未能进入“会员服务”页");
-        }
-        this.clickBtnLeft();
-        this.waitElement(driver, topview);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
-//        log.info("判断初始豆币是不是0个");
-//        if (this.getBeanNum() != beannum) {
-//            Assert.fail("初始豆币个数和预期不一致");
-//        }
-        this.clickVipTitle();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickNewVip();
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        this.clickKaiTong();
-        this.waitElement(driver, alisure);
-        this.clickMonitorAgree(driver);
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, wancheng);
-        this.clickMonitorBack(driver);
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-        this.clickCheck();
-//        log.info("判断开通免密后，是否提示开通成功");
-//        if (!this.doesWebElementExist(success)) {
-//            Assert.fail("开通免密后，没有成功提示");
-//        }
-        this.clickQianWang();
-        log.info("判断第一次支付引导");
-        this.clickBuYao();
-//        this.waitElement(driver, personal_data);
-//        this.clickMeIcon();
-//        this.waitElement(driver, member_center);
-//        this.clickMemberCenter();
-////        log.info("判断初始豆币是不是增加4个");
-////        if (this.getBeanNum() != beannum + 4) {
-////            Assert.fail("豆币个数未增加4个");
-////        }
-//        this.clickVipTitle();
-//        log.info("判断第二次支付引导");
-//        this.clickBuLiao();
-//        this.waitElement(driver, title_name);
-//        this.clickBtnLeft();
-//        this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        this.clickduiduipeng(driver);
-        Thread.sleep(2000);
-        log.info("判断开通免密后，对对碰中令牌是否增加");
-        if (!this.getToken().contains("3")) {
-            Assert.fail("开通免密后，对对碰中令牌数未增加");
-        }
-        log.info("判断开通免密后，对对碰中是否提示购买会员");
-        if (!this.getOKText().contains("开始")) {
-            Assert.fail("开通免密后，对对碰中提示信息未改变");
-        }
+        this.judgeVipMianMi(driver);
     }
 
     //    附近
@@ -1762,116 +1474,6 @@ public class LAPSCheck extends ElementMethod {
     }
 
     //    1线男，会员中心 豆币报价
-    public void beanPrice11(AndroidDriver driver) throws Exception {
-        this.waitElement(driver, title_name);
-        this.clickReload();
-        if (this.doesWebElementExist(bean_vip)) {
-            Assert.fail("1线男，豆币购买存在 0元签约");
-        }
-        if (!this.doesWebElementExist(bean800)) {
-            Assert.fail("800语音豆不存在");
-        }
-//        if (!this.getBean800Price().contains("￥99")) {
-//            Assert.fail("800语音豆价格有误");
-//        }
-        if (!this.doesWebElementExist(bean550)) {
-            Assert.fail("550语音豆不存在");
-        }
-//        if (!this.getBean550Price().contains("￥89")) {
-//            Assert.fail("550语音豆价格有误");
-//        }
-        this.clickBean800();
-        this.waitElement(driver, title_name);
-        log.info("判断800豆币，支付宝是否默认勾选 自动续费，且价格优惠10元");
-        if (!this.doesWebElementExist(xufei)) {
-            Assert.fail("800豆币，支付宝无自动续费");
-        }
-        if (!this.doesWebElementExist(youhuijiage800)) {
-            Assert.fail("800豆币，支付宝默认未勾选 自动续费，不为优惠后价格");
-        }
-        this.clickXufei();
-        log.info("判断800豆币，支付宝取消 自动续费后，恢复为原价");
-        if (!this.doesWebElementExist(yuanjia800)) {
-            Assert.fail("800豆币，支付宝取消 自动续费后，不为原价");
-        }
-        this.clickKaiTong();
-        log.info("判断800豆币，支付宝调起");
-        this.waitElement(driver, alisure);
-        if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
-            Assert.fail("800豆币未启动支付宝");
-        }
-        this.clickAlipayBack();
-        this.clickEnsure();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-        this.clickWecharPay();
-        if (this.doesWebElementExist(xufei)) {
-            Assert.fail("800豆币，微信支付 存在自动续费 选项");
-        }
-//        Thread.sleep(5000);
-        this.clickKaiTong();
-        Thread.sleep(5000);
-        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
-            Assert.fail("800豆币未启动微信");
-        }
-        this.keyBack(driver);
-        //        2018年8月23版本变更
-        this.clickQueRen();
-//        this.waitElement(driver, title_name);
-        this.clickYinlianPay();
-        log.info("判断800豆币，银联支付是否默认 价格优惠10元");
-//        if(!this.doesWebElementExist(xufei)){
-//            Assert.fail("800豆币，银联支付无自动续费");
-//        }
-        if (!this.doesWebElementExist(youhuijiage800)) {
-            Assert.fail("800豆币，银联支付默认 不为优惠后价格");
-        }
-        this.clickBtnLeft();
-        this.clickReload();
-        this.clickBean550();
-        this.waitElement(driver, title_name);
-        log.info("判断550豆币，支付宝是否默认勾选 自动续费，且价格优惠10元");
-        if (!this.doesWebElementExist(xufei)) {
-            Assert.fail("550豆币，支付宝无自动续费");
-        }
-        if (!this.doesWebElementExist(youhuijiage550)) {
-            Assert.fail("550豆币，支付宝 默认未勾选 自动续费，不为优惠后价格");
-        }
-        this.clickXufei();
-        log.info("判断550豆币，支付宝取消 自动续费后，恢复为原价");
-        if (!this.doesWebElementExist(yuanjia550)) {
-            Assert.fail("550豆币，支付宝 取消 自动续费后，不为原价");
-        }
-        this.clickKaiTong();
-        log.info("判断550豆币，支付宝调起");
-        this.waitElement(driver, alisure);
-        if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
-//            System.out.println(this.getCurrentActivity(driver));
-            Assert.fail("550豆币未启动支付宝");
-        }
-        this.clickAlipayBack();
-        this.clickEnsure();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-        this.clickWecharPay();
-        if (this.doesWebElementExist(xufei)) {
-            Assert.fail("550豆币，微信支付 存在自动续费 选项");
-        }
-        this.clickKaiTong();
-        Thread.sleep(5000);
-        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
-            Assert.fail("550豆币未启动微信");
-        }
-        this.keyBack(driver);
-        //        2018年8月23版本变更
-        this.clickQueRen();
-//        this.waitElement(driver, title_name);
-        this.clickYinlianPay();
-        log.info("判断550豆币，银联支付是否默认价格优惠10元");
-        if (!this.doesWebElementExist(youhuijiage550)) {
-            Assert.fail("550豆币，银联支付 默认不为优惠后价格");
-        }
-    }
     public void beanPrice1(AndroidDriver driver) throws Exception {
         this.waitElement(driver, title_name);
         this.clickReload();
@@ -1896,8 +1498,9 @@ public class LAPSCheck extends ElementMethod {
         if (!this.doesWebElementExist(xufei)) {
             Assert.fail("800豆币，支付宝无自动续费");
         }
+        this.clickXufei();
         if (!this.doesWebElementExist(youhuijiage800)) {
-            Assert.fail("800豆币，支付宝默认未勾选 自动续费，不为优惠后价格");
+            Assert.fail("800豆币，支付宝勾选 自动续费后，不为优惠后价格");
         }
         this.clickXufei();
         log.info("判断800豆币，支付宝取消 自动续费后，恢复为原价");
@@ -1906,15 +1509,26 @@ public class LAPSCheck extends ElementMethod {
         }
         this.clickKaiTong();
         log.info("判断800豆币，支付宝调起");
-        this.waitElement(driver, alisure);
-        if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
+//        this.waitElement(driver, alisure);
+        if (this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
+            log.info("800豆币启动支付宝");
+        }else if(this.getCurrentActivity(driver).toLowerCase().contains("aliuserguideactivity")){
+            log.info("800豆币启动支付宝");
+        }else{
             Assert.fail("800豆币未启动支付宝");
         }
-        this.waitElement(driver,alisure);
-        this.clickAlipayBack();
+        /*this.clickAlipayBack();
         this.clickEnsure();
-        this.waitElement(driver, alipay);
+        this.waitElement(driver, alipay);*/
         this.keyBack(driver);
+        Thread.sleep(3000);
+        if(doesWebElementExist(cancel)){
+            new TouchAction(driver).tap(400,750).perform();
+            this.keyBack(driver);
+        }
+        if(!this.doesWebElementExist(wecharpay)){
+            this.keyBack(driver);
+        }
         this.clickWecharPay();
         if (this.doesWebElementExist(xufei)) {
             Assert.fail("800豆币，微信支付 存在自动续费 选项");
@@ -1926,16 +1540,18 @@ public class LAPSCheck extends ElementMethod {
             Assert.fail("800豆币未启动微信");
         }
         this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
         //        2018年8月23版本变更
-        this.clickQueRen();
+//        this.clickQueRen();
 //        this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断800豆币，银联支付是否默认 价格优惠10元");
 //        if(!this.doesWebElementExist(xufei)){
 //            Assert.fail("800豆币，银联支付无自动续费");
 //        }
-        if (!this.doesWebElementExist(youhuijiage800)) {
-            Assert.fail("800豆币，银联支付默认 不为优惠后价格");
+        if (this.doesWebElementExist(youhuijiage800)) {
+            Assert.fail("800豆币，银联支付默认 为优惠后价格");
         }
         this.clickBtnLeft();
         this.clickReload();
@@ -1945,8 +1561,9 @@ public class LAPSCheck extends ElementMethod {
         if (!this.doesWebElementExist(xufei)) {
             Assert.fail("550豆币，支付宝无自动续费");
         }
+        this.clickXufei();
         if (!this.doesWebElementExist(youhuijiage550)) {
-            Assert.fail("550豆币，支付宝 默认未勾选 自动续费，不为优惠后价格");
+            Assert.fail("550豆币，支付宝勾选 自动续费，不为优惠后价格");
         }
         this.clickXufei();
         log.info("判断550豆币，支付宝取消 自动续费后，恢复为原价");
@@ -1955,15 +1572,29 @@ public class LAPSCheck extends ElementMethod {
         }
         this.clickKaiTong();
         log.info("判断550豆币，支付宝调起");
-        this.waitElement(driver, alisure);
-        if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
+//        this.waitElement(driver, alisure);
+        System.out.println("this.getCurrentActivity(driver):"+this.getCurrentActivity(driver));
+        if (this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
 //            System.out.println(this.getCurrentActivity(driver));
+            log.info("550豆币启动支付宝");
+        }else if(this.getCurrentActivity(driver).toLowerCase().contains("aliuserguideactivity")){
+            log.info("550豆币启动支付宝");
+        }else{
             Assert.fail("550豆币未启动支付宝");
+
         }
-        this.clickAlipayBack();
-        this.clickEnsure();
-        this.waitElement(driver, alipay);
+//        this.clickAlipayBack();
+//        this.clickEnsure();
+//        this.waitElement(driver, alipay);
         this.keyBack(driver);
+        Thread.sleep(3000);
+        if(doesWebElementExist(cancel)){
+            new TouchAction(driver).tap(400,750).perform();
+            this.keyBack(driver);
+        }
+        if(!this.doesWebElementExist(wecharpay)){
+            this.keyBack(driver);
+        }
         this.clickWecharPay();
         if (this.doesWebElementExist(xufei)) {
             Assert.fail("550豆币，微信支付 存在自动续费 选项");
@@ -1974,14 +1605,17 @@ public class LAPSCheck extends ElementMethod {
             Assert.fail("550豆币未启动微信");
         }
         this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
         //        2018年8月23版本变更
-        this.clickQueRen();
+//        this.clickQueRen();
 //        this.waitElement(driver, title_name);
         this.clickYinlianPay();
         log.info("判断550豆币，银联支付是否默认价格优惠10元");
-        if (!this.doesWebElementExist(youhuijiage550)) {
-            Assert.fail("550豆币，银联支付 默认不为优惠后价格");
+        if (this.doesWebElementExist(youhuijiage550)) {
+            Assert.fail("550豆币，银联支付 默认为优惠后价格");
         }
+        log.info("豆币购买测试成功");
     }
 
     //    三线男豆币价格及支付调起
@@ -2138,7 +1772,7 @@ public class LAPSCheck extends ElementMethod {
 //            Assert.fail("1线男，写信包月，30天畅聊价格有误");
 //        }
         if (!this.doesWebElementExist(letter7)) {
-            Assert.fail("1线男，写信包月，天畅聊不存在");
+            Assert.fail("71线男，写信包月，天畅聊不存在");
         }
 //        if (!this.getLetter7Price().contains("￥69")) {
 //            Assert.fail("1线男，写信包月，7天畅聊价格有误");
@@ -2159,7 +1793,7 @@ public class LAPSCheck extends ElementMethod {
         }
         this.clickKaiTong();
         log.info("判断写信包月90天，支付宝调起");
-        this.waitElement(driver, alisure);
+//        this.waitElement(driver, alisure);
         if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
             Assert.fail("90天畅聊未启动支付宝");
         }
@@ -2496,6 +2130,10 @@ public class LAPSCheck extends ElementMethod {
 //        }
     }
 
+    /**
+     * 公共方法替换
+     */
+/*
     //1线男，会员中心 皇冠特权
     public void VipPrice1(AndroidDriver driver) throws Exception {
         this.waitElement(driver, title_name);
@@ -2621,9 +2259,6 @@ public class LAPSCheck extends ElementMethod {
 //        }
     }
 
-
-
-
     //    3线男 皇冠特权价格及支付调起
     public void VipPrice3(AndroidDriver driver) throws Exception {
         this.waitElement(driver, title_name);
@@ -2664,7 +2299,7 @@ public class LAPSCheck extends ElementMethod {
         this.clickKaiTong();
 //        Thread.sleep(5000);
         log.info("判断90天vip，支付宝调起");
-        this.waitElement(driver, alisure);
+//        this.waitElement(driver, alisure);
         if (!this.getCurrentActivity(driver).toLowerCase().contains("alipay")) {
             Assert.fail("90天vip未启动支付宝");
         }
@@ -2754,7 +2389,7 @@ public class LAPSCheck extends ElementMethod {
 //        if(!this.doesWebElementExist(yuanjia_vip30)){
 //            Assert.fail("30天vip，银联支付取消 自动续费后，不为原价");
 //        }
-    }
+    }*/
 
     //    搜索条件初始验证
     public void initSeachCondition() {
@@ -2926,8 +2561,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
-//        this.clickTestEnv();
-//        this.clickHuluprep();
+        this.clickTestEnv();
+        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.pass("渠道号：" + qudaohao);
 //        this.clickAddress();
@@ -2954,8 +2589,8 @@ public class LAPSCheck extends ElementMethod {
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
-//        this.clickTestEnv();
-//        this.clickHuluprep();
+        this.clickTestEnv();
+        this.clickHuluprep();
         this.updateQuDao(qudaohao);
         log.pass("渠道号：" + qudaohao);
 //        this.clickAddress();
@@ -3673,23 +3308,23 @@ public class LAPSCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAliMianMi(driver);
-        this.clickMonitorAgreePay(driver);
+        this.waitElement(driver, agreepay);
+        this.clickAliMianMi();
+        this.clickAgreePay();
         Thread.sleep(3000);
-        this.clickAliPayNow();//尚未修改
+        this.clickAliPayNow();
         Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyA(driver);
         Thread.sleep(500);
         this.sendKeyA(driver);
         Thread.sleep(500);
         this.sendKeyB(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.sendKeyD(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
         Thread.sleep(500);
         this.waitElement(driver, aliback);
         this.clickAliBack();
@@ -3719,9 +3354,9 @@ public class LAPSCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAliMianMi(driver);
-        this.clickMonitorAgreePay(driver);
+        this.waitElement(driver, agreepay);
+        this.clickAliMianMi();
+        this.clickAgreePay();
         Thread.sleep(3000);
         this.clickAliPayNow();
         Thread.sleep(2000);
@@ -3729,13 +3364,13 @@ public class LAPSCheck extends ElementMethod {
         Thread.sleep(500);
         this.sendKeyA(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyB(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.sendKeyD(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
         Thread.sleep(500);
         this.waitElement(driver, aliback);
         this.clickAliBack();
@@ -3751,7 +3386,6 @@ public class LAPSCheck extends ElementMethod {
         this.waitElement(driver, mokuai.get(0));
     }
 
-
     public void buyVip3(AndroidDriver driver) throws Exception{
         this.clickMeIcon();
         this.waitElement(driver, member_center);
@@ -3763,9 +3397,9 @@ public class LAPSCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAliMianMi(driver);
-        this.clickMonitorAgreePay(driver);
+        this.waitElement(driver, agreepay);
+        this.clickAliMianMi();
+        this.clickAgreePay();
         Thread.sleep(3000);
         this.clickAliPayNow();
         Thread.sleep(2000);
@@ -3773,13 +3407,13 @@ public class LAPSCheck extends ElementMethod {
         Thread.sleep(500);
         this.sendKeyA(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyB(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.sendKeyD(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
         Thread.sleep(500);
         this.waitElement(driver, aliback);
         this.clickAliBack();
@@ -3808,9 +3442,9 @@ public class LAPSCheck extends ElementMethod {
         this.waitElement(driver, title_name);
         this.clickReload();
         this.clickKaiTong();
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAliMianMi(driver);
-        this.clickMonitorAgreePay(driver);
+        this.waitElement(driver, agreepay);
+        this.clickAliMianMi();
+        this.clickAgreePay();
         Thread.sleep(3000);
         this.clickAliPayNow();
         Thread.sleep(2000);
@@ -3818,13 +3452,13 @@ public class LAPSCheck extends ElementMethod {
         Thread.sleep(500);
         this.sendKeyA(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyB(driver);
         Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
         this.sendKeyC(driver);
+        Thread.sleep(500);
+        this.sendKeyD(driver);
+        Thread.sleep(500);
+        this.sendKeyA(driver);
         Thread.sleep(500);
         this.waitElement(driver, aliback);
         this.clickAliBack();
@@ -4082,7 +3716,7 @@ public class LAPSCheck extends ElementMethod {
 //            this.clickMsgClose();
 //        }
         String ID1 = this.getUserID(driver);
-        wui.appendFile("E:\\LAPS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+ID1+"\r\n");
+        wui.appendFile("D:\\LAPS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+ID1+"\r\n");
         int ID = Integer.parseInt(ID1);
         if (ID % 2 != 0) {
             return false;

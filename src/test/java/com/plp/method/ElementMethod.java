@@ -1,9 +1,8 @@
 package com.plp.method;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.plp.page.PageElement;
 import com.listener.ExtentTestNGITestListener;
-import io.appium.java_client.AppiumDriver;
+import com.plp.page.PageElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
@@ -23,41 +22,31 @@ public class ElementMethod extends PageElement {
 
 
     //    通用
-//   点击左上角 返回
-    public void clickBtnLeft() {
-        log.info("点击左上角 返回");
-        btn_left.click();
-    }
-
-    public String getTopView() {
-        log.info("获取上方模块名称");
-        return topview.getText();
-    }
-
-    public void clickMsgClose() {
-        log.info("点击上方私信关闭按钮");
-        msg_close.click();
-    }
-
-    public void clickMsgIcon() {
-        log.info("点击上方私信条");
-        head_menu_icon.click();
-    }
-
-    public String getTitleName() {
-        log.info("获取上方页面名称");
-        return title_name.getText();
-    }
-
-    //5.5.9新增页面元素方法
-    public void clickLijireg(){
-        log.info("合理化，注册页点击 立即注册");
-        btn_reg_dialog_reg.click();
-    }
-    public void clickBtnSpeed(){
-        log.info("合理化，双号，超级曝光页点击 立即领取");
-        btn_speed.click();
-    }
+////   点击左上角 返回
+//    public void clickBtnLeft() {
+//        log.info("点击左上角 返回");
+//        btn_left.click();
+//    }
+//
+//    public String getTopView() {
+//        log.info("获取上方模块名称");
+//        return topview.getText();
+//    }
+//
+//    public void clickMsgClose() {
+//        log.info("点击上方私信关闭按钮");
+//        msg_close.click();
+//    }
+//
+//    public void clickMsgIcon() {
+//        log.info("点击上方私信条");
+//        head_menu_icon.click();
+//    }
+//
+//    public String getTitleName() {
+//        log.info("获取上方页面名称");
+//        return title_name.getText();
+//    }
 
     //    下方五个模块切换
     public void clickYuanFenIcon() {
@@ -84,109 +73,10 @@ public class ElementMethod extends PageElement {
         log.info("点击“我的”");
         mokuai.get(4).click();
     }
-
-    //    注册页面方法
-//    点击一键注册
-    public void clickRegister() {
-        log.info("点击一键注册");
-        btn_reg.click();
-    }
-
-
-    public void clickMen() {
-        log.info("点击 我是男");
-        btn_men.click();
-    }
-
-    public void clickWomen() {
-        log.info("点击“我是女”");
-        btn_women.click();
-    }
-
-    public void clickIKnown() {
-        log.info("点击 知道了");
-        btn_i_know.click();
-    }
-
-    public void clickLogin() {
-        log.info("点击登录按钮");
-        login.click();
-    }
-
     public void clickZhaoHuGuanJia() {
         log.info("点击 注册提示中的 开启招呼管家");
         zhaohuguanjia.click();
     }
-
-    public void clickProtocal() {
-        log.info("点击“协议”");
-        btn_protocal.click();
-    }
-
-
-
-    public void sendAccount(String account) {
-        log.info("输入用户名");
-        input_account.click();
-        input_account.clear();
-        input_account.sendKeys(account);
-    }
-
-    public void sendPassword(String password) {
-        log.info("输入密码");
-        input_password.click();
-        input_password.clear();
-        input_password.sendKeys(password);
-    }
-
-    public void clickBtnLogin() {
-        log.info("点击登录按钮");
-        btn_login.click();
-    }
-
-    //    修改测试环境方法
-//    修改渠道号
-    public void updateQuDao(String qudaonum) {
-        log.info("修改渠道号");
-        qudao.click();
-        qudao.clear();
-        qudao.sendKeys(qudaonum);
-    }
-
-    //    展开 注册地址一项
-    public void clickAddress() {
-        log.info("展开注册地址一项");
-        address.click();
-    }
-
-    public String getAddress() {
-        log.info("获取修改后的城市");
-        return address.getText();
-    }
-
-    //    展开测试环境一项
-    public void clickTestEnv() {
-        log.info("展开测试环境一项");
-        test_env.click();
-    }
-
-    //    选择线上环境
-    public void clickProduct() {
-        log.info("选择线上环境");
-        product.click();
-    }
-
-    //      选择预上线环境
-    public void clickHuluprep() {
-        log.info("选择预上线环境");
-        huluprep.click();
-    }
-
-    public void clickSave() {
-        log.info("点击修改测试环境上 保存");
-        btn_test_save.click();
-    }
-
 
     //    缘分模块方法
 //    点击左上角用户头像
@@ -204,18 +94,6 @@ public class ElementMethod extends PageElement {
         log.info("点击缘分页上第一个打招呼按钮");
         iv_sayhi.get(0).click();
     }
-
-    //缘分页，三列头像。5.5.9需求
-    public void clickIVAction() {
-        log.info("5.5.9新需求，点击缘分页上第一个打招呼按钮");
-        iv_action.get(0).click();
-    }
-    public String getTVAge(){
-        log.info("5.5.9新需求,获取缘分页，第一个女用户头像上显示的年龄");
-        return tv_age.get(0).getText();
-    }
-
-
 
     //    空间页方法
 //    获取空间中用户名
@@ -242,11 +120,11 @@ public class ElementMethod extends PageElement {
         log.info("点击查看视频");
         video_view.click();
     }
-
+/* 公共
     public void clickCancle() {
         log.info("点击取消按钮");
         btn_cancel.click();
-    }
+    }*/
 
     public void clickAskBtn() {
         log.info("点击空间中“打招呼”按钮");
@@ -297,11 +175,13 @@ public class ElementMethod extends PageElement {
         log.info("点击“取消”");
         btn_cancel.click();
     }
-
+/*
+公共
     public void clickBtnok() {
         log.info("点击“确定”");
         btn_ok.click();
     }
+*/
 
     public String getUpgraded() {
         log.info("获取 举报 信息");
@@ -507,12 +387,14 @@ public class ElementMethod extends PageElement {
         log.info("获取附近人年龄");
         return nearage.get(0).getText();
     }
-
+/*
+  公共
     //    我的模块 方法
     public void clickMemberCenter() {
         log.info("点击会员中心");
         member_center.click();
     }
+*/
 
     public void clickMyTag() {
         log.info("点击我的标签");
@@ -776,11 +658,13 @@ public class ElementMethod extends PageElement {
         String b = bean.getText().replace("豆币", "").replace("个", "");
         return Integer.parseInt(b);
     }
-
+/*
+ 公共
     public void clickBean() {
         log.info("点击豆币");
         bean.click();
     }
+
 
 
     public void clickWriteLetter() {
@@ -792,22 +676,25 @@ public class ElementMethod extends PageElement {
         log.info("点击星级服务");
         vip_title.click();
     }
-
+*/
     public void clickReceiveLetter() {
         log.info("点击收信宝");
         receive_letter.click();
     }
-
+/*
+  公共
     public void clickReload() {
         log.info("点击右上角刷新");
-        btn_rigth.click();
+        btn_right.click();
     }
+*/
 
     public void clickBeanVip() {
         log.info("点击vip0元购");
         bean_vip.click();
     }
-
+/*
+公共
     public void clickXufei() {
         log.info("点击自动续费");
         xufei.click();
@@ -823,15 +710,16 @@ public class ElementMethod extends PageElement {
         return bean800price.getAttribute("name");
     }
 
+
     public void clickBean550() {
         log.info("点击550语音豆");
         bean550.click();
     }
-
+/
     public String getBean550Price() {
         log.info("获取550语音豆价格");
         return bean550price.getAttribute("name");
-    }
+    }*/
 
     public String getBean800Price_3() {
         log.info("获取800语音豆价格");
@@ -857,7 +745,8 @@ public class ElementMethod extends PageElement {
         log.info("点击3天vip0元购");
         letter_vip.click();
     }
-
+/*
+  公共
     public void clickLetter90() {
         log.info("点击90天会员");
         letter90.click();
@@ -872,12 +761,14 @@ public class ElementMethod extends PageElement {
         log.info("获取90天会员价格");
         return letter90price.getAttribute("name");
     }
+*/
 
     public String getLetter90Price_3() {
         log.info("获取90天会员价格");
         return letter90price_3.getAttribute("name");
     }
-
+/*
+ 公共
     public void clickLetter30() {
         log.info("点击30天会员");
         letter30.click();
@@ -892,12 +783,14 @@ public class ElementMethod extends PageElement {
         log.info("获取30天会员价格");
         return letter30price.getAttribute("name");
     }
+*/
 
     public String getLetter30Price_3() {
         log.info("获取30天会员价格");
         return letter30price_3.getAttribute("name");
     }
-
+/*
+  公共
     public void clickLetter7() {
         log.info("点击7天会员");
         letter7.click();
@@ -912,6 +805,7 @@ public class ElementMethod extends PageElement {
         log.info("获取7天会员价格");
         return letter7price.getAttribute("name");
     }
+*/
 
     public String getLetter7Price_3() {
         log.info("获取7天会员价格");
@@ -922,7 +816,8 @@ public class ElementMethod extends PageElement {
         log.info("点击vip新手");
         newvip.click();
     }
-
+/*
+ 公共
     public void clickVip90() {
         log.info("点击90天vip");
         vip90.click();
@@ -933,6 +828,7 @@ public class ElementMethod extends PageElement {
         return vip90.getAttribute("name");
     }
 
+
     public void clickVip30() {
         log.info("点击30天vip");
         vip30.click();
@@ -941,7 +837,7 @@ public class ElementMethod extends PageElement {
     public String getVip30price() {
         log.info("获取30天vip价格");
         return vip30.getAttribute("name");
-    }
+    }*/
 
     public void clickUploadPic() {
         log.info("点击上传头像");
@@ -1031,18 +927,20 @@ public class ElementMethod extends PageElement {
         TouchAction action = new TouchAction(driver);
         action.tap(490, 1670).perform();
     }
-
+/*
+ 公共
     public void clickKaiTong() {
         log.info("点击立即开通");
         kaitong.click();
     }
+*/
 
     public void clickMigu() {
         log.info("点击咪咕联合会员");
         migu.click();
     }
 
-
+/*公共
     //    支付方式
     public void clickWecharPay() {
         log.info("选择 微信支付");
@@ -1052,14 +950,15 @@ public class ElementMethod extends PageElement {
         log.info("选择 银联支付");
         yinlianpay.click();
     }
-
+*/
     //    点击 对对碰（用于点击右下角 对对碰）
     public void clickduiduipeng(AndroidDriver driver) {
         log.info("点击 对对碰");
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(920, 1430).perform();
+        btn_super_say_hello.click();
+//        TouchAction action = new TouchAction(driver);
+////        int width = driver.manage().window().getSize().width;
+////        int height=driver.manage().window().getSize().height;
+//        action.tap(920, 1430).perform();
     }
     public String getToken(){
         log.info("获取令牌数");
@@ -1093,7 +992,7 @@ public class ElementMethod extends PageElement {
         TouchAction action1 = new TouchAction(driver).press(width / 2, 1550).waitAction(duration).moveTo(width / 2, 50).release();
         action1.perform();
     }
-
+/* 公共
     public String getCurrentActivity(AndroidDriver driver) {
         log.info("获取启动的APP名称");
         return driver.currentActivity();
@@ -1111,193 +1010,62 @@ public class ElementMethod extends PageElement {
     public void keyBack(AndroidDriver driver) {
         log.info("点击物理返回键");
         driver.pressKeyCode(AndroidKeyCode.BACK);
-    }
+    }*/
 //    public void hideKeyboard(AndroidDriver driver) {
 //        log.info("收起软键盘");
 //        driver.hideKeyboard();
 //    }
 
-
+/*
+ 公共
     public void waitElement(AndroidDriver driver, WebElement webelement) throws Exception {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.elementToBeClickable(webelement));
     }
+*/
 
 
-    //    修改环境方法
-//    点击页面空白处（用于进入修改环境）
-    public void clickMonitor(AndroidDriver driver) {
-        log.info("点击页面空白处（用于进入修改环境）");
-        TouchAction action = new TouchAction(driver);
-        int width = driver.manage().window().getSize().width;
-        action.tap(width - 10, 150).perform();
-        action.tap(width - 10, 150).perform();
-        action.tap(width - 10, 150).perform();
-        action.tap(width - 10, 150).perform();
-    }
-
-    //向上滑动选择一线城市
-    public void swipeAddressUp(AndroidDriver driver) {
-        log.info("滑动修改城市，选择一线城市");
-        Duration duration = Duration.ofSeconds(1);
-        int width = driver.manage().window().getSize().width;
-        int height = driver.manage().window().getSize().height;
-        TouchAction action1 = new TouchAction(driver).press(200, 950).waitAction(duration).moveTo(200, 1320).release();
-        action1.perform();
-    }
-
-    //      滑动选择所在地址
-    public void swipeAddress(AndroidDriver driver) {
-        log.info("滑动修改城市");
-        Duration duration = Duration.ofSeconds(1);
-        int width = driver.manage().window().getSize().width;
-        int height = driver.manage().window().getSize().height;
-        TouchAction action1 = new TouchAction(driver).press(200, 950).waitAction(duration).moveTo(200, 690).release();
-        action1.perform();
-    }
-
-    //  永远判断，下拉刷新后，列表上的 某些元素是否存在（死循环），如果不存在，则跳出该方法，继续后续方法
-    public void waitElementInvisibility(WebElement webelement) throws Exception {
-        for (int i = 0; i < 1; ) {
-            if (!this.doesWebElementExist(webelement)) {
-                break;
-            }
-        }
-    }
-
-    public void swipePic(AndroidDriver driver)throws Exception{
-        log.info("滑动查看下一张照片");
-        Duration duration = Duration.ofSeconds(1);
-        TouchAction action1 = new TouchAction(driver);
-//        .longPress(700, 650).waitAction(duration).moveTo(50, 650).perform();
-//        TouchAction(driver).longPress(700, 650).waitAction(duration).moveTo(50, 650).perform();
-        action1.longPress(1000, 650,duration).moveTo(50, 650);
-        action1.release();
-        action1.perform();
-    }
-
-
-    //    支付宝页面方法
-    public void clickAgree() {
-        agree.click();
-    }
-
-    public void clickEnsure() {
-//        支付宝确认放弃支付
-        ensure.click();
-    }
-
-    public void clickAlipayBack() {
-        log.info("点击支付宝付款页面 回退");
-        alipayback.click();
-    }
-
-    public void clickBack() {
-        back.click();
-    }
-    public void clickMonitorBack(AndroidDriver driver) {
-        log.info("支付宝免密签约成功页面，点击 返回");
-        TouchAction action = new TouchAction(driver);
-        action.tap(530, 1160).perform();
-    }
-    public void qianYueZhifubao(AndroidDriver driver) throws Exception{
-        log.info("签约支付宝");
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAgree(driver);
-        Thread.sleep(3000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, wancheng);
-        this.clickMonitorBack(driver);
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-    }
-    public void fufeiZhifubao(AndroidDriver driver) throws Exception{
-        log.info("打开支付宝完成支付");
-        this.waitElement(driver, mianmititle);
-        this.clickMonitorAliMianMi(driver);
-        this.clickMonitorAgreePay(driver);
-        Thread.sleep(3000);
-        this.clickAliPayNow();//尚未修改
-        Thread.sleep(2000);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyB(driver);
-        Thread.sleep(500);
-        this.sendKeyA(driver);
-        Thread.sleep(500);
-        this.sendKeyC(driver);
-        Thread.sleep(500);
-        this.waitElement(driver, aliback);
-        this.clickAliBack();
-//        this.waitElement(driver, back);
-//        this.clickBack();
-        this.waitElement(driver, alipay);
-        this.keyBack(driver);
-    }
-
-    //    发送密码
-    public void sendKeyAA(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
+//    //    修改环境方法
+////    点击页面空白处（用于进入修改环境）
+//    public void clickMonitor(AndroidDriver driver) {
+//        log.info("点击页面空白处（用于进入修改环境）");
+//        TouchAction action = new TouchAction(driver);
 //        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(505, 1225).perform();
-    }
-
-    public void sendKeyBB(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
+//        action.tap(width - 10, 150).perform();
+//        action.tap(width - 10, 150).perform();
+//        action.tap(width - 10, 150).perform();
+//        action.tap(width - 10, 150).perform();
+//    }
+//
+//    //      滑动选择所在地址
+//    public void swipeAddress(AndroidDriver driver) {
+//        log.info("滑动修改城市");
+//        Duration duration = Duration.ofSeconds(1);
 //        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(522, 1549).perform();
-    }
-
-    public void sendKeyCC(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(900, 1230).perform();
-    }
-
-    public void sendKeyD(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(180, 1200).perform();
-    }
-    public void sendKeyA(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(190, 1225).perform();
-    }
-
-    public void sendKeyB(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(540, 1725).perform();
-    }
-
-    public void sendKeyC(AndroidDriver driver) {
-        TouchAction action = new TouchAction(driver);
-//        int width = driver.manage().window().getSize().width;
-//        int height=driver.manage().window().getSize().height;
-        action.tap(900, 1225).perform();
-    }
+//        int height = driver.manage().window().getSize().height;
+//        TouchAction action1 = new TouchAction(driver).press(200, 950).waitAction(duration).moveTo(200, 690).release();
+//        action1.perform();
+//    }
+//
+//    //  永远判断，下拉刷新后，列表上的 某些元素是否存在（死循环），如果不存在，则跳出该方法，继续后续方法
+//    public void waitElementInvisibility(WebElement webelement) throws Exception {
+//        for (int i = 0; i < 1; ) {
+//            if (!this.doesWebElementExist(webelement)) {
+//                break;
+//            }
+//        }
+//    }
+//
+//    public void swipePic(AndroidDriver driver)throws Exception{
+//        log.info("滑动查看下一张照片");
+//        Duration duration = Duration.ofSeconds(1);
+//        TouchAction action1 = new TouchAction(driver);
+////        .longPress(700, 650).waitAction(duration).moveTo(50, 650).perform();
+////        TouchAction(driver).longPress(700, 650).waitAction(duration).moveTo(50, 650).perform();
+//        action1.longPress(1000, 650,duration).moveTo(50, 650);
+//        action1.release();
+//        action1.perform();
+//    }
 
     public void clickCheck() {
         log.info("查询免密开通情况");
@@ -1331,10 +1099,6 @@ public class ElementMethod extends PageElement {
     }
 
 
-    public void clickQueRen(){
-        log.info("放弃微信支付回退后,确认页面，点击确认");
-        queren.click();
-    }
 
     //    设置--安全指南
     public void clickSecurity() {
@@ -1484,26 +1248,11 @@ public class ElementMethod extends PageElement {
     public void clickAliMianMi() {
         alimianmi.click();
     }
-    public void clickMonitorAliMianMi(AndroidDriver driver) {
-        log.info("支付宝免密支付页面，点击 同意协议并开通");
-        TouchAction action = new TouchAction(driver);
-        action.tap(190, 1382).perform();
-    }
     //    确认开通并支付
-    public void clickMonitorAgreePay(AndroidDriver driver){
-        log.info("支付宝付款页面，点击 确认开通并支付");
-        TouchAction action = new TouchAction(driver);
-        action.tap(500, 1530).perform();
-    }
     public void clickAgreePay(){
         agreepay.click();
     }
 
-    public void clickMonitorAgree(AndroidDriver driver) {
-        log.info("支付宝免密支付页面，点击 同意协议并开通");
-        TouchAction action = new TouchAction(driver);
-        action.tap(530, 1320).perform();
-    }
     //    点击支付宝 立即付款
     public void clickAliPayNow(){
         log.info("点击支付宝 立即付款");

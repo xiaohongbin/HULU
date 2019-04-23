@@ -3,7 +3,6 @@ package com.driver;
 import com.listener.ScreenScr;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.TakesScreenshot;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -14,6 +13,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
+
     public boolean acceptNextAlert = true;
     public StringBuffer verificationErrors = new StringBuffer();
 
@@ -35,6 +35,7 @@ public class Driver {
     ThreadLocal<AndroidDriver> ThreadDriver = new ThreadLocal<AndroidDriver>();
     public AndroidDriver driver = ThreadDriver.get();
 
+
     /**
      * 指定参数，从testng.xml中获取
      */
@@ -54,10 +55,29 @@ public class Driver {
             capabilities.setCapability("unicodeKeyboard", true);
 //            capabilities.setCapability("automationName","UiAutomator2");
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //            driver.
             ThreadDriver.set(driver);
-        } else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("lasq")) {
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("laps")) {
+            System.out.println(" Executing on 恋爱普适");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+//            capabilities.setCapability("automationName","UiAutomator2");
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            driver.
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("lasq")) {
             System.out.println(" Executing on 恋爱神器");
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("deviceName", deviceID);
@@ -69,9 +89,24 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
-        } else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("jp")) {
+        } else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("lasq")) {
+            System.out.println(" Executing on 恋爱神器");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("jp")) {
             System.out.println(" Executing on 绝配");
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("deviceName", deviceID);
@@ -83,7 +118,24 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        } else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("jp")) {
+            System.out.println(" Executing on 绝配");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);  //设置appium工作台的超时时间180秒，不会报错NoSuchSessionException
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
         }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("tcrl")) {
             System.out.println(" Executing on 同城热恋");
@@ -97,7 +149,22 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("tcrl")) {
+            System.out.println(" Executing on 同城热恋");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
         }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("plp")) {
             System.out.println(" Executing on 漂流瓶");
@@ -111,7 +178,22 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("plp")) {
+            System.out.println(" Executing on 漂流瓶");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
         }else if (deviceID.equalsIgnoreCase("66612808") && app.equalsIgnoreCase("yhb")) {
             System.out.println(" Executing on 约会吧");
@@ -125,7 +207,22 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("yhb")) {
+            System.out.println(" Executing on 约会吧");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);  //设置appium工作台的超时时间180秒，不会报错NoSuchSessionException
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
         }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("dsjy")) {
             System.out.println(" Executing on 单身交友");
@@ -139,8 +236,206 @@ public class Driver {
 //            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
             capabilities.setCapability("unicodeKeyboard", true);
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-//            driver.installApp("D:\\"+app+".apk");
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("dsjy")) {
+            System.out.println(" Executing on 单身交友");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("mi_4w-5c549937") && app.equalsIgnoreCase("yyw")) {
+            System.out.println(" Executing on 有缘网");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+//            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.youyuan.yyhl");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("qs")) {
+            System.out.println(" Executing on 牵手");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "4.4.2");
+            capabilities.setCapability("resetKeyboard", true);
+//            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("qs")) {
+            System.out.println(" Executing on 牵手");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+//            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("mlyh")) {
+            System.out.println(" Executing on 美丽约会");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "4.4.2");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("mlyh")) {
+            System.out.println(" Executing on 美丽约会");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("xydht")) {
+            System.out.println(" Executing on 寻缘电话亭");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "4.4.2");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("xydht")) {
+            System.out.println(" Executing on 寻缘电话亭");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("mi_4w-5c549937") && app.equalsIgnoreCase("xydht")) {
+            System.out.println(" Executing on 寻缘电话亭");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("yy")) {
+            System.out.println(" Executing on 音缘");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);  //设置appium工作台的超时时间180秒，不会报错NoSuchSessionException
+//            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            //隐藏手机中的软键盘
+            capabilities.setCapability("unicodeKeyboard", "True");
+            capabilities.setCapability("resetKeyboard","True");
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+            capabilities.setCapability("'noReset'",true);  //已安装apk，不需要每次重新安装
+            /*capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");*/
+
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("yy")) {
+            System.out.println(" Executing on 音缘");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+//            capabilities.setCapability("newCommandTimeout", 180);
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "4.4.2");
+            //隐藏手机中的软键盘
+            capabilities.setCapability("unicodeKeyboard", "True");
+            capabilities.setCapability("resetKeyboard","True");
+            capabilities.setCapability("app","E:\\"+app+".apk");
+            capabilities.setCapability("'noReset'",true);  //已安装apk，不需要每次重新安装
+            /*capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");*/
+
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        }else if (deviceID.equalsIgnoreCase("5TF7N15A17007305") && app.equalsIgnoreCase("rd")) {
+            System.out.println(" Executing on 瑞福缘动");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("newCommandTimeout", 180);  //设置appium工作台的超时时间180秒，不会报错NoSuchSessionException
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            //隐藏手机中的软键盘
+            capabilities.setCapability("unicodeKeyboard", "True");
+            capabilities.setCapability("resetKeyboard","True");
+            capabilities.setCapability("app","D:\\workspace\\LBS5.6.1\\apps\\"+app+".apk");
+            capabilities.setCapability("'noReset'",true);  //已安装apk，不需要每次重新安装
+            /*capabilities.setCapability("appPackage", "com.huizheng.lasq");
+            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");*/
+
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//            driver.installApp("E:\\"+app+".apk");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             ThreadDriver.set(driver);
         }
         /**

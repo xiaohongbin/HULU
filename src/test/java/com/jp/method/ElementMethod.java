@@ -44,6 +44,16 @@ public class ElementMethod extends PageElement {
         return title_name.getText();
     }
 
+    //5.5.9新增页面元素方法
+    public void clickLijireg(){
+        log.info("合理化，注册页点击 立即注册");
+        btn_reg_dialog_reg.click();
+    }
+    public void clickBtnSpeed(){
+        log.info("合理化，双号，超级曝光页点击 立即领取");
+        btn_speed.click();
+    }
+
     //    下方五个模块切换
     public void clickYuanFenIcon() {
         log.info("点击“缘分”ICON");

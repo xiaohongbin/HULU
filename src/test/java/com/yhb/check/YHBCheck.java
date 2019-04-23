@@ -12,19 +12,31 @@ public class YHBCheck extends ElementMethod {
     ExtentTestNGITestListener el = new ExtentTestNGITestListener();
     ExtentTest log = el.getlog();
 
-    //男用户注册
+    //男用户注册  899633590  aaa123456
     public void manRegister(AndroidDriver driver) throws Exception {
 //        this.clickBtnRegister();
         this.clickBtnMen();
-        this.clickBtnRegister();
+        this.clickRegister();
         this.waitElement(driver,title_name);
         this.setPwd();
-        this.clickBtnOk();
+        this.clickBtnok();
         this.waitElement(driver,title_name);
         //拍照
         this.clickPhotos();
-        this.cameraBtn();
-        this.savnBtn();
+        if(this.doesWebElementExist(shutter_button)){
+            //华为拍照
+            this.shutterBtn();
+        }else{
+            this.cameraBtn();
+        }
+        Thread.sleep(3000);
+        if(this.doesWebElementExist(btn_done)){
+            //华为拍照
+            this.savnDoneBtn();
+        }else {
+            this.savnBtn();
+        }
+
         this.waitElement(driver,btn_right);
         this.clickConfirm();
         Thread.sleep(3000);
@@ -49,24 +61,32 @@ public class YHBCheck extends ElementMethod {
     //女用户注册
     public void womenRegister(AndroidDriver driver)throws Exception{
         this.clickBtnWomen();
-        this.clickBtnRegister();
+        this.clickRegister();
         this.waitElement(driver,title_name);
         this.setPwd();
-        this.clickBtnOk();
+        this.clickBtnok();
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
+        this.swipeToUp(driver);
+
         /*this.uploadLocalhostImage();  //上传照片
         this.clickIcon(driver);
         Thread.sleep(2000);
         this.clickThreePic(driver);*/
         this.clickPhotos();
-        this.cameraBtn();
-        this.savnBtn();
+        if(this.doesWebElementExist(shutter_button)){
+            this.shutterBtn();
+        }else
+            this.cameraBtn();
+        if(this.doesWebElementExist(btn_done)){
+            this.savnDoneBtn();
+        }else
+            this.savnBtn();
 
         this.clickConfirm();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
-        this.clickAudio(driver);
+        this.clickAudio(driver,500,1300);
         Thread.sleep(2000);
 
         this.waitElement(driver,loginSuccess);
@@ -75,18 +95,25 @@ public class YHBCheck extends ElementMethod {
             Assert.fail("女用户注册失败");
         }
 
-        this.btnIknow();
+        this.clickIKnown();
         //点击知道了按钮后
-        Thread.sleep(5000);
+        Thread.sleep(1000);
+        if(!this.doesWebElementExist(say_hello_layout)){
+            log.fail("注册成功没有进入附近打招呼页面");
+        }
+//        this.clickReload();
+        for(int i=0;i<4;i++){
+            this.clickImageIcon(i);
+        }
         this.sayHello();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         String name= this.getTitleName();
         if(name.equals("约会管家")){
             this.msgManagerOk();
             Thread.sleep(2000);
             Assert.assertTrue(this.topMe(),"开启约会管家失败！");
         }
-
+        log.info("女用户注册成功进入首页");
         /*this.keyBack(driver);
         this.waitElement(driver,topview);
         log.info("判断是否进入缘分模块");
@@ -106,11 +133,11 @@ public class YHBCheck extends ElementMethod {
     //男用户登陆公共接口
     public void manLogin()throws Exception{
         this.clickBtnMen();
-        this.clickBtnRegister();
+        this.clickRegister();
         Thread.sleep(3000);
         log.info("设置登陆密码");
         this.setPwd();
-        this.clickBtnOk();
+        this.clickBtnok();
 
         Thread.sleep(3000);
         this.clickSkip();
@@ -119,20 +146,20 @@ public class YHBCheck extends ElementMethod {
 
     //女用户登陆公共接口
     public void girlLogin(AndroidDriver driver)throws Exception{
-        this.clickBtnRegister();
+        this.clickRegister();
         this.clickBtnWomen();
-        this.clickBtnRegister();
+        this.clickRegister();
         Thread.sleep(3000);
         log.info("设置登陆密码");
         this.setPwd();
-        this.clickBtnOk();
+        this.clickBtnok();
 
         Thread.sleep(3000);
         this.keyBack(driver);
         this.keyBack(driver);
         this.clickSkip();
         this.waitElement(driver,title_name);
-        this.clickBtnBack();
+        this.clickBtnLeft();
 
     }
 
@@ -333,7 +360,7 @@ public class YHBCheck extends ElementMethod {
         title = this.getTitleName();
         Assert.assertEquals(title,"约会问答(5/5)","没有进入第五个约会问答");
         this.askInfo();  //选择答案
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-----------------------------------------------");
+
         if(!this.doesWebElementExist(top_me)){
             Assert.fail("约会问题回答后没有进入首页！");
         }
@@ -401,7 +428,7 @@ public class YHBCheck extends ElementMethod {
         Assert.assertTrue(imgLook(),"管理员消息未显示未读消息标识");
 
         this.userIconBtn(); //进入消息详情
-        this.clickBtnBack(); //返回消息页面
+        this.clickBtnLeft(); //返回消息页面
 
 
         Assert.assertFalse(imgLook2(),"私信tab旁显示未读消息标识");
@@ -410,12 +437,12 @@ public class YHBCheck extends ElementMethod {
         //判断进入完善资料页面
         this.adImageBtn();
         Assert.assertEquals(this.getTitleName(),"完善信息","没有进入完善信息页面");
-        this.clickBtnBack(); //返回消息页面
+        this.clickBtnLeft(); //返回消息页面
 
         //猜你感兴趣的女用户列表-约TA按钮
         this.sayHelloBtn();
 
-        this.clickBtnBack(); //返回首页
+        this.clickBtnLeft(); //返回首页
         Assert.assertFalse(imgLook(),"首页右上角显示未读消息标识");
         log.info("消息验证成功");
 
@@ -466,8 +493,8 @@ public class YHBCheck extends ElementMethod {
         this.setting_identity_auth_information_layout();
         Assert.assertEquals(getTitleName(),"约会信息(15%)","未进入到完善资料页面");
         log.info("进入到完善资料页面");
-        this.clickBtnBack(); //返回
-//        this.clickBtnBack();
+        this.clickBtnLeft(); //返回
+//        this.clickBtnLeft();
 
 //        //////上传头像
 //        this.setting_identity_auth_upload_user_icon_layout();
@@ -486,7 +513,7 @@ public class YHBCheck extends ElementMethod {
         this.information_button();
         Assert.assertEquals(getTitleName(),"约会信息(15%)","未进入到完善资料页面");
         log.info("进入到完善资料页面");
-        this.clickBtnBack(); //返回
+        this.clickBtnLeft(); //返回
         log.info("诚信等级提交成功");
     }
 
@@ -494,7 +521,7 @@ public class YHBCheck extends ElementMethod {
     public void phoneCheck(){
         Assert.assertEquals(getTitleName(),"手机认证","未进入到手机号验证页面");
         log.info("进入到手机号验证页面");
-        this.clickBtnBack(); //返回
+        this.clickBtnLeft(); //返回
     }
 
     //诚信认证-上传照片
@@ -551,7 +578,7 @@ public class YHBCheck extends ElementMethod {
         this.myspace_location_view();
         new TouchAction(driver).tap(360,850).perform();  //选中上海
         new TouchAction(driver).tap(360,850).perform();  //选中上海
-        this.clickBtnOk();  //确定
+        this.clickBtnok();  //确定
         String location = this.myspace_location();
         Assert.assertEquals(location,"上海","约会要求的所在地选中后显示不正确");
 
@@ -559,14 +586,14 @@ public class YHBCheck extends ElementMethod {
         this.myspace_he_age_view();
         swipeToUpSecend(driver,280,860,371);  //选中起始年龄
         swipeToUpSecend(driver,440,860,371);  //选中截至年龄
-        this.clickBtnOk();  //确定
+        this.clickBtnok();  //确定
         System.out.println("年龄区间："+this.myspace_he_age());
 //        Assert.assertEquals(this.myspace_he_age(),"27~33岁","约会要求的年龄选中后显示不正确");
         //身高
         this.myspace_info_height_view();
         swipeToUpSecend(driver,260,860,371);  //选中起始身高
         swipeToUpSecend(driver,420,860,371);  //选中截至身高
-        this.clickBtnOk();  //确定
+        this.clickBtnok();  //确定
         System.out.println("身高区间："+this.myspace_info_height());
 //        Assert.assertEquals(this.myspace_info_height(),"157~160cm","约会要求的身高选中后显示不正确");
 
@@ -606,7 +633,7 @@ public class YHBCheck extends ElementMethod {
             this.body_item_5();
             this.longPress(driver);
             this.id_bt_voice_commit(); //提交
-            this.clickBtnBack();  //返回
+            this.clickBtnLeft();  //返回
             Assert.assertFalse(this.introduce_myself_hint(),"录制失败");
             log.info("自我介绍完成");
         }
@@ -632,7 +659,7 @@ public class YHBCheck extends ElementMethod {
         System.out.println("title2:"+title2+"------"+"title3:"+title);
         Assert.assertNotEquals(title,title2,"换一题后，问题没有切换");
         log.info("换一题成功");
-        this.clickBtnBack();  //返回
+        this.clickBtnLeft();  //返回
         if(this.duihao()==true){
             System.out.println("this.answer():"+this.answer());
             Assert.assertEquals(this.answer(),answer,"选中的答案显示不正确");
@@ -660,18 +687,56 @@ public class YHBCheck extends ElementMethod {
         }
     }
 
-/*
 
-    public void VIP(AndroidDriver driver) throws Exception {
-        this.manlogin(driver);
-        this.clickMeIcon();
-        this.clickMemberCenter();
-        Thread.sleep(3000);
-        this.VipCenter();
+    public void beanList1(AndroidDriver driver) throws Exception {
+        this.manLogin();
+        this.clickBtnLeft();
+//        yhbCheck.keyBack(driver);  //手机的返回按钮
+        this.clickTopMe();
+        this.body_item_8();
+        this.waitElement(driver, title_name);
+        this.clickBean();
+//        this.beanPrice1(driver);
+        this.judgeBeanPrice1(driver);
+    }
+
+    public void letterList1(AndroidDriver driver) throws Exception {
+        this.manLogin();
+        this.clickBtnLeft();
+//        yhbCheck.keyBack(driver);  //手机的返回按钮
+        this.clickTopMe();
+        this.body_item_8();
+        this.waitElement(driver, title_name);
+        this.clickWriteLetter();
+        this.judgeLetterPrice1(driver);
+    }
+    public void vipList1(AndroidDriver driver) throws Exception {
+        this.manLogin();
+        this.clickBtnLeft();
+//        yhbCheck.keyBack(driver);  //手机的返回按钮
+        this.clickTopMe();
+        this.body_item_8();
+        this.waitElement(driver, title_name);
+        this.clickVipTitle();
+        this.judgeVipPrice1(driver);
     }
 
 
 
+    public void VIP(AndroidDriver driver) throws Exception {
+        this.manLogin();
+        this.clickBtnLeft();
+        this.clickTopMe();
+        this.body_item_8();
+        this.waitElement(driver, title_name);
+        this.judgeVipCenter();
+    }
+
+/**
+ * 公共方法替换
+
+ */
+/*
     //    1线男，会员中心 可购买项
     public void VipCenter() throws Exception {
         log.info("判断是否进会员中心");
@@ -701,12 +766,14 @@ public class YHBCheck extends ElementMethod {
     }
 */
 
+    /**
+     * 公共方法替换
+
+     */
+/*
     //    男，会员中心 豆币报价
     public void beanPrice1(AndroidDriver driver) throws Exception {
-        this.clickTopMe();
-        this.body_item_8();
-        this.waitElement(driver, title_name);
-        this.clickBean();
+
         this.clickReload();
         if (!this.doesWebElementExist(bean800)) {
             Assert.fail("800语音豆不存在");
@@ -722,6 +789,21 @@ public class YHBCheck extends ElementMethod {
         }
         this.clickBean800();
         this.waitElement(driver, kaitong);
+        log.info("判断800豆币，支付宝勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("800豆币，支付宝无自动续费");
+        }
+
+        this.clickXufei();
+        log.info("判断800豆币，支付宝自动续费后,价格优惠10元");
+        if (!this.doesWebElementExist(youhuijiage800)) {
+            Assert.fail("800豆币，支付宝勾选自动续费后，价格没有优惠10元");
+        }
+        this.clickXufei();
+        log.info("判断800豆币，支付宝取消 自动续费后，恢复为原价");
+        if (!this.doesWebElementExist(yuanjia800)) {
+            Assert.fail("800豆币，支付宝取消 自动续费后，不为原价");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         System.out.println("====+++++++"+this.getCurrentActivity(driver).toLowerCase());
@@ -740,20 +822,41 @@ public class YHBCheck extends ElementMethod {
             this.keyBack(driver);
         }
 
-        /*this.waitElement(driver, title_name);
+        this.waitElement(driver, title_name);
         this.clickWecharPay();
-        Thread.sleep(5000);
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("800豆币，微信支付 存在自动续费 选项");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
             Assert.fail("800豆币未启动微信");
         }
-        this.keyBack(driver);*/
-        this.clickBtnBack();  //返回
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断800豆币，银联支付原价是否是99元");
+        if (!this.doesWebElementExist(yuanjia800)) {
+            Assert.fail("800豆币原价不是99元");
+        }
+        this.clickBtnLeft();  //返回
         this.clickReload();
         this.clickBean550();
         this.waitElement(driver, title_name);
         this.clickReload();
+        log.info("判断550豆币，支付宝勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("550豆币，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage550)) {
+            Assert.fail("550豆币，支付宝 默认勾选 自动续费，为优惠后价格");
+        }
+        this.clickXufei();
+        log.info("判断550豆币，支付宝勾选自动续费后，为优惠后价格");
+        if (this.doesWebElementExist(yuanjia550)) {
+            Assert.fail("550豆币，支付宝自动续费后，不为优惠后价格");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         System.out.println("===="+this.getCurrentActivity(driver).toLowerCase());
@@ -765,22 +868,31 @@ public class YHBCheck extends ElementMethod {
             Assert.fail("550豆币未启动支付宝");
 
         }
-        log.info("豆币购买测试成功");
-        /*this.keyBack(driver);
+
+        this.keyBack(driver);
         this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("550豆币，微信支付 存在自动续费 选项");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
             Assert.fail("550豆币未启动微信");
-        }*/
+        }
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断550豆币，银联支付原价是否是89元");
+        if (!this.doesWebElementExist(yuanjia550)) {
+            Assert.fail("550豆币原价不是89元");
+        }
+        log.info("豆币购买测试成功");
     }
 
     //    男， 会员中心  写信包月报价
     public void letterPrice1(AndroidDriver driver) throws Exception {
-        this.clickTopMe();
-        this.body_item_8();
-        this.waitElement(driver, title_name);
-        this.clickWriteLetters();
+
         this.clickReload();
         this.waitElement(driver, title_name);
         if (!this.doesWebElementExist(letter90)) {
@@ -802,6 +914,23 @@ public class YHBCheck extends ElementMethod {
             Assert.fail("7天畅聊价格有误");
         }
         this.clickLetter90();
+        this.waitElement(driver, title_name);
+        log.info("判断写信包月90天，支付宝是否默认勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("一线男，写信包月90天，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage90)) {
+            Assert.fail("一线男，写信包月90天，支付宝默认勾选 自动续费，为优惠后价格");
+        }else{
+            log.info("一线男，写信包月90天，支付宝默认未勾选 自动续费，显示原价");
+        }
+        this.clickXufei();
+        log.info("判断写信包月90天，支付宝勾选自动续费后，显示优惠后价格");
+        if (this.doesWebElementExist(yuanjia90)) {
+            Assert.fail("写信包月90天，支付宝勾选自动续费后，仍显示原价");
+        }else{
+            log.info("一线男，写信包月90天，支付宝勾选自动续费后，显示优惠后价格");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if(this.getCurrentActivity(driver).toLowerCase().contains("alipay")){
@@ -816,12 +945,46 @@ public class YHBCheck extends ElementMethod {
             new TouchAction(driver).tap(400,750).perform();
             this.keyBack(driver);
         }
-        this.clickBtnBack();  //返回
+        this.waitElement(driver, title_name);
+        this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("90天写信包月，微信支付 存在自动续费 选项");
+        }
+        this.clickKaiTong();
+        Thread.sleep(5000);
+        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
+            Assert.fail("90天写信包月未启动微信");
+        }
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断90天写信包月，银联支付原价是否是109元");
+        if (!this.doesWebElementExist(yuanjia90)) {
+            Assert.fail("90天写信包月原价不是109元");
+        }
+        this.clickBtnLeft();  //返回
         this.clickReload();
         this.waitElement(driver, title_name);
         this.clickLetter30();
         this.waitElement(driver, title_name);
         this.clickReload();
+        log.info("判断写信包月30天，支付宝是否默认勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("一线男，写信包月30天，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage30)) {
+            Assert.fail("一线男，写信包月30天，支付宝默认勾选 自动续费，为优惠后价格");
+        }else{
+            log.info("一线男，写信包月30天，支付宝默认未勾选 自动续费，显示原价");
+        }
+        this.clickXufei();
+        log.info("判断写信包月30天，支付宝勾选自动续费后，显示优惠后价格");
+        if (this.doesWebElementExist(yuanjia30)) {
+            Assert.fail("写信包月30天，支付宝勾选自动续费后，仍显示原价");
+        }else{
+            log.info("一线男，写信包月30天，支付宝勾选自动续费后，显示优惠后价格");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if(this.getCurrentActivity(driver).toLowerCase().contains("alipay")){
@@ -836,11 +999,46 @@ public class YHBCheck extends ElementMethod {
             new TouchAction(driver).tap(400,750).perform();
             this.keyBack(driver);
         }
-        this.clickBtnBack();  //返回
+        this.waitElement(driver, title_name);
+        this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("30天写信包月，微信支付 存在自动续费 选项");
+        }
+        this.clickKaiTong();
+        Thread.sleep(5000);
+        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
+            Assert.fail("30天写信包月未启动微信");
+        }
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断30天写信包月，银联支付原价是否是89元");
+        if (!this.doesWebElementExist(yuanjia30)) {
+            Assert.fail("30天写信包月原价不89元");
+        }
+
+        this.clickBtnLeft();  //返回
         this.clickReload();
         this.clickLetter7();
         this.waitElement(driver, title_name);
         this.clickReload();
+        log.info("判断写信包月7天，支付宝是否默认勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("一线男，写信包月7天，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage7)) {
+            Assert.fail("一线男，写信包月7天，支付宝默认勾选 自动续费，为优惠后价格");
+        }else{
+            log.info("一线男，写信包月7天，支付宝默认未勾选 自动续费，显示原价");
+        }
+        this.clickXufei();
+        log.info("判断写信包月7天，支付宝勾选自动续费后，显示优惠后价格");
+        if (this.doesWebElementExist(yuanjia7)) {
+            Assert.fail("写信包月7天，支付宝勾选自动续费后，仍显示原价");
+        }else{
+            log.info("一线男，写信包月7天，支付宝勾选自动续费后，显示优惠后价格");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if(this.getCurrentActivity(driver).toLowerCase().contains("alipay")){
@@ -855,6 +1053,25 @@ public class YHBCheck extends ElementMethod {
             new TouchAction(driver).tap(400,750).perform();
             this.keyBack(driver);
         }
+        this.waitElement(driver, title_name);
+        this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("7天写信包月，微信支付 存在自动续费 选项");
+        }
+        this.clickKaiTong();
+        Thread.sleep(5000);
+        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
+            Assert.fail("7天写信包月未启动微信");
+        }
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断7天写信包月，银联支付原价是否是69元");
+        if (!this.doesWebElementExist(yuanjia7)) {
+            Assert.fail("7天写信包月原价不69元");
+        }
+
         log.info("写信包月测试成功");
 
     }
@@ -863,24 +1080,36 @@ public class YHBCheck extends ElementMethod {
         this.clickTopMe();
         this.body_item_8();
         this.waitElement(driver, title_name);
-        this.vipClick();
+        this.clickVipTitle();
         this.clickReload();
         this.waitElement(driver, title_name);
-        if (!this.doesWebElementExist(vip90)) {
+        if (!this.doesWebElementExist(vip90danhao)) {
             Assert.fail("90天vip不存在");
         }
-        if (!this.getVip90price().contains("￥100")) {
+        if (!this.getVip90priceDanhao().contains("￥100")) {
             Assert.fail("90天vip价格错误");
         }
-        if (!this.doesWebElementExist(vip30)) {
+        if (!this.doesWebElementExist(vip30danhao)) {
             Assert.fail("30天vip不存在");
         }
-        if (!this.getVip30price().contains("￥50")) {
+        if (!this.getVip30priceDanhao().contains("￥50")) {
             Assert.fail("30天vip价格有误");
         }
-        this.clickVip90();
+        this.clickVip90Danhao();
         this.clickReload();
         this.waitElement(driver, title_name);
+        log.info("判断90天vip，支付宝是否默认勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("90天vip，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage_vip90)) {
+            Assert.fail("90天vip，支付宝默认勾选 自动续费，为优惠后价格");
+        }
+        this.clickXufei();
+        log.info("判断 90天vip，支付宝取消 自动续费，恢复原价");
+        if (this.doesWebElementExist(yuanjia_vip90)) {
+            Assert.fail("90天vip，支付宝勾选自动续费后，显示原价");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if(this.getCurrentActivity(driver).toLowerCase().contains("alipay")){
@@ -895,12 +1124,42 @@ public class YHBCheck extends ElementMethod {
             new TouchAction(driver).tap(400,750).perform();
             this.keyBack(driver);
         }
-        this.clickBtnBack();  //返回
+        this.waitElement(driver, title_name);
+        this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("90天vip，微信支付 存在自动续费 选项");
+        }
+        this.clickKaiTong();
+        Thread.sleep(5000);
+        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
+            Assert.fail("90天vip未启动微信");
+        }
+        this.keyBack(driver);
         this.clickReload();
-        this.clickVip30();
+        this.clickYinlianPay();
+        this.waitElement(driver, title_name);
+        log.info("判断90天vip，银联支付是否默认价格优惠10元");
+        if (this.doesWebElementExist(youhuijiage_vip90)) {
+            Assert.fail("90天vip，银联支付默认勾选 自动续费，为优惠后价格");
+        }
+
+        this.clickBtnLeft();  //返回
+        this.clickReload();
+        this.clickVip30Danhao();
         this.clickReload();
         this.waitElement(driver, title_name);
-
+        log.info("判断30天vip，支付宝是否默认勾选 自动续费，且价格优惠10元");
+        if (!this.doesWebElementExist(xufei)) {
+            Assert.fail("30天vip，支付宝无自动续费");
+        }
+        if (this.doesWebElementExist(youhuijiage_vip30)) {
+            Assert.fail("30天vip，支付宝默认勾选 自动续费，为优惠后价格");
+        }
+        this.clickXufei();
+        log.info("判断 30天vip，支付宝取消 自动续费，恢复原价");
+        if (this.doesWebElementExist(yuanjia_vip30)) {
+            Assert.fail("30天vip，支付宝勾选自动续费后，显示原价");
+        }
         this.clickKaiTong();
         Thread.sleep(5000);
         if(this.getCurrentActivity(driver).toLowerCase().contains("alipay")){
@@ -915,8 +1174,27 @@ public class YHBCheck extends ElementMethod {
             new TouchAction(driver).tap(400,750).perform();
             this.keyBack(driver);
         }
+
+        this.clickWecharPay();
+        if (this.doesWebElementExist(xufei)) {
+            Assert.fail("30天vip，微信支付 存在自动续费 选项");
+        }
+        this.clickKaiTong();
+        Thread.sleep(5000);
+        if (!this.getCurrentActivity(driver).contains("SimpleLoginUI")) {
+            Assert.fail("30天vip未启动微信");
+        }
+        this.keyBack(driver);
+        this.waitElement(driver, title_name);
+        this.clickReload();
+        this.clickYinlianPay();
+        log.info("判断30天vip，银联支付是否默认价格优惠10元");
+
+        if (this.doesWebElementExist(youhuijiage_vip30)) {
+            Assert.fail("30天vip，银联支付默认勾选 自动续费，为优惠后价格");
+        }
         log.info("VIP开通测试成功");
-    }
+    }*/
    //    1线男，会员中心 收信宝----已废掉
    /* public void receiveLetterPrice1(AndroidDriver driver) throws Exception {
         this.clickTopMe();
@@ -1041,7 +1319,7 @@ public class YHBCheck extends ElementMethod {
        if(!price.contains("￥30.00")){
            Assert.fail("咪咕VIP会员价格不正确");
        }
-       this.clickBtnBack();
+       this.clickBtnLeft();
        this.waitElement(driver,title_name);
        this.clickZhuanQu();
        this.clickReload();
