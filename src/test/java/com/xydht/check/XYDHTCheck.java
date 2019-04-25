@@ -1386,8 +1386,8 @@ public class XYDHTCheck extends ElementMethod {
     }
     //      豆币，免密开通及两次支付引导
     public void beanMianMi(AndroidDriver driver, String qudaohao ,int beannum) throws Exception {
-//        this.manRegiste3(driver, qudaohao);
-        this.manLogin(driver,"903402889","aaa123456",3);
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903402889","aaa123456",3);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
@@ -1396,8 +1396,8 @@ public class XYDHTCheck extends ElementMethod {
     }
     //      写信包月，免密开通及两次支付引导-测试支付包账号专用
     public void letterMianMi(AndroidDriver driver, String qudaohao) throws Exception {
-//        this.manRegiste3(driver, qudaohao);
-        this.manLogin(driver,"903402889","aaa123456",3);
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903402889","aaa123456",3);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
@@ -1407,8 +1407,8 @@ public class XYDHTCheck extends ElementMethod {
     }
     //      皇冠特权，免密开通及两次支付引导
     public void vipMianMi(AndroidDriver driver, String qudaohao) throws Exception {
-//        this.manRegiste3(driver, qudaohao);
-        this.manLogin(driver,"903402889","aaa123456",3);
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903402889","aaa123456",3);
         this.clickMeIcon();
         this.waitElement(driver, member_center);
         this.clickMemberCenter();
