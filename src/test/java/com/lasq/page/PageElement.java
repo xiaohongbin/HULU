@@ -41,6 +41,11 @@ public class PageElement {
     @FindBy(id = "com.huizheng.lasq:id/title_name")
     @CacheLookup
     public WebElement title_name;
+    //权限信息
+//    @FindBy(id = "com.android.packageinstaller:id/permission_allow_button")
+    @FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[2]")
+    @CacheLookup
+    public WebElement allow_button;
 
     //5.5.9新增页面,注册页合理化
     @FindBy(id="com.huizheng.lasq:id/btn_reg_dialog_reg")

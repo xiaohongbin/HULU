@@ -8,14 +8,14 @@
         <!--<suite-file path="jp.xml"/>-->
         <!--<suite-file path="jpUI.xml"/>-->
         <!--<suite-file path="laps.xml"/>-->
-        <!--<suite-file path="lasq.xml"/>-->
+        <suite-file path="lasq.xml"/>
         <!--<suite-file path="plp.xml"/>-->
         <!--<suite-file path="tcrl.xml"/>-->
         <!--<suite-file path="yhb.xml"/>-->
         <!--<suite-file path="dsjy.xml"/>-->
         <!--<suite-file path="qs.xml"/>-->
         <!--<suite-file path="mlyh.xml"/>-->
-        <suite-file path="xydht.xml"/>
+        <!--<suite-file path="xydht.xml"/>-->
         <!--<suite-file path="yy.xml"/>-->
         <!--<suite-file path="yyw.xml"/>-->
         <!--<suite-file path="rd.xml"/>-->

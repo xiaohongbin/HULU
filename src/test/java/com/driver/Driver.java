@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.remote.internal.OkHttpClient.Factory;
 
 public class Driver {
 
@@ -77,7 +78,35 @@ public class Driver {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //            driver.
             ThreadDriver.set(driver);
-        }else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("lasq")) {
+        }else if (deviceID.equalsIgnoreCase("73EBB18530233351") && app.equalsIgnoreCase("lasq")) {
+            System.out.println(" Executing on 恋爱神器-荣耀7C");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "8.0.0");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","E:\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        } else if (deviceID.equalsIgnoreCase("ed22d1d4") && app.equalsIgnoreCase("lasq")) {
+            System.out.println(" Executing on 恋爱神器-小米MI 5s");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("deviceName", deviceID);
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", "6.0.1");
+            capabilities.setCapability("resetKeyboard", true);
+            capabilities.setCapability("app","E:\\"+app+".apk");
+//            capabilities.setCapability("appPackage", "com.huizheng.lasq");
+//            capabilities.setCapability("appActivity", "com.app.ui.activity.WelcomeActivity");
+            capabilities.setCapability("unicodeKeyboard", true);
+            driver = new AndroidDriver<>(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            ThreadDriver.set(driver);
+        } else if (deviceID.equalsIgnoreCase("DU2SSE148L041137") && app.equalsIgnoreCase("lasq")) {
             System.out.println(" Executing on 恋爱神器");
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("deviceName", deviceID);

@@ -8,38 +8,91 @@
     <!--<suite-file path="test1.xml"></suite-file>-->
     <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
     <!--</suite-files>-->
-    <test name="恋爱神器" preserve-order="true">
-        <parameter name="deviceID" value="DU2SSE148L041137"/>
+    <test name="恋爱神器-小米MI5s" preserve-order="true">
+        <!--<parameter name="deviceID" value="73EBB18530233351"/>-->
+        <!--<parameter name="deviceID" value="DU2SSE148L041137"/>-->
+        <parameter name="deviceID" value="ed22d1d4"/>
         <parameter name="app" value="lasq"/>
         <classes>
             <class name="com.lasq.testcase.testcase">
                 <methods>
-                    <!--<include name="checkProtocal"/>-->
-                    <include name="checkManRegiste1"/>
-                    <include name="checkManRegiste3"/>
-                    <include name="checkSayHi"/>
-                    <include name="checkConversation"/>
-                    <include name="checkNotread"/>
-                    <include name="checkUpgraded"/>
-                    <include name="checkAskbtn"/>
-                    <include name="checkOnlineStatus"/>
-                    <include name="checkManMore1"/>
-                    <include name="checkManMore3"/>
-                    <include name="checkManVideo3"/>
-                    <include name="checkVIPList"/>
-                    <include name="checkBeanList1"/>
-                    <include name="checkLetterList1"/>
-                    <include name="checkVipList1"/>
-                    <include name="checkAnswerQuestions1"/>
-                    <include name="checkMyPersonData1"/>
-                    <include name="checkMyCondition1"/>
-                    <include name="checkMyTag1"/>
-                    <include name="checkMyVisitor3"/>
-                    <include name="checkMyIntegrity3"/>
-                    <include name="checkInitSearch"/>
-                    <include name="checkSeachArea"/>
-                    <include name="checkSeachAge"/>
-                    <include name="checkSeachHeight"/>
+                    <include name="checkProtocal"/>
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManRegiste3"/>-->
+                    <!--<include name="checkSayHi"/>-->
+                    <!--<include name="checkConversation"/>-->
+                    <!--<include name="checkNotread"/>-->
+                    <!--<include name="checkUpgraded"/>-->
+                    <!--<include name="checkAskbtn"/>-->
+                    <!--<include name="checkOnlineStatus"/>-->
+                    <!--<include name="checkManMore1"/>-->
+                    <!--<include name="checkManMore3"/>-->
+                    <!--<include name="checkManVideo3"/>-->
+                    <!--<include name="checkVIPList"/>-->
+                    <!--<include name="checkBeanList1"/>-->
+                    <!--<include name="checkLetterList1"/>-->
+                    <!--<include name="checkVipList1"/>-->
+                    <!--<include name="checkAnswerQuestions1"/>-->
+                    <!--<include name="checkMyPersonData1"/>-->
+                    <!--<include name="checkMyCondition1"/>-->
+                    <!--<include name="checkMyTag1"/>-->
+                    <!--<include name="checkMyVisitor3"/>-->
+                    <!--<include name="checkMyIntegrity3"/>-->
+                    <!--<include name="checkInitSearch"/>-->
+                    <!--<include name="checkSeachArea"/>-->
+                    <!--<include name="checkSeachAge"/>-->
+                    <!--<include name="checkSeachHeight"/>-->
+                    <!--<include name="checkSeachAll"/>-->
+                    <!--<include name="checkSeachHello"/>-->
+                    <!--<include name="checkMailbox"/>-->
+                    <!--<include name="checkMailboxNum1"/>-->
+                    <!--<include name="checkMailboxPersonData1"/>-->
+                    <!--<include name="checkWomanRegiste1"/>-->
+                    <!--<include name="checkWomenSayHi1"/>-->
+                    <!--<include name="checkWomenZuanfenZhuShou1"/>-->
+                    <!--<include name="checkWomenMemberCenter"/>-->
+                    <!--<include name="checkWomananNear1"/>-->
+                    <!--<include name="checkManNear1"/>-->
+
+                    <!--<include name="checkManRegisteNear3"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="恋爱神器-华为H60" preserve-order="true">
+        <!--<parameter name="deviceID" value="73EBB18530233351"/>-->
+        <parameter name="deviceID" value="DU2SSE148L041137"/>
+        <!--<parameter name="deviceID" value="ed22d1d4"/>-->
+        <parameter name="app" value="lasq"/>
+        <classes>
+            <class name="com.lasq.testcase.testcase">
+                <methods>
+                    <include name="checkProtocal"/>
+                    <!--<include name="checkManRegiste1"/>-->
+                    <!--<include name="checkManRegiste3"/>-->
+                    <!--<include name="checkSayHi"/>-->
+                    <!--<include name="checkConversation"/>-->
+                    <!--<include name="checkNotread"/>-->
+                    <!--<include name="checkUpgraded"/>-->
+                    <!--<include name="checkAskbtn"/>-->
+                    <!--<include name="checkOnlineStatus"/>-->
+                    <!--<include name="checkManMore1"/>-->
+                    <!--<include name="checkManMore3"/>-->
+                    <!--<include name="checkManVideo3"/>-->
+                    <!--<include name="checkVIPList"/>-->
+                    <!--<include name="checkBeanList1"/>-->
+                    <!--<include name="checkLetterList1"/>-->
+                    <!--<include name="checkVipList1"/>-->
+                    <!--<include name="checkAnswerQuestions1"/>-->
+                    <!--<include name="checkMyPersonData1"/>-->
+                    <!--<include name="checkMyCondition1"/>-->
+                    <!--<include name="checkMyTag1"/>-->
+                    <!--<include name="checkMyVisitor3"/>-->
+                    <!--<include name="checkMyIntegrity3"/>-->
+                    <!--<include name="checkInitSearch"/>-->
+                    <!--<include name="checkSeachArea"/>-->
+                    <!--<include name="checkSeachAge"/>-->
+                    <!--<include name="checkSeachHeight"/>-->
                     <!--<include name="checkSeachAll"/>-->
                     <!--<include name="checkSeachHello"/>-->
                     <!--<include name="checkMailbox"/>-->
@@ -58,33 +111,6 @@
         </classes>
     </test>
 
-    <!--<test name ="chrome" preserve-order="true">-->
-    <!--<parameter name="browser" value="chrome" />-->
-    <!--<classes>-->
-    <!--<class name="ptenginecase.Chrome">-->
-    <!--<methods>-->
-    <!--<include name="cnLogin"/>-->
-    <!--&lt;!&ndash;<include name="DCoverview"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="campaignmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="referralmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="searchmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="keywordmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="socialmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="devicemenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="osmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="browsermenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="resolutionmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="locationmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="pagemenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="entrypagemenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="campaignOverviewmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="eventmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="eventAnalyticsmenu"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<include name="eventAnalyticstabmenu"/>&ndash;&gt;-->
-    <!--</methods>-->
-    <!--</class>-->
-    <!--</classes>-->
-    <!--</test>-->
     <listeners>
         <!--&lt;!&ndash;listener class-name="listener.TestngListener"/&ndash;&gt;-->
         <!--&lt;!&ndash;<listener class-name="listener.ExtentTestNGIReporterListener1"/>&ndash;&gt;-->

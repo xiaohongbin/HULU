@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="366.016" tests="4" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="61.355" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
-    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
+    <property name="java.vm.version" value="25.91-b14"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\workspace\LBS5.6.1"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\hulu5.5.9"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,46 +16,46 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\workspace\LBS5.6.1"/>
-    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="user.dir" value="E:\hulu5.5.9"/>
+    <property name="java.runtime.version" value="1.8.0_91-b14"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\yangx\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\maven\bin\..\bin\m2.conf"/>
+    <property name="classworlds.conf" value="F:\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\Java\jdk1.8.0_171\bin;D:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\appium\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\appium\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\Program Files\Appium\node_modules\.bin;D:\Program Files\nodejs\;D:\maven\bin\;D:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\yangx\AppData\Local\Microsoft\WindowsApps;C:\Users\yangx\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
-    <property name="maven.conf" value="D:\maven\bin\../conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\nodejs\;C:\strawberry\c\bin;C:\strawberry\perl\bin;F:\maven\bin;C:\Program Files\TortoiseSVN\bin;F:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\MySQL\mysql-5.6.26-winx64\bin;E:\Android\android-sdk\platform-tools;E:\Android\android-sdk\tools;E:\Appium\node_modules\.bin\;E:\Android\android-sdk\build-tools\27.0.3;F:\AppServ\Apache24\bin;F:\AppServ\php5;F:\AppServ\MySQL\bin;."/>
+    <property name="maven.conf" value="F:\maven\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="D:\maven\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\yangx"/>
+    <property name="library.jansi.path" value="F:\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="GBK"/>
-    <property name="user.name" value="yangx"/>
-    <property name="java.class.path" value="D:\maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="F:\maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="D:\Program Files\Java\jdk1.8.0_171\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_171"/>
-    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes"/>
     <property name="sun.stderr.encoding" value="ms936"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\maven\bin\.."/>
+    <property name="maven.home" value="F:\maven\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -64,27 +64,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkBean1" classname="com.xydht.testcase.testcase" time="56.333"/>
-  <testcase name="checkBeanMianMi3" classname="com.xydht.testcase.testcase" time="76.939">
-    <failure message="Expected condition failed: waiting for element to be clickable: [[Android: null] -&gt; xpath: //android.widget.Button[@content-desc=&quot;同意协议并开通&quot;]] (tried for 8 second(s) with 500 MILLISECONDS interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[Android: null] -> xpath: //android.widget.Button[@content-desc="同意协议并开通"]] (tried for 8 second(s) with 500 MILLISECONDS interval)
-	at com.xydht.testcase.testcase.checkBeanMianMi3(testcase.java:306)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-106INDP', ip: '192.168.119.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\workspace\LBS5.6.1\apps\..., appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, browserName: Android, databaseEnabled: false, desired: {app: D:\workspace\LBS5.6.1\apps\..., appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, deviceName: 5TF7N15A17007305, newCommandTimeout: 180, platformName: Android, platformVersion: 6.0.1, resetKeyboard: true, unicodeKeyboard: true}, deviceName: 5TF7N15A17007305, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 180, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 405a59e2-772d-4b4f-896e-217e17243fcc
-*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc="同意协议并开通"]}
-	at com.xydht.testcase.testcase.checkBeanMianMi3(testcase.java:306)
-</failure>
-  </testcase>
-  <testcase name="checkLetterMianMi3" classname="com.xydht.testcase.testcase" time="95.599"/>
-  <testcase name="checkVIPMianMi3" classname="com.xydht.testcase.testcase" time="79.303">
-    <failure message="Index: 1, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
-	at com.xydht.testcase.testcase.checkVIPMianMi3(testcase.java:316)
-</failure>
-  </testcase>
+  <testcase name="checkProtocal" classname="com.lasq.testcase.testcase" time="13.655"/>
+  <testcase name="checkProtocal" classname="com.lasq.testcase.testcase" time="15.963"/>
 </testsuite>

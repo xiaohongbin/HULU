@@ -13,6 +13,10 @@ public class LASQCheck extends ElementMethod {
     WriteUserID wui=new WriteUserID();
     //    注册协议
     public void protocal() throws Exception {
+        if(this.doesWebElementExist(allow_button)){
+            this.clickAllow_button();
+        }
+
         this.clickProtocal();
         if (!this.getTitleName().equals("注册协议")) {
             Assert.fail("点击注册页面下方“使用协议”，未进入注册协议页面");

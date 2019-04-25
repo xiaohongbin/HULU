@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f565f773-fa84-460c-8259-609cda9b2955" name="Default" comment="" />
+    <list default="true" id="f565f773-fa84-460c-8259-609cda9b2955" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lasq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lasq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.xydht.testcase.testcase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/寻缘电话亭/寻缘电话亭.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/寻缘电话亭/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/寻缘电话亭/寻缘电话亭.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/寻缘电话亭/寻缘电话亭.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/driver/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hulu/method/ElementsMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/hulu/method/ElementsMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/check/LASQCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/check/LASQCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/method/ElementMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lasq/page/PageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lasq/page/PageElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/listener/ScreenScr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/listener/ScreenScr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/xydht/check/XYDHTCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/xydht/check/XYDHTCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/yhb/check/YHBCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/yhb/check/YHBCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,42 +56,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5814">
-              <caret line="310" column="25" selection-start-line="310" selection-start-column="25" selection-end-line="310" selection-end-column="25" />
+            <state relative-caret-position="75">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lasq.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lasq.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#test#0;n#suite#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PLPCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java">
+      <file leaf-file-name="ExtentTestNGITestListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publicCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hulu/check/publicCheck.java">
+      <file leaf-file-name="ITestContext.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.11/testng-6.11.jar!/org/testng/ITestContext.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6726">
-              <caret line="1174" column="22" selection-start-line="1174" selection-start-column="13" selection-end-line="1174" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#judgeBean#0;class#publicCheck#0" />
-                <element signature="method#judgeLetter#0;class#publicCheck#0" />
-                <element signature="method#judgeLetterPrice1#0;class#publicCheck#0" />
-                <element signature="method#judgeLetterPrice3#0;class#publicCheck#0" />
-                <element signature="method#judgeVip#0;class#publicCheck#0" />
-                <element signature="method#judgeVipPrice1#0;class#publicCheck#0" />
-                <element signature="method#judgeVipPrice3#0;class#publicCheck#0" />
-              </folding>
+            <state relative-caret-position="715">
+              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtentManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/ExtentManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1100">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -55,53 +116,34 @@
       <file leaf-file-name="ElementsMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18373">
-              <caret line="1027" column="16" selection-start-line="1027" selection-start-column="16" selection-end-line="1027" selection-end-column="16" />
+            <state relative-caret-position="350">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testcase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/xydht/testcase/testcase.java">
+      <file leaf-file-name="java-client-5.0.4.pom" pinned="false" current-in-tab="false">
+        <entry file="file://$MAVEN_REPOSITORY$/io/appium/java-client/5.0.4/java-client-5.0.4.pom">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4617">
-              <caret line="248" column="24" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+            <state relative-caret-position="258">
+              <caret line="105" column="71" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
+      <file leaf-file-name="LASQCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XYDHTCheck.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/xydht/check/XYDHTCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="1341" column="27" selection-start-line="1341" selection-start-column="27" selection-end-line="1341" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plp.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plp.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xydht.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xydht.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="275">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -117,7 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clickLeftLoveImage</find>
       <find>manLogin1</find>
       <find>btn_cancel</find>
       <find>manRegiste1</find>
@@ -147,6 +188,7 @@
       <find>checkLetterMianMi</find>
       <find>this.manLogin</find>
       <find>manLogin</find>
+      <find>恋爱神器</find>
     </findStrings>
     <replaceStrings>
       <replace>clickRDMemberCenter</replace>
@@ -164,12 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qs/method/ElementMethod.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/listener/ExtentManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mlyh/page/PageElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mlyh/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java" />
@@ -181,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/xydht/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xydht/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/yhb/check/YHBCheck.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/yy/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/yy/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rd/testcase/testcase.java" />
@@ -206,15 +241,22 @@
         <option value="$PROJECT_DIR$/mlyh.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/xydht/testcase/testcase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hulu/page/PageElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/method/ElementMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/page/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java" />
         <option value="$PROJECT_DIR$/plp.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/xydht.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/xydht/check/XYDHTCheck.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/driver/Driver.java" />
+        <option value="$PROJECT_DIR$/lasq.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java" />
       </list>
     </option>
   </component>
@@ -229,30 +271,97 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.6.1" type="462c0819:PsiDirectoryNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LBS5.6.1" type="462c0819:PsiDirectoryNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lasq" type="462c0819:PsiDirectoryNode" />
+              <item name="testcase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hulu5.5.9" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -338,7 +447,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -349,10 +459,10 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32983023" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17107584" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.19713262" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1738076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22231205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.2497979" />
       <window_info id="UI Designer" order="5" />
@@ -360,12 +470,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.43309858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -381,76 +491,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="82" selection-start-line="82" selection-end-line="82" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="985" column="22" selection-start-line="985" selection-start-column="22" selection-end-line="985" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="770" column="62" selection-start-line="770" selection-start-column="53" selection-end-line="770" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/laps/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="772" column="17" selection-start-line="772" selection-start-column="8" selection-end-line="772" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mlyh/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/yhb/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="558" column="26" lean-forward="true" selection-start-line="558" selection-start-column="26" selection-end-line="558" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/yhb/method/ElementMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="849" column="5" lean-forward="true" selection-start-line="849" selection-start-column="5" selection-end-line="849" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yhb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/yhb/testcase/testcase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="136" column="30" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rd/page/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xydht/method/ElementMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28538">
@@ -469,31 +509,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="737" column="3" selection-start-line="737" selection-start-column="3" selection-end-line="737" selection-end-column="3" />
-          <folding>
-            <element signature="method#recommendedDaily#0;class#YHBCheck#0" />
-            <element signature="method#beanList1#0;class#YHBCheck#0" />
-            <element signature="method#letterList1#0;class#YHBCheck#0" />
-            <element signature="method#vipList1#0;class#YHBCheck#0" />
-            <element signature="method#beanPrice1#0;class#YHBCheck#0" />
-            <element signature="method#letterPrice1#0;class#YHBCheck#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="471" column="19" selection-start-line="471" selection-start-column="19" selection-end-line="471" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebElement.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/yy/page/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -564,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mlyh.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dsjy/check/DSJYCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -606,20 +619,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar!/org/openqa/selenium/support/PageFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="182" column="61" selection-start-line="182" selection-start-column="45" selection-end-line="182" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar!/org/openqa/selenium/support/PageFactory.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/yy/check/YYCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10127">
@@ -676,64 +676,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18373">
-          <caret line="1027" column="16" selection-start-line="1027" selection-start-column="16" selection-end-line="1027" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hulu/check/publicCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6726">
+        <state relative-caret-position="8850">
           <caret line="1174" column="22" selection-start-line="1174" selection-start-column="13" selection-end-line="1174" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#judgeBean#0;class#publicCheck#0" />
-            <element signature="method#judgeLetter#0;class#publicCheck#0" />
-            <element signature="method#judgeLetterPrice1#0;class#publicCheck#0" />
-            <element signature="method#judgeLetterPrice3#0;class#publicCheck#0" />
-            <element signature="method#judgeVip#0;class#publicCheck#0" />
-            <element signature="method#judgeVipPrice1#0;class#publicCheck#0" />
-            <element signature="method#judgeVipPrice3#0;class#publicCheck#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/testcase/testcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5814">
+        <state relative-caret-position="7650">
           <caret line="310" column="25" selection-start-line="310" selection-start-column="25" selection-end-line="310" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xydht.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
+        <state relative-caret-position="1475">
           <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plp/check/PLPCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="850">
           <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
@@ -742,29 +708,193 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xydht/testcase/testcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4617">
+        <state relative-caret-position="6075">
           <caret line="248" column="24" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xydht/check/XYDHTCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="33375">
           <caret line="1341" column="27" selection-start-line="1341" selection-start-column="27" selection-end-line="1341" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/method/ElementMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/page/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="45" column="117" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/testcase/testcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlyh.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lasq/check/LASQCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/io/appium/java-client/5.0.4/java-client-5.0.4.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hulu/method/ElementsMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="105" column="71" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lasq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding>
+            <element signature="n#test#0;n#suite#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.11/testng-6.11.jar!/org/testng/ITestContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/ExtentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/listener/ExtentTestNGITestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LBS</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -772,6 +902,18 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.seleniumhq.selenium:selenium-api:3.14.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6105611" />
               </list>
             </option>
           </splitter-proportions>

@@ -37,11 +37,20 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>3.14.0</version>
+            <!--<version>3.141.0</version>-->
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <!--<dependency>-->
+            <!--<groupId>org.seleniumhq.selenium</groupId>-->
+            <!--<artifactId>selenium-remote-driver</artifactId>-->
+            <!--<version>3.141.59</version>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>5.0.4</version>
+            <!--<version>6.0.0</version>-->
         </dependency>
     </dependencies>
     <build>

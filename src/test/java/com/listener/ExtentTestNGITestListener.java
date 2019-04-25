@@ -36,7 +36,8 @@ public class ExtentTestNGITestListener implements ITestListener,IAnnotationTrans
 //        System.out.println(context.getName());
 //        parentTest=extent.createTest(context.getName());
 //        ExtentTest parent = extent.createTest(context.getName());
-        ExtentTest parent = extent.createTest(context.getSuite().getName());
+//        ExtentTest parent = extent.createTest(context.getSuite().getName());
+        ExtentTest parent = extent.createTest(context.getCurrentXmlTest().getName());
 
         parentTest.set(parent);
 

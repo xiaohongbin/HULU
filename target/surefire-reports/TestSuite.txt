@@ -1,23 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 366.016 sec <<< FAILURE! - in TestSuite
-checkBeanMianMi3(com.xydht.testcase.testcase)  Time elapsed: 76.939 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[Android: null] -> xpath: //android.widget.Button[@content-desc="同意协议并开通"]] (tried for 8 second(s) with 500 MILLISECONDS interval)
-	at com.xydht.testcase.testcase.checkBeanMianMi3(testcase.java:306)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-106INDP', ip: '192.168.119.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\workspace\LBS5.6.1\apps\..., appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, browserName: Android, databaseEnabled: false, desired: {app: D:\workspace\LBS5.6.1\apps\..., appActivity: com.app.ui.activity.Welcome..., appPackage: com.huizheng.lasq, deviceName: 5TF7N15A17007305, newCommandTimeout: 180, platformName: Android, platformVersion: 6.0.1, resetKeyboard: true, unicodeKeyboard: true}, deviceName: 5TF7N15A17007305, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 180, platform: LINUX, platformName: LINUX, platformVersion: 6.0.1, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 405a59e2-772d-4b4f-896e-217e17243fcc
-*** Element info: {Using=xpath, value=//android.widget.Button[@content-desc="同意协议并开通"]}
-	at com.xydht.testcase.testcase.checkBeanMianMi3(testcase.java:306)
-
-checkVIPMianMi3(com.xydht.testcase.testcase)  Time elapsed: 79.303 sec  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
-	at com.xydht.testcase.testcase.checkVIPMianMi3(testcase.java:316)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.355 sec - in TestSuite

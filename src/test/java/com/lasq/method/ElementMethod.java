@@ -47,6 +47,11 @@ public class ElementMethod extends PageElement {
         head_menu_icon.click();
     }
 
+    //手机权限
+    public void clickAllow_button(){
+        log.info("点击始终允许");
+        allow_button.click();
+    }
     //5.5.9新增页面元素方法
     public void clickLijireg(){
         log.info("合理化，注册页点击 立即注册");
