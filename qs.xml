@@ -9,27 +9,42 @@
     <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
     <!--</suite-files>-->
     <test name="牵手" preserve-order="true">
-        <parameter name="deviceID" value="DU2SSE148L041137"/>
+        <parameter name="deviceID" value="5TF7N15A17007305"/>
         <parameter name="app" value="qs"/>
         <classes>
             <class name="com.qs.testcase.testcase">
                 <methods>
                     <!--<include name="checkProtocal"/>-->
-                    <!--<include name="checkManRegiste1"/>-->
-                    <!--<include name="checkManRegiste3"/>-->
+                    <!--<include name="checkManRegiste1"/>
+                    <include name="checkManRegiste3"/>-->
                     <!--<include name="checkSayHi"/>-->
                     <!--<include name="checkConversation"/>-->
                     <!--<include name="checkNotread"/>-->
                     <!--<include name="checkUpgraded"/>-->
                     <!--<include name="checkAskbtn"/>-->
-                    <include name="checkOnlineStatus"/>
+                    <!--<include name="checkOnlineStatus"/>-->
                     <!--<include name="checkManMore1"/>-->
-                    <include name="checkManMore3"/>
+                    <!--<include name="checkManMore3"/>-->
                     <!--<include name="checkManVideo3"/>-->
-                    <!--<include name="checkVIPList"/>-->
-                    <!--<include name="checkBeanList1"/>-->
-                    <!--<include name="checkLetterList1"/>-->
-                    <!--<include name="checkVipList1"/>-->
+                    <!-- 会员中心 -->
+                    <!--<include name="checkVIPList"/>
+                    <include name="checkVIPList3"/>
+                    <include name="checkBean1"/>
+                    <include name="checkBean3"/>
+                    <include name="checkLetter1"/>
+                    <include name="checkLetter3"/>
+                    <include name="checkVIP1"/>
+                    <include name="checkVIP3"/>-->
+                    <!--<include name="checkBeanList1"/>
+                    <include name="checkBeanList3"/>-->
+                    <!--<include name="checkLetterList1"/>
+                    <include name="checkLetterList3"/>
+                    <include name="checkVipList1"/>
+                    <include name="checkVipList3"/>-->
+                    <!-- 免密支付 -->
+                    <include name="checkBeanMianMi3"/>
+                    <!--<include name="checkLetterMianMi3"/>-->
+                    <!--<include name="checkVIPMianMi3"/>-->
                     <!--<include name="checkAnswerQuestions1"/>-->
                     <!--<include name="checkAnswerQuestions3"/>-->
                     <!--<include name="checkMyPersonData1"/>-->
@@ -41,9 +56,9 @@
                     <!--<include name="checkMyIntegrity1"/>-->
                     <!--<include name="checkMyIntegrity3"/>-->
                     <!--<include name="checkInitSearch"/>-->
-                    <include name="checkSeachArea"/>
+                    <!--<include name="checkSeachArea"/>-->
                     <!--<include name="checkSeachAge"/>-->
-                    <include name="checkSeachHeight"/>
+                    <!--<include name="checkSeachHeight"/>-->
                     <!--<include name="checkSeachAll"/>-->
                     <!--<include name="checkSeachHello"/>-->
                     <!--<include name="checkMailbox"/>-->
@@ -53,17 +68,17 @@
                     <!--<include name="checkManMailboxZonePic3"/>-->
                     <!--<include name="checkManNear1"/>-->
 
-                    <include name="checkWomenRegiste1"/>
+                    <!--<include name="checkWomenRegiste1"/>-->
                     <!--<include name="checkWomenLogin1"/>-->
                     <!--<include name="checkWomenLogin3"/>-->
                     <!--<include name="checkWomenSayHi1"/>-->
                     <!--&lt;!&ndash;<include name="checkWomenMore1"/>&ndash;&gt;-->
-                    <include name="checkWomenMore3"/>
+                    <!--<include name="checkWomenMore3"/>-->
                     <!--&lt;!&ndash;<include name="checkWomenAdvertisement1"/>&ndash;&gt;-->
                     <!--<include name="checkWomenZuanfenZhuShou1"/>-->
-                    <include name="checkWomenMemberCenter1"/>
+                    <!--<include name="checkWomenMemberCenter1"/>
                     <include name="checkWomenMemberCenter3"/>
-                    <include name="checkWomenNear3"/>
+                    <include name="checkWomenNear3"/>-->
 
                     <!--<include name="checkManRegisteNear3"/>-->
                 </methods>

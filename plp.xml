@@ -34,8 +34,8 @@
                     <include name="checkLetterList3"/>
                     <include name="checkVipList3"/>
                     <include name="checkBeanList1"/>
-                   <include name="checkLetterList1"/>
-                    <include name="checkVipList1"/>-->
+                    <include name="checkLetterList1"/>-->
+                    <include name="checkVipList1"/>
                     <!-- 免密支付 -->
                     <include name="checkBeanMianMi3"/>
                     <!--<include name="checkLetterMianMi3"/>
