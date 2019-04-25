@@ -13,7 +13,7 @@ public class QSCheck extends ElementMethod {
     WriteUserID wui=new WriteUserID();
     //    注册协议
     public void protocal() throws Exception {
-        this.clickProtocal();
+        this.clickProtocol();
         if (!this.getTitleName().equals("注册协议")) {
             Assert.fail("点击注册页面下方“使用协议”，未进入注册协议页面");
         }
@@ -25,24 +25,34 @@ public class QSCheck extends ElementMethod {
 
     //    3线男注册
     public void manRegiste3(AndroidDriver driver, String qudaohao) throws Exception {
+        //手机授权
+        if(this.doesWebElementExist(alertTitle)){
+            this.clickBtnAllow();
+            this.waitElement(driver,alertTitle);
+            this.clickBtnAllow();
+        }
         this.clickLogin();
         Thread.sleep(2000);
+        this.oneClickRegister();
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
 //        this.clickTestEnv();
 //        this.clickHuluprep();
-        this.updateQuDao(qudaohao);
-//        this.clickAddress();
+//        this.updateQuDao(qudaohao);
+        this.clickAddress();
 //        this.swipeAddress(driver);
-//        this.clickBtnok();
-        String address=this.getAddress();
-        log.pass(address);
+        this.clickBtnok();
+        /*String address=this.getAddress();
+        log.pass(address);*/
         this.clickSave();
-        this.clickLoginRegistButton();
-        this.clickRegister();
-//        this.clickMen();
-//        this.clickBtnok();
+        this.clickMen();
+        this.clickBtnok();
+        Thread.sleep(2000);
+        //手机授权
+        if(this.doesWebElementExist(alertTitle)) {
+            this.clickBtnAllow();
+        }
         if(this.doesWebElementExist(btn_reg_dialog_reg)){
             this.clickLijireg();
         }
@@ -66,44 +76,58 @@ public class QSCheck extends ElementMethod {
         if (this.doesWebElementExist(msg_close)) {//等待时间？
             this.clickMsgClose();
         }
-        String userid=this.getUserID(driver);
+       /* String userid=this.getUserID(driver);
         wui.appendFile("E:\\QS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
         log.pass(userid);
         this.clickBtnLeft();
         this.clickBtnLeft();
-        this.clickYuanFenIcon();
+        this.clickYuanFenIcon();*/
     }
 
     //  1线男注册
-    public String manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
+    public void manRegiste1(AndroidDriver driver, String qudaohao) throws Exception {
+        //手机授权
+        if(this.doesWebElementExist(alertTitle)){
+            this.clickBtnAllow();
+            this.waitElement(driver,alertTitle);
+            this.clickBtnAllow();
+        }
         this.clickLogin();
         Thread.sleep(2000);
+        this.oneClickRegister();
         this.clickMonitor(driver);
         this.clickTestEnv();
         this.clickProduct();
 ////        this.clickTestEnv();
 //        this.clickHuluprep();
-        this.updateQuDao(qudaohao);
+//        this.updateQuDao(qudaohao);
         this.clickAddress();
 //        this.setBeiJing();
-        this.swipeAddressUp(driver);
+        this.swipeAddress(driver);
         this.clickBtnok();
-        log.info("渠道号：" + qudaohao);
+        /*log.info("渠道号：" + qudaohao);
         String address=this.getAddress();
-        log.pass(address);
+        log.pass(address);*/
         this.clickSave();
-        this.clickLoginRegistButton();
-        this.clickRegister();
-//        this.clickMen();
-//        this.clickBtnok();
-
+        this.clickMen();
+        this.clickBtnok();
+        Thread.sleep(2000);
+        //手机授权
+        if(this.doesWebElementExist(alertTitle)) {
+            this.clickBtnAllow();
+        }
         if(this.doesWebElementExist(btn_reg_dialog_reg)){
             this.clickLijireg();
         }
-        this.waitElement(driver, btn_left);
-//        this.waitElement(driver,title_name);
+        log.info("判断 男用户注册，第一个页面是否为 上传头像页面");
+        if (!this.doesWebElementExist(upload_user_icon_image)) {
+            Assert.fail("未进入上传头像页面");
+        }
         this.clickBtnLeft();
-        this.waitElement(driver, btn_left);
+        log.info("判断 男用户注册，第二个页面是否为 完善资料页面");
+        if (!this.getTitleName().contains("完善资料")) {
+            Assert.fail("未进入完善资料页面");
+        }
         this.clickBtnLeft();
         //5.5.9新新需求，双号弹出超级曝光页面
         log.info("判断5.5.9新需求，一线城市超级曝光页是否弹出");
@@ -125,19 +149,68 @@ public class QSCheck extends ElementMethod {
 //            this.clickBtnLeft();
             this.clickMsgClose();
         }
-        String userid=this.getUserID(driver);
-        wui.appendFile("E:\\QS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
+
+       /* wui.appendFile("E:\\QS.csv",this.getRegisterDate()+","+qudaohao+","+address+","+userid+"\r\n");
         log.pass(userid);
         this.clickBtnLeft();
         this.clickBtnLeft();
-        this.clickYuanFenIcon();
-        return userid;
+        this.clickYuanFenIcon();*/
+
     }
 
+    //    1/3线男登录
+    // 1线男 903615579   903618021  3线男903618100  903626638
+    public void manLogin(AndroidDriver driver, String account, String password,int source) throws Exception {
+        this.clickLogin();
+        Thread.sleep(2000);
+        this.sendAccount(account);
+        this.sendPassword(password);
+        this.clickLogin();
+        if(source ==3) {
+//        取消地理位置的切换
+            this.waitElement(driver,btn_cancel);
+            if (this.doesWebElementExist(btn_cancel)) {
+                this.clickCancle();
+            }
+            if(this.doesWebElementExist(manuploaduserportraitcancle)){
+                this.clickCancleUpload();
+            }
+
+            if(this.doesWebElementExist(btn_speed)){
+                this.clickBtnSpeed();
+            }
+        }else{
+            //1线男
+            Thread.sleep(2000);
+            if(this.doesWebElementExist(right_love_image)) {
+                log.info("1线男用户登录后显示每次推荐用户");
+                String titleName = this.getTitleName();
+                if (titleName.contains("1/5")) {
+                    this.clickLeftLoveImage();
+                    titleName = this.getTitleName();
+                    if (titleName.contains("2/5")) {
+                        log.info("喜欢TA后进度正确");
+                        this.clickRightLoveImage();
+                        this.clickRightLoveImage();
+                        this.clickRightLoveImage();
+                        this.clickRightLoveImage();
+                    }
+                }
+            }
+        }
+        if (!this.mokuai.get(0).getText().equals("缘分")) {
+            Assert.fail("登录成功后，未进入缘分模块");
+        }
+        Thread.sleep(1000);
+    }
     //      一线男 缘分页打招呼
     public void manSayHi(AndroidDriver driver, String qudaohao) throws Exception {
-        String userid = this.manRegiste1(driver, qudaohao);
+        this.manRegiste1(driver, qudaohao);
+        String userid = this.getUserID(driver);
         Integer user = new Integer(userid);
+        this.clickBtnLeft();
+        this.clickBtnLeft();
+        mokuai.get(0).click();
 //        int user1 = Integer.parseInt(userid);
         log.info("判断注册ID号是否为双号");//针对双号策略生效
         if(user%2==0||user%2==1){
@@ -1061,65 +1134,152 @@ public class QSCheck extends ElementMethod {
 
     //一线线男 会员中心
     public void VIP(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste1(driver, qudaohao);
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.waitElement(driver, title_name);
-        this.VipCenter();
+//        this.VipCenter();
+        this.judgeVipCenter();
+    }
+    //三线线男 会员中心
+    public void VIP3(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.waitElement(driver, title_name);
+//        this.VipCenter();
+        this.judgeVipCenter();
+    }
+
+    //    3线男 豆币价格判断
+    public void beanPriceCheck3(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickBean();
+        this.judgeBean(driver,bean800price_3,bean550price_3,3);
+
+    }
+    //    1线男 豆币价格判断
+    public void beanPriceCheck1(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickBean();
+        this.judgeBean(driver,bean800price,bean550price,1);
+
+    }
+
+    //    3线男 写信包月价格判断
+    public void letterPriceCheck3(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickWriteLetter();
+        this.judgeLetter(driver,letter90price_3,letter30price_3,letter7price_3,3);
+
+    }
+    //    1线男 写信包月价格判断
+    public void letterPriceCheck1(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickWriteLetter();
+        this.judgeLetter(driver,letter90price,letter30price,letter7price,1);
+
+    }
+
+
+    //    一线男 星级服务价格
+    public void vipPriceCheck1(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickVipTitle();
+        this.judgeVip(driver,vip90danhao,vip30danhao,1);
+
+    }
+    //    三线男 星级服务价格
+    public void vipPriceCheck3(AndroidDriver driver, String qudaohao) throws Exception {
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.clickMemberCenter();
+        this.clickVipTitle();
+        this.judgeVip(driver,vip90,vip30,3);
     }
 
     //    三线男 豆币价格
     public void beanList3(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste3(driver, qudaohao);
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickBean();
-        this.beanPrice3(driver);
+//        this.beanPrice3(driver);
+        this.judgeBeanPrice3(driver);
     }
 
     //    一线男 豆币价格
     public void beanList1(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste1(driver, qudaohao);
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickBean();
-        this.beanPrice1(driver);
+//        this.beanPrice1(driver);
+        this.judgeBeanPrice1(driver);
     }
 
     //    三线男 写信包月价格
     public void letterList3(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste3(driver, qudaohao);
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickWriteLetter();
-        this.letterPrice3(driver);
+//        this.letterPrice3(driver);
+        this.judgeLetterPrice3(driver);
     }
 
     //    一线男 写信包月价格
     public void letterList1(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste1(driver, qudaohao);
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickWriteLetter();
-        this.letterPrice1(driver);
+//        this.letterPrice1(driver);
+        this.judgeLetterPrice1(driver);
     }
 
     //    三线男 皇冠特权
     public void VipList3(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste3(driver, qudaohao);
+//        this.manRegiste3(driver, qudaohao);
+        this.manLogin(driver,"903618100","aaa123456",3);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickVipTitle();
-        this.VipPrice3(driver);
+//        this.VipPrice3(driver);
+        this.judgeVipPrice3(driver);
     }
 
     //    1线男 皇冠特权
     public void VipList1(AndroidDriver driver, String qudaohao) throws Exception {
-        this.manRegiste1(driver, qudaohao);
+//        this.manRegiste1(driver, qudaohao);
+        this.manLogin(driver,"903615579","aaa123456",1);
         this.clickMeIcon();
         this.clickMemberCenter();
         this.clickVipTitle();
-        this.VipPrice1(driver);
+//        this.VipPrice1(driver);
+        this.judgeVipPrice1(driver);
     }
 
     //      对对碰，免密开通及两次支付引导
@@ -1204,6 +1364,38 @@ public class QSCheck extends ElementMethod {
 
 
     }
+    //      豆币，免密开通及两次支付引导
+    public void beanMianMi(AndroidDriver driver, String qudaohao ,int beannum) throws Exception {
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.waitElement(driver, member_center);
+        this.clickMemberCenter();
+        this.judgeBeanMianMi(driver,beannum);
+
+    }
+    //      写信包月，免密开通及两次支付引导-测试支付包账号专用
+    public void letterMianMi(AndroidDriver driver, String qudaohao) throws Exception {
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.waitElement(driver, member_center);
+        this.clickMemberCenter();
+        this.judgeLetterMianMi(driver);
+
+
+    }
+    //      皇冠特权，免密开通及两次支付引导
+    public void vipMianMi(AndroidDriver driver, String qudaohao) throws Exception {
+        this.manRegiste3(driver, qudaohao);
+//        this.manLogin(driver,"903618100","aaa123456",3);
+        this.clickMeIcon();
+        this.waitElement(driver, member_center);
+        this.clickMemberCenter();
+        this.judgeVipMianMi(driver);
+    }
+/*  公共方法替换
+
     //      写信包月，免密开通及两次支付引导
     public void letterMianMi(AndroidDriver driver, String qudaohao, int beannum) throws Exception {
         this.manRegiste3(driver, qudaohao);
@@ -1371,6 +1563,7 @@ public class QSCheck extends ElementMethod {
             Assert.fail("开通免密后，对对碰中提示信息未改变");
         }
     }
+*/
 
     //    搜索初始条件
     public void initSearch(AndroidDriver driver, String qudaohao) throws Exception {
@@ -1749,7 +1942,7 @@ public class QSCheck extends ElementMethod {
     }
 
     //    获取用户id
-    private String getUserID(AndroidDriver driver) throws Exception {
+    public String getUserID(AndroidDriver driver) throws Exception {
         this.clickMeIcon();
         this.waitElement(driver, memberinfo);
         this.swipeToUp(driver);
@@ -1760,6 +1953,7 @@ public class QSCheck extends ElementMethod {
         this.clickUserInfo();
         return this.getUserInfoUserName();
     }
+/*  公共方法替换
 
     //    三线男 会员中心可以购买项
     public void VipCenter() throws Exception {
@@ -2666,6 +2860,7 @@ public class QSCheck extends ElementMethod {
 //            Assert.fail("30天vip，银联支付取消 自动续费后，不为原价");
 //        }
     }
+*/
 
     //    搜索条件初始验证
     public void initSeachCondition() {
@@ -2715,14 +2910,12 @@ public class QSCheck extends ElementMethod {
         this.updateQuDao(qudaohao);
         this.clickAddress();
 //        this.setBeiJing();
-        this.swipeAddressUp(driver);
+        this.swipeAddress(driver);
         this.clickBtnok();
         log.info("渠道号：" + qudaohao);
-        String address=this.getAddress();
-        log.pass(address);
+//        String address=this.getAddress();
+//        log.pass(address);
         this.clickSave();
-        this.clickLoginRegistButton();
-//        this.clickSpSex();
         this.clickWomen();
         this.clickRegister();
         this.waitElement(driver, title_name);
@@ -2820,7 +3013,7 @@ public class QSCheck extends ElementMethod {
         this.updateQuDao(qudaohao);
         this.clickAddress();
 //        this.setBeiJing();
-        this.swipeAddressUp(driver);
+        this.swipeAddress(driver);
         this.clickBtnok();
         log.info("渠道号：" + qudaohao);
         String address=this.getAddress();
